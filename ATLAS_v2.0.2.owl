@@ -1,0 +1,1283 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#"
+     xml:base="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ConsistsOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ConsistsOf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#HasMaterial -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#HasMaterial">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ElevationChange -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ElevationChange">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageDataset -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageDataset">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageNumber">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsAdversary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsAdversary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsBoulder -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsBoulder">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsFreshWater -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsFreshWater">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsGravel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsGravel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rock"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsShadow -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsShadow">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#SensorIssue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#SensorIssue">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Traversability -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Traversability">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Version -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Version">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#aerial_vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#aerial_vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#animal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#animal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#artificial -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#artificial">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#asphalt -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#asphalt">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#artificial"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#autumn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#autumn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bay -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bay">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bridge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bridge">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#building -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#building">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bush_and_tree -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bush_and_tree">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cacti -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cacti">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#canyon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#canyon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cave -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cave">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#celestial_body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#celestial_body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#clear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#clear">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cloud -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cloud">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#coastal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#coastal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dawn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dawn">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#desert -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#desert">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#detritus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#detritus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dusk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dusk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#electric_pole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#electric_pole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#flat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#flat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fluctuating_elevation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fluctuating_elevation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fog_haze -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fog_haze">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#forest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#forest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#glacier -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#glacier">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#grass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#grass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#grassland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#grassland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_cover -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_cover">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vegetation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#guard_rail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#guard_rail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#hill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#hill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#lake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#lake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#landform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#landform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#landform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#leaf -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#leaf">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tree_log"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#mountain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#mountain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#night -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#night">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#null -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#null">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ocean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ocean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#optical_phenomenon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#optical_phenomenon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plateau -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plateau">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#puddle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#puddle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#river -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#river">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#road -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#road">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sensor_issue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sensor_issue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#void"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#shape -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#shape">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sky -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sky">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#snow -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#snow">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#snow_ice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#snow_ice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#soil -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#soil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#spring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#spring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#street_light -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#street_light">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#subterranean -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#subterranean">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#summer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#summer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#telecommunication_pole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#telecommunication_pole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#traffic_light -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#traffic_light">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#traffic_sign -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#traffic_sign">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tree_log -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tree_log">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tundra -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tundra">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tunnel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tunnel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unknown -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unknown">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#void"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#valley -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#valley">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vegetation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vegetation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsAdversary"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#void -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#void">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#landform"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_vehicle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_vehicle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wetland -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wetland">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#winter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#winter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tree_log"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Version"/>
+                <owl:hasValue>2.0.2</owl:hasValue>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#F1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#F1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_cover"/>
+        <HasMaterial rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#M1"/>
+        <ElevationChange rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.2</ElevationChange>
+        <Traversability rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</Traversability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#F2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#F2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#river"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#F3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#F3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#mountain"/>
+        <ConsistsOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#F1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#M1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#M1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ElevationChange"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#flat"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ElevationChange"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                <swrl:arguments>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
+                                                        <rdf:rest>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5</rdf:first>
+                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                            </rdf:Description>
+                                                        </rdf:rest>
+                                                    </rdf:Description>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
