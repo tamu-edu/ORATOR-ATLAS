@@ -1,0 +1,137 @@
+{
+	"ImageDataset" : "RELLIS 3D",
+	"Class": [
+	{
+		"type" : "void",
+		"polygon_instantiation" : "unknown",
+		"terrain_instantiation" : ""
+		
+	},
+
+	{
+		"type" : "dirt",
+		"polygon_instantiation" : "land_body",
+		"terrain_instantiation" : "soil"
+	},
+
+	{
+		"type" : "grass",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "grass"
+	},
+
+	{
+		"type" : "tree",
+		"polygon_instantiation" : "bush_and_tree",
+		"terrain_instantiation" : "tree_log"
+	},
+
+	{
+		"type" : "pole",
+		"polygon_instantiation" : "pole",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "water",
+		"polygon_instantiation" : "water_body",
+		"terrain_instantiation" : "water"
+	},
+
+	{
+		"type" : "sky",
+		"polygon_instantiation" : "sky",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "vehicle",
+		"polygon_instantiation" : "vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "object",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "asphalt",
+		"polygon_instantiation" : "road",
+		"terrain_instantiation" : "asphalt"
+	},
+
+	{
+		"type" : "build",
+		"polygon_instantiation" : "building",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "log",
+		"polygon_instantiation" : "vegetation",
+		"terrain_instantiation" : "wood"
+	},
+
+	{
+		"type" : "person",
+		"polygon_instantiation" : "person",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "fence",
+		"polygon_instantiation" : "fence",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "bush",
+		"polygon_instantiation" : "bush_and_tree",
+		"terrain_instantiation" : "plant"
+	},
+
+	{
+		"type" : "concrete",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "barrier",
+		"polygon_instantiation" : "barrier",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "puddle",
+		"polygon_instantiation" : "puddle",
+		"terrain_instantiation" : "water"
+	},
+
+	{
+		"type" : "mud",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "soil"
+	},
+
+	{
+		"type" : "rubble",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "rock"
+	},
+	
+	{
+		"type" : "leaves",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "leaf"
+	},
+	
+	{
+		"type" : "rock",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "rock"
+	}
+	]
+}
