@@ -1,6 +1,24 @@
 # ORATOR-ATLAS
 This repo holds the relevant code for an All-Terrain Labelset for Autonomous Systems (ATLAS) developed by the Off-Road Annotation TOols & Resources (ORATOR) team and Texas A&M Univsity. The goal of this effort is to develop a standardized ontology for off-road datasets to unify exisiting and future dataset ontologies. This standardized ontological framework can be used to aid training AI-models on data that is collected from multiple datasets. Moreover, the integration of W3C Web Ontology Language (OWL) allows for easy addition to the proposed ontology and the ability to analyze data for inconsistencies. 
 
+There are 3 different parts of the ontology - instance ontology, imaging conditions, and properties. The imaging conditions typically apply to an entire dataset, whereas the instance onotology corresponds to objects within a single image. The different objects can have associated properties. Overviews are shown for the different parts below within the OWL framework. There are  changes from the original ATLAS version that was previously published and viewable in the manuscript in this repo. 
+
+The below image shows the high level view of the Imaging Conditions and corresponding OWL representation. 
+![imaging_conditions_chart](Documentation/image_labels.PNG)
+![imaging_conditions](Documentation/imaging_conditions.png)
+
+
+
+The below image shows the high level view of the instance ontology and corresponding OWL representation. 
+![instance_ontology_chart](Documentation/instance_chart.PNG)![instance_ontology](Documentation/instance_ontology.png)
+
+
+The below image shows the high level view of the properties and corresponding OWL representation. 
+![properties_chart](Documentation/Properties_chart.PNG)
+![properties](Documentation/properties.png)
+
+
+
 ## Supported Datasets 
 The mappings from current datasets to ATLAS has been created for:
 
@@ -19,7 +37,7 @@ The installation instructions assume that the development platform is Ubuntu 20.
 
 SemanticImage relies on 2 dependencies - OpenCV and jsoncpp. Jsoncpp and CMake can be installed with the below command: 
 
-`sudo apt-get install cmake libjsoncpp-dev`
+`sudo apt-get install cmake libjsoncpp-dev libboost-all-dev -y`
 
 #### Install  OpenCV:
 The process for installing the most recent version of OpenCV with the contrib modules is:
@@ -64,7 +82,7 @@ OWL is used to represent the ontology in a hierarchical manner and leverage open
 
 The recommended software package to use is Protege. The link to Protege can be found [here](https://protege.stanford.edu/). It is recommended to install Protege  Desktop. This application allows for viewing and modifying the onotology. 
 
-The onotology can be loaded into the software by .....
+The onotology can be loaded into the software by File->Open and then selecting the relevant "***.owl" file. 
 
 ## SemanticImage 
 This package is used to start the conversion of existing semantically segmented datasets into a more standarized format. The input to this step is a semantically segmented image and a json file containing the RGB value and corresponding semantic class. The output file contains the necessary information for input into OntologyInstantiation, such as the input image, ATLAS version, object class, object size, and polygon vertices.
@@ -129,8 +147,6 @@ This work is a collaboration between USARMY GVSC and TAMU.
 
 
 ## TO-DO
-- Need to generate visualization images
-- Installation instructions for gtk 
 - Automate the process for a directory instead of single  image and output should correspond to input name 
 - Update list of supported datasets
 - Example integration showing the distribution of objects/images for single dataset and multidataset

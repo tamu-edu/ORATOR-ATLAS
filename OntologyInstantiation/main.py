@@ -8,7 +8,7 @@ import numpy as np
 
 if __name__ == '__main__':
     
-    input_ontology_mapping= "json/Class2OntologyMapping.json"
+    input_ontology_mapping= "json/RELLIS3D.json"
     input_image_json = "json/segmented_output_240.json"
     input_ATLAS_ontology="ATLAS_v2.0.3.owl"
 

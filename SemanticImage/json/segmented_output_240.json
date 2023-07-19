@@ -13,7 +13,7 @@
          },
          "properties" : {
             "entity_number" : 0,
-            "pixel_area" : 167281
+            "pixel_area" : 167281.0
          },
          "type" : "Ballpark"
       },
@@ -1313,7 +1313,7 @@
          },
          "properties" : {
             "entity_number" : 3,
-            "pixel_area" : 19848
+            "pixel_area" : 19848.0
          },
          "type" : "grass"
       },
@@ -2349,7 +2349,7 @@
          },
          "properties" : {
             "entity_number" : 5,
-            "pixel_area" : 21917
+            "pixel_area" : 21917.0
          },
          "type" : "leaves"
       },
@@ -2647,7 +2647,7 @@
          },
          "properties" : {
             "entity_number" : 6,
-            "pixel_area" : 34675
+            "pixel_area" : 34675.0
          },
          "type" : "sky"
       }
