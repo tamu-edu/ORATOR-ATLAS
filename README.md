@@ -159,3 +159,4 @@ This work is a collaboration between USARMY GVSC and TAMU.
 - Update list of supported datasets
 - Example integration showing the distribution of objects/images for single dataset and multidataset
 - Example integration showing the images from different datasets in a unified ontology
+- Reorganize and cleanup repo 
