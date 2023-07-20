@@ -147,6 +147,7 @@ This work is a collaboration between USARMY GVSC and TAMU.
 
 
 ## TO-DO
+- Update readme for changes
 - Automate the process for a directory instead of single  image and output should correspond to input name 
 - Update list of supported datasets
 - Example integration showing the distribution of objects/images for single dataset and multidataset

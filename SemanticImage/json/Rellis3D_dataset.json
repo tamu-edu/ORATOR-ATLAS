@@ -1,0 +1,105 @@
+{
+   "Color_Information" : {
+      "void" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 0
+      },
+      "dirt" : {
+         "blue_value" : 20,
+         "green_value" : 64,
+         "red_value" : 108
+      },
+      "grass" : {
+         "blue_value" : 0,
+         "green_value" : 102,
+         "red_value" : 0
+      },
+      "tree" : {
+         "blue_value" : 0,
+         "green_value" : 255,
+         "red_value" : 0
+      },
+      "pole" : {
+         "blue_value" : 153,
+         "green_value" : 153,
+         "red_value" : 0
+      },
+      "water" : {
+         "blue_value" : 255,
+         "green_value" : 128,
+         "red_value" : 0
+      },
+      "sky" : {
+         "blue_value" : 255,
+         "green_value" : 0,
+         "red_value" : 0
+      },
+      "vehicle" : {
+         "blue_value" : 0,
+         "green_value" : 255,
+         "red_value" : 255
+      },
+      "object" : {
+         "blue_value" : 127,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "asphalt" : {
+         "blue_value" : 64,
+         "green_value" : 64,
+         "red_value" : 64
+      },
+      "building" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "log" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 102
+      },
+      "person" : {
+         "blue_value" : 255,
+         "green_value" : 153,
+         "red_value" : 204
+      },
+      "fence" : {
+         "blue_value" : 204,
+         "green_value" : 0,
+         "red_value" : 102
+      },
+      "bush" : {
+         "blue_value" : 204,
+         "green_value" : 153,
+         "red_value" : 255
+      },
+      "concrete" : {
+         "blue_value" : 170,
+         "green_value" : 170,
+         "red_value" : 170
+      },
+      "barrier" : {
+         "blue_value" : 255,
+         "green_value" : 121,
+         "red_value" : 41
+      },
+      "puddle" : {
+         "blue_value" : 239,
+         "green_value" : 255,
+         "red_value" : 134
+      },
+      "mud" : {
+         "blue_value" : 34,
+         "green_value" : 66,
+         "red_value" : 99
+      },
+      "rubble" : {
+         "blue_value" : 138,
+         "green_value" : 22,
+         "red_value" : 110
+      }
+   }
+       
+}
