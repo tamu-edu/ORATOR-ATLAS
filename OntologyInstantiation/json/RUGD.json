@@ -1,12 +1,6 @@
 {
-	"ImageDataset" : "RELLIS 3D",
+	"ImageDataset" : "RUGD",
 	"Class": [
-	{
-		"type" : "void",
-		"polygon_instantiation" : "unknown",
-		"terrain_instantiation" : ""
-		
-	},
 
 	{
 		"type" : "dirt",
@@ -14,6 +8,13 @@
 		"terrain_instantiation" : "soil"
 	},
 
+	{
+		"type" : "sand",
+		"polygon_instantiation" : "land_body",
+		"terrain_instantiation" : "soil"
+		
+	},
+	
 	{
 		"type" : "grass",
 		"polygon_instantiation" : "ground_cover",
@@ -51,7 +52,7 @@
 	},
 
 	{
-		"type" : "object",
+		"type" : "container",
 		"polygon_instantiation" : "geographic_feature",
 		"terrain_instantiation" : ""
 	},
@@ -63,9 +64,24 @@
 	},
 
 	{
-		"type" : "build",
-		"polygon_instantiation" : "building",
-		"terrain_instantiation" : "artificial"
+		"type" : "gravel",
+		"polygon_instantiation" : "land_body",
+		"terrain_instantiation" : "rock"
+		
+	},
+	
+	{
+		"type" : "mulch",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "detritus"
+		
+	},
+	
+	{
+		"type" : "rockbed",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "rock"
+		
 	},
 
 	{
@@ -74,6 +90,12 @@
 		"terrain_instantiation" : "wood"
 	},
 
+	{
+		"type" : "bicycle",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	
 	{
 		"type" : "person",
 		"polygon_instantiation" : "person",
@@ -93,34 +115,41 @@
 	},
 
 	{
+		"type" : "sign",
+		"polygon_instantiation" : "regulatory",
+		"terrain_instantiation" : "artificial"
+	},
+	
+	{
+		"type" : "rock",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "rock"
+	}
+	
+	{
+		"type" : "bridge",
+		"polygon_instantiation" : "bridge",
+		"terrain_instantiation" : "artificial"
+	}
+	
+	{
 		"type" : "concrete",
 		"polygon_instantiation" : "infrastructure",
 		"terrain_instantiation" : "artificial"
 	},
 
 	{
-		"type" : "barrier",
-		"polygon_instantiation" : "barrier",
+		"type" : "table",
+		"polygon_instantiation" : "infrastructure",
 		"terrain_instantiation" : "artificial"
 	},
 
 	{
-		"type" : "puddle",
-		"polygon_instantiation" : "puddle",
-		"terrain_instantiation" : "water"
-	},
-
-	{
-		"type" : "mud",
-		"polygon_instantiation" : "geographic_feature",
-		"terrain_instantiation" : "soil"
-	},
-
-	{
-		"type" : "rubble",
-		"polygon_instantiation" : "geographic_feature",
-		"terrain_instantiation" : "rock"
-	},
+		"type" : "building",
+		"polygon_instantiation" : "building",
+		"terrain_instantiation" : "artificial"
+	}
 	
+
 	]
 }

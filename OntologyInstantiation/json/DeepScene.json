@@ -1,0 +1,37 @@
+{
+	"ImageDataset" : "DeepScene",
+	"Class": [
+	{
+		"type" : "object",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "trail",
+		"polygon_instantiation" : "road",
+		"terrain_instantiation" : "soil"
+		
+	},
+
+	{
+		"type" : "grass",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "grass"
+	},
+
+	{
+		"type" : "sky",
+		"polygon_instantiation" : "sky",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "vegetation",
+		"polygon_instantiation" : "vegetation",
+		"terrain_instantiation" : "wood"
+	},
+
+
+	]
+}

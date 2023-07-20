@@ -1,0 +1,231 @@
+{
+	"ImageDataset" : "A2D2",
+	"Class": [
+	{
+		"type" : "Nature Object",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : ""
+		
+	},
+		
+	{
+		"type" : "Sky",
+		"polygon_instantiation" : "sky",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "RD normal street",
+		"polygon_instantiation" : "road",
+		"terrain_instantiation" : "asphalt"
+	},
+
+	{
+		"type" : "Buildings",
+		"polygon_instantiation" : "building",
+		"terrain_instantiation" : "artificial"
+	},
+	
+	{
+		"type" : "Car 1-4",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Sidewalk",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+	
+	{
+		"type" : "Truck",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Grid structure",
+		"polygon_instantiation" : "electric_pole",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Road blocks",
+		"polygon_instantiation" : "barrier",
+		"terrain_instantiation" : "artificial"
+	},	
+	
+	{
+		"type" : "Drivable cobblestone",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+	
+	{
+		"type" : "Curbstone",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},	
+	
+	
+	{
+		"type" : "Solid line",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},	
+	
+	
+	{
+		"type" : "Non-drivable street",
+		"polygon_instantiation" : "road",
+		"terrain_instantiation" : "asphalt"
+	},	
+	
+	{
+		"type" : "Poles",
+		"polygon_instantiation" : "pole",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Dashed line",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},	
+	
+	{
+		"type" : "Irrelevant signs",
+		"polygon_instantiation" : "regulatory",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Traffic signs 1-3",
+		"polygon_instantiation" : "traffic_sign",
+		"terrain_instantiation" : "artificial"
+	},	
+
+	{
+		"type" : "Parking area",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Obstacles / trash",
+		"polygon_instantiation" : "barrier",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "RD restricted area",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Traffic guide obj.",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Slow drive area",
+		"polygon_instantiation" : "road",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Signal corpus",
+		"polygon_instantiation" : "regulatory",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Pedestrian 1-3",
+		"polygon_instantiation" : "person",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "Bicycle 1-4",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Painted driv. instr.",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Utility vehicle 1-2",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Traffic signal 1-3",
+		"polygon_instantiation" : "traffic_sign",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Sidebars",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+	
+	{
+		"type" : "Small vehicles 1-3",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	
+	{
+		"type" : "Zebra crossing",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Electronic traffic",
+		"polygon_instantiation" : "regulatory",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Tractor",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "Blurred area",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "Animals",
+		"polygon_instantiation" : "animal",
+		"terrain_instantiation" : ""
+	},
+	
+	{
+		"type" : "Speed bumper",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : "artificial"
+	},
+	
+	{
+		"type" : "Rain dirt",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "soil"
+	},
+	
+	]
+	
+}
