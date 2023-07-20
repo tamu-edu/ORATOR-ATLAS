@@ -89,17 +89,23 @@ This package is used to start the conversion of existing semantically segmented 
 
 
 ### Parameters: 
-**input_image** - This is the name of the input image for analysis. 
+
+**ATLAS_version** - This is the current version of ATLAS being used. The default is "2.1.2". This is one of the items included in the json file. 
+
+**ext** - This is the extension of the image files being analyzed. 
+
+**input_directory** - This is the name of the input image directory for analysis. 
 
 **input_json** - This input json should contain the semantic class and corresponding RGB value for the dataset being analyzed. 
 
-**output_json** - The output json is the name of the file that is to be written after analysis.  
+**min_polygon_area** - This is the minimum number of pixels that a contour needs or else it is filtered out and not outputted to the output json file. 
 
 **num_threads** - This is the number of threads that can be used to help speed up processing times. The default is to use all threads on the machine. 
 
-**min_polygon_area** - This is the minimum number of pixels that a contour needs or else it is filtered out and not outputted to the output json file. 
+**output_directory** - The output json directory is the name of the directory that files are to be written after analysis. 
 
-**ATLAS_version** - This is the current version of ATLAS being used. The default is "2.1.2". This is one of the items included in the json file. 
+**visualize** - This is a variable to see the images that are being processed.  It will display the input image, the detected edges, and the extracted contours that are written to the output json file. This default is set to false, since it slows down processing times. 
+
 
 ### Usage
 Make sure to adjust the parameters to match your setup. Make sure you are in the main directory for the ORATOR-ATLAS repo. After the code can be built and run by the following commands in the terminal:
@@ -130,11 +136,13 @@ This package is used to take the json file from SemanticImage and convert it to 
 
 ### Parameters
 
-**input_ontology_mapping** - This is a file that converts the semantic classes from an existing dataset into the ATLAS ontology. 
-
-**input_image_json** - This is the output file from SemanticImage. 
-
 **input_ATLAS_ontology** - This is the OWL file for the ATLAS version being used. 
+
+**input_image_json_directory** - This is the output file directory from SemanticImage that is the input to this package. It contains the information about the images being analyzed.  
+
+**input_ontology_mapping** - This is a json file that converts the semantic classes from an existing dataset into the ATLAS ontology. 
+
+**output_owl_directory** - This is the output file directory for the converted OWL files from the inputted image json files. 
 
 ### Usage 
 
@@ -148,7 +156,6 @@ This work is a collaboration between USARMY GVSC and TAMU.
 
 ## TO-DO
 - Update readme for changes
-- Automate the process for a directory instead of single  image and output should correspond to input name 
 - Update list of supported datasets
 - Example integration showing the distribution of objects/images for single dataset and multidataset
 - Example integration showing the images from different datasets in a unified ontology

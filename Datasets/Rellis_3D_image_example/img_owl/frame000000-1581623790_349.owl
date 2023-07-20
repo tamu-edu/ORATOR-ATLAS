@@ -1,0 +1,1017 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204"
+         xmlns="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#"
+         xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+         xmlns:swrl2="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#">
+
+<owl:Ontology rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204"/>
+
+<owl:ObjectProperty rdf:about="#ConsistsOf">
+  <rdfs:domain rdf:resource="#geographic_feature"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#HasMaterial">
+  <owl:inverseOf rdf:resource="#Makes"/>
+  <rdfs:domain>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#agent"/>
+        <rdf:Description rdf:about="#geographic_feature"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:domain>
+  <rdfs:range rdf:resource="#material"/>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Makes">
+  <rdfs:domain rdf:resource="#material"/>
+  <rdfs:range>
+    <owl:Class>
+      <owl:unionOf rdf:parseType="Collection">
+        <rdf:Description rdf:about="#agent"/>
+        <rdf:Description rdf:about="#geographic_feature"/>
+      </owl:unionOf>
+    </owl:Class>
+  </rdfs:range>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#ElevationChange">
+  <rdfs:domain rdf:resource="#geographic_feature"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#ImageDataset">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#ImageNumber">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#IsAdversary">
+  <rdfs:domain rdf:resource="#agent"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#IsBoulder">
+  <rdfs:domain rdf:resource="#rock"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#IsFreshWater">
+  <rdfs:domain rdf:resource="#H2O"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#IsGravel">
+  <rdfs:domain rdf:resource="#rock"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#IsShadow">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#SensorIssue">
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Size">
+  <rdfs:domain rdf:resource="#instance_ontology"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Traversability">
+  <rdfs:domain rdf:resource="#geographic_feature"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Version">
+  <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+</owl:DatatypeProperty>
+
+<owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+
+<owl:Class rdf:about="#geographic_feature">
+  <rdfs:subClassOf rdf:resource="#instance_ontology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#agent">
+  <rdfs:subClassOf rdf:resource="#instance_ontology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#material">
+  <rdfs:subClassOf rdf:resource="#property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#rock">
+  <rdfs:subClassOf rdf:resource="#material"/>
+</owl:Class>
+
+<owl:Class rdf:about="#H2O">
+  <rdfs:subClassOf rdf:resource="#material"/>
+</owl:Class>
+
+<owl:Class rdf:about="#instance_ontology">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#ImageDataset"/>
+      <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RELLIS 3D</owl:hasValue>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#aerial_vehicle">
+  <rdfs:subClassOf rdf:resource="#vehicle"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vehicle">
+  <rdfs:subClassOf rdf:resource="#agent"/>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#IsAdversary"/>
+      <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+      <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#animal">
+  <rdfs:subClassOf rdf:resource="#agent"/>
+</owl:Class>
+
+<owl:Class rdf:about="#artificial">
+  <rdfs:subClassOf rdf:resource="#material"/>
+</owl:Class>
+
+<owl:Class rdf:about="#asphalt">
+  <rdfs:subClassOf rdf:resource="#artificial"/>
+</owl:Class>
+
+<owl:Class rdf:about="#atmospheric">
+  <rdfs:subClassOf rdf:resource="#instance_ontology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#autumn">
+  <rdfs:subClassOf rdf:resource="#season"/>
+</owl:Class>
+
+<owl:Class rdf:about="#season">
+  <rdfs:subClassOf rdf:resource="#imaging_conditions"/>
+</owl:Class>
+
+<owl:Class rdf:about="#barrier">
+  <rdfs:subClassOf rdf:resource="#infrastructure"/>
+</owl:Class>
+
+<owl:Class rdf:about="#infrastructure">
+  <rdfs:subClassOf rdf:resource="#geographic_feature"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bay">
+  <rdfs:subClassOf rdf:resource="#water_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#water_body">
+  <rdfs:subClassOf rdf:resource="#landform"/>
+</owl:Class>
+
+<owl:Class rdf:about="#biome">
+  <rdfs:subClassOf rdf:resource="#imaging_conditions"/>
+</owl:Class>
+
+<owl:Class rdf:about="#imaging_conditions">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#ImageDataset"/>
+      <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RELLIS 3D</owl:hasValue>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#bridge">
+  <rdfs:subClassOf rdf:resource="#infrastructure"/>
+</owl:Class>
+
+<owl:Class rdf:about="#building">
+  <rdfs:subClassOf rdf:resource="#infrastructure"/>
+</owl:Class>
+
+<owl:Class rdf:about="#bush_and_tree">
+  <rdfs:subClassOf rdf:resource="#vegetation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vegetation">
+  <rdfs:subClassOf rdf:resource="#geographic_feature"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cacti">
+  <rdfs:subClassOf rdf:resource="#plant"/>
+</owl:Class>
+
+<owl:Class rdf:about="#plant">
+  <rdfs:subClassOf rdf:resource="#material"/>
+</owl:Class>
+
+<owl:Class rdf:about="#canyon">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#land_body">
+  <rdfs:subClassOf rdf:resource="#landform"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cave">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#celestial_body">
+  <rdfs:subClassOf rdf:resource="#atmospheric"/>
+</owl:Class>
+
+<owl:Class rdf:about="#clear">
+  <rdfs:subClassOf rdf:resource="#weather"/>
+</owl:Class>
+
+<owl:Class rdf:about="#weather">
+  <rdfs:subClassOf rdf:resource="#imaging_conditions"/>
+</owl:Class>
+
+<owl:Class rdf:about="#cloud">
+  <rdfs:subClassOf rdf:resource="#atmospheric"/>
+</owl:Class>
+
+<owl:Class rdf:about="#coastal">
+  <rdfs:subClassOf rdf:resource="#biome"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dawn">
+  <rdfs:subClassOf rdf:resource="#time_of_day"/>
+</owl:Class>
+
+<owl:Class rdf:about="#time_of_day">
+  <rdfs:subClassOf rdf:resource="#imaging_conditions"/>
+</owl:Class>
+
+<owl:Class rdf:about="#day">
+  <rdfs:subClassOf rdf:resource="#time_of_day"/>
+</owl:Class>
+
+<owl:Class rdf:about="#desert">
+  <rdfs:subClassOf rdf:resource="#biome"/>
+</owl:Class>
+
+<owl:Class rdf:about="#detritus">
+  <rdfs:subClassOf rdf:resource="#plant"/>
+</owl:Class>
+
+<owl:Class rdf:about="#dusk">
+  <rdfs:subClassOf rdf:resource="#time_of_day"/>
+</owl:Class>
+
+<owl:Class rdf:about="#electric_pole">
+  <rdfs:subClassOf rdf:resource="#pole"/>
+</owl:Class>
+
+<owl:Class rdf:about="#pole">
+  <rdfs:subClassOf rdf:resource="#regulatory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#elevation_change">
+  <rdfs:subClassOf rdf:resource="#property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#property">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#ImageDataset"/>
+      <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">RELLIS 3D</owl:hasValue>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</owl:Class>
+
+<owl:Class rdf:about="#fence">
+  <rdfs:subClassOf rdf:resource="#barrier"/>
+</owl:Class>
+
+<owl:Class rdf:about="#flat">
+  <rdfs:subClassOf rdf:resource="#elevation_change"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fluctuating_elevation">
+  <rdfs:subClassOf rdf:resource="#elevation_change"/>
+</owl:Class>
+
+<owl:Class rdf:about="#fog_haze">
+  <rdfs:subClassOf rdf:resource="#weather"/>
+</owl:Class>
+
+<owl:Class rdf:about="#forest">
+  <rdfs:subClassOf rdf:resource="#biome"/>
+</owl:Class>
+
+<owl:Class rdf:about="#glacier">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#grass">
+  <rdfs:subClassOf rdf:resource="#plant"/>
+</owl:Class>
+
+<owl:Class rdf:about="#grassland">
+  <rdfs:subClassOf rdf:resource="#biome"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ground_cover">
+  <rdfs:subClassOf rdf:resource="#vegetation"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ground_vehicle">
+  <rdfs:subClassOf rdf:resource="#vehicle"/>
+</owl:Class>
+
+<owl:Class rdf:about="#guard_rail">
+  <rdfs:subClassOf rdf:resource="#barrier"/>
+</owl:Class>
+
+<owl:Class rdf:about="#hill">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ice">
+  <rdfs:subClassOf rdf:resource="#H2O"/>
+</owl:Class>
+
+<owl:Class rdf:about="#lake">
+  <rdfs:subClassOf rdf:resource="#water_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#landform">
+  <rdfs:subClassOf rdf:resource="#geographic_feature"/>
+</owl:Class>
+
+<owl:Class rdf:about="#leaf">
+  <rdfs:subClassOf rdf:resource="#plant"/>
+  <rdfs:subClassOf rdf:resource="#tree_log"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tree_log">
+  <rdfs:subClassOf rdf:resource="#plant"/>
+</owl:Class>
+
+<owl:Class rdf:about="#mountain">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#night">
+  <rdfs:subClassOf rdf:resource="#time_of_day"/>
+</owl:Class>
+
+<owl:Class rdf:about="#null">
+  <rdfs:subClassOf rdf:resource="#unclassified"/>
+</owl:Class>
+
+<owl:Class rdf:about="#unclassified">
+  <rdfs:subClassOf rdf:resource="#instance_ontology"/>
+</owl:Class>
+
+<owl:Class rdf:about="#ocean">
+  <rdfs:subClassOf rdf:resource="#water_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#optical_phenomenon">
+  <rdfs:subClassOf rdf:resource="#atmospheric"/>
+</owl:Class>
+
+<owl:Class rdf:about="#person">
+  <rdfs:subClassOf rdf:resource="#agent"/>
+</owl:Class>
+
+<owl:Class rdf:about="#plain">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#plateau">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#regulatory">
+  <rdfs:subClassOf rdf:resource="#infrastructure"/>
+</owl:Class>
+
+<owl:Class rdf:about="#puddle">
+  <rdfs:subClassOf rdf:resource="#water_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#rain">
+  <rdfs:subClassOf rdf:resource="#weather"/>
+</owl:Class>
+
+<owl:Class rdf:about="#river">
+  <rdfs:subClassOf rdf:resource="#water_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#road">
+  <rdfs:subClassOf rdf:resource="#infrastructure"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sea">
+  <rdfs:subClassOf rdf:resource="#water_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sensor_issue">
+  <rdfs:subClassOf rdf:resource="#void"/>
+</owl:Class>
+
+<owl:Class rdf:about="#void">
+  <rdfs:subClassOf rdf:resource="#unclassified"/>
+</owl:Class>
+
+<owl:Class rdf:about="#shape">
+  <rdfs:subClassOf rdf:resource="#property"/>
+</owl:Class>
+
+<owl:Class rdf:about="#sky">
+  <rdfs:subClassOf rdf:resource="#atmospheric"/>
+</owl:Class>
+
+<owl:Class rdf:about="#snow">
+  <rdfs:subClassOf rdf:resource="#H2O"/>
+</owl:Class>
+
+<owl:Class rdf:about="#snow_ice">
+  <rdfs:subClassOf rdf:resource="#weather"/>
+</owl:Class>
+
+<owl:Class rdf:about="#soil">
+  <rdfs:subClassOf rdf:resource="#material"/>
+</owl:Class>
+
+<owl:Class rdf:about="#spring">
+  <rdfs:subClassOf rdf:resource="#season"/>
+</owl:Class>
+
+<owl:Class rdf:about="#street_light">
+  <rdfs:subClassOf rdf:resource="#pole"/>
+</owl:Class>
+
+<owl:Class rdf:about="#subterranean">
+  <rdfs:subClassOf rdf:resource="#biome"/>
+</owl:Class>
+
+<owl:Class rdf:about="#summer">
+  <rdfs:subClassOf rdf:resource="#season"/>
+</owl:Class>
+
+<owl:Class rdf:about="#telecommunication_pole">
+  <rdfs:subClassOf rdf:resource="#pole"/>
+</owl:Class>
+
+<owl:Class rdf:about="#traffic_light">
+  <rdfs:subClassOf rdf:resource="#regulatory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#traffic_sign">
+  <rdfs:subClassOf rdf:resource="#regulatory"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tundra">
+  <rdfs:subClassOf rdf:resource="#biome"/>
+</owl:Class>
+
+<owl:Class rdf:about="#tunnel">
+  <rdfs:subClassOf rdf:resource="#infrastructure"/>
+</owl:Class>
+
+<owl:Class rdf:about="#unknown">
+  <rdfs:subClassOf rdf:resource="#void"/>
+</owl:Class>
+
+<owl:Class rdf:about="#valley">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#vine">
+  <rdfs:subClassOf rdf:resource="#plant"/>
+</owl:Class>
+
+<owl:Class rdf:about="#wall">
+  <rdfs:subClassOf rdf:resource="#barrier"/>
+</owl:Class>
+
+<owl:Class rdf:about="#water">
+  <rdfs:subClassOf rdf:resource="#H2O"/>
+</owl:Class>
+
+<owl:Class rdf:about="#water_vehicle">
+  <rdfs:subClassOf rdf:resource="#vehicle"/>
+</owl:Class>
+
+<owl:Class rdf:about="#wetland">
+  <rdfs:subClassOf rdf:resource="#land_body"/>
+  <rdfs:subClassOf rdf:resource="#water_body"/>
+</owl:Class>
+
+<owl:Class rdf:about="#winter">
+  <rdfs:subClassOf rdf:resource="#season"/>
+</owl:Class>
+
+<owl:Class rdf:about="#wood">
+  <rdfs:subClassOf rdf:resource="#tree_log"/>
+</owl:Class>
+
+<owl:NamedIndividual rdf:about="#F1">
+  <rdf:type rdf:resource="#ground_cover"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#puddle"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3395.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M1">
+  <rdf:type rdf:resource="#grass"/>
+  <rdf:type rdf:resource="#soil"/>
+  <rdf:type rdf:resource="#water"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F2">
+  <rdf:type rdf:resource="#puddle"/>
+  <HasMaterial rdf:resource="#M2"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2772.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M2">
+  <rdf:type rdf:resource="#water"/>
+  <rdf:type rdf:resource="#grass"/>
+  <rdf:type rdf:resource="#soil"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F3">
+  <rdf:type rdf:resource="#geographic_feature"/>
+  <HasMaterial rdf:resource="#M3"/>
+  <rdf:type rdf:resource="#ground_cover"/>
+  <HasMaterial rdf:resource="#M2"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">952917.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M3">
+  <rdf:type rdf:resource="#soil"/>
+  <rdf:type rdf:resource="#plant"/>
+  <rdf:type rdf:resource="#grass"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F4">
+  <rdf:type rdf:resource="#geographic_feature"/>
+  <HasMaterial rdf:resource="#M3"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#ground_cover"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1490.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F5">
+  <rdf:type rdf:resource="#ground_cover"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#fence"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1266.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F6">
+  <rdf:type rdf:resource="#fence"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">598.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M4">
+  <rdf:type rdf:resource="#artificial"/>
+  <rdf:type rdf:resource="#tree_log"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F7">
+  <rdf:type rdf:resource="#fence"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">465.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F8">
+  <rdf:type rdf:resource="#fence"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1359.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F9">
+  <rdf:type rdf:resource="#fence"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#vehicle"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1157.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F10">
+  <rdf:type rdf:resource="#vehicle"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <rdf:type rdf:resource="#geographic_feature"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">809.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F11">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#ground_cover"/>
+  <HasMaterial rdf:resource="#M3"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">650.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M5">
+  <rdf:type rdf:resource="#tree_log"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F12">
+  <rdf:type rdf:resource="#ground_cover"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M6"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1119.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F13">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">946.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F14">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#fence"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">187.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F15">
+  <rdf:type rdf:resource="#fence"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M6"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">117.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F16">
+  <rdf:type rdf:resource="#geographic_feature"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M6"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">147.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F17">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <HasMaterial rdf:resource="#M3"/>
+  <HasMaterial rdf:resource="#M6"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">267.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F18">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <HasMaterial rdf:resource="#M3"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">170.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F19">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">154.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F20">
+  <rdf:type rdf:resource="#geographic_feature"/>
+  <rdf:type rdf:resource="#sky"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">147.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F21">
+  <rdf:type rdf:resource="#geographic_feature"/>
+  <rdf:type rdf:resource="#sky"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">325.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F22">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <rdf:type rdf:resource="#sky"/>
+  <HasMaterial rdf:resource="#M6"/>
+  <HasMaterial rdf:resource="#M1"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">205.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F23">
+  <rdf:type rdf:resource="#geographic_feature"/>
+  <rdf:type rdf:resource="#sky"/>
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M6"/>
+  <HasMaterial rdf:resource="#M3"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7436.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F24">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M6"/>
+  <rdf:type rdf:resource="#sky"/>
+  <HasMaterial rdf:resource="#M3"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">214886.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M6">
+  <rdf:type rdf:resource="#plant"/>
+  <rdf:type rdf:resource="#tree_log"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F25">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <rdf:type rdf:resource="#sky"/>
+  <HasMaterial rdf:resource="#M6"/>
+  <HasMaterial rdf:resource="#M4"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">242545.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F26">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">276.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F27">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">157.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F28">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">123.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F29">
+  <rdf:type rdf:resource="#bush_and_tree"/>
+  <HasMaterial rdf:resource="#M5"/>
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">130.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F30">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">169.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F31">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">410.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F32">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">271.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F33">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">167.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F34">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">587.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F35">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">359.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F36">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">254.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F37">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">163.0</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F38">
+  <rdf:type rdf:resource="#sky"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">864769.0</Size>
+</owl:NamedIndividual>
+
+<rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#Version"/>
+      <owl:hasValue>2.0.3</owl:hasValue>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+</rdf:Description>
+
+<swrl:Variable rdf:about="#f"/>
+
+<swrl:Variable rdf:about="#val"/>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#geographic_feature"/>
+          <swrl:argument1 rdf:resource="#f"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#ElevationChange"/>
+              <swrl:argument1 rdf:resource="#f"/>
+              <swrl:argument2 rdf:resource="#val"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                  <swrl:arguments>
+                    <rdf:List>
+                      <rdf:first rdf:resource="#val"/>
+                      <rdf:rest>
+                        <rdf:List>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</rdf:first>
+                        </rdf:List>
+                      </rdf:rest>
+                    </rdf:List>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:BuiltinAtom>
+                      <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                      <swrl:arguments>
+                        <rdf:List>
+                          <rdf:first rdf:resource="#val"/>
+                          <rdf:rest>
+                            <rdf:List>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5</rdf:first>
+                            </rdf:List>
+                          </rdf:rest>
+                        </rdf:List>
+                      </swrl:arguments>
+                    </swrl:BuiltinAtom>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#flat"/>
+          <swrl:argument1 rdf:resource="#f"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+</swrl:Imp>
+
+<swrl:Imp>
+  <swrl:body>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#geographic_feature"/>
+          <swrl:argument1 rdf:resource="#f"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest>
+        <swrl:AtomList>
+          <rdf:first>
+            <swrl:DatavaluedPropertyAtom>
+              <swrl:propertyPredicate rdf:resource="#ElevationChange"/>
+              <swrl:argument1 rdf:resource="#f"/>
+              <swrl:argument2 rdf:resource="#val"/>
+            </swrl:DatavaluedPropertyAtom>
+          </rdf:first>
+          <rdf:rest>
+            <swrl:AtomList>
+              <rdf:first>
+                <swrl:BuiltinAtom>
+                  <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                  <swrl:arguments>
+                    <rdf:List>
+                      <rdf:first rdf:resource="#val"/>
+                      <rdf:rest>
+                        <rdf:List>
+                          <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                          <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</rdf:first>
+                        </rdf:List>
+                      </rdf:rest>
+                    </rdf:List>
+                  </swrl:arguments>
+                </swrl:BuiltinAtom>
+              </rdf:first>
+              <rdf:rest>
+                <swrl:AtomList>
+                  <rdf:first>
+                    <swrl:BuiltinAtom>
+                      <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                      <swrl:arguments>
+                        <rdf:List>
+                          <rdf:first rdf:resource="#val"/>
+                          <rdf:rest>
+                            <rdf:List>
+                              <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                              <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5</rdf:first>
+                            </rdf:List>
+                          </rdf:rest>
+                        </rdf:List>
+                      </swrl:arguments>
+                    </swrl:BuiltinAtom>
+                  </rdf:first>
+                  <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                </swrl:AtomList>
+              </rdf:rest>
+            </swrl:AtomList>
+          </rdf:rest>
+        </swrl:AtomList>
+      </rdf:rest>
+    </swrl:AtomList>
+  </swrl:body>
+  <swrl:head>
+    <swrl:AtomList>
+      <rdf:first>
+        <swrl:ClassAtom>
+          <swrl:classPredicate rdf:resource="#barrier"/>
+          <swrl:argument1 rdf:resource="#f"/>
+        </swrl:ClassAtom>
+      </rdf:first>
+      <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+    </swrl:AtomList>
+  </swrl:head>
+  <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
+</swrl:Imp>
+
+<owl:AllDisjointClasses>
+  <owl:members rdf:parseType="Collection">
+    <rdf:Description rdf:about="#agent"/>
+    <rdf:Description rdf:about="#atmospheric"/>
+    <rdf:Description rdf:about="#geographic_feature"/>
+    <rdf:Description rdf:about="#unclassified"/>
+  </owl:members>
+</owl:AllDisjointClasses>
+
+
+</rdf:RDF>
