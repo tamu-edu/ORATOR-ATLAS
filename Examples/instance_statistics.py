@@ -38,7 +38,7 @@ if __name__ == '__main__':
                 #print((individual.get_properties())) 
                 if (value.python_name=='Size'):
                     for size in value[individual]:
-                        print(individual.is_a[0].name, value.python_name, size) #prints number of pixels for entity
+                        #print(individual.is_a[0].name, value.python_name, size) #prints number of pixels for entity
                         # above print example: Sky Size 100.0
                         try:
                             dictionary_of_instance_pixels[individual.is_a[0].name]+=size
@@ -93,4 +93,30 @@ if __name__ == '__main__':
 
     # need to verify these results by comparison with json files
     # seem like there is double of what is expected
+
+
+    input_image_json_directory = "../Datasets/Rellis_3D_image_example/img_json/"
+    file_list_json=[]
+    dictionary_of_json_entitites = {}
+    print('verify with json files')
+    for file in os.listdir(input_image_json_directory):
+        if file.endswith(".json"):
+            temp_file_json=os.path.join(input_image_json_directory, file)
+            #print(temp_file_json)
+            file_list_json.append(temp_file_json)
+
+    for input_image_json in file_list_json:
+        f2 = open(input_image_json)
+        polygonInfo = json.load(f2)
+
+        for i in polygonInfo['entities']:
+            class_instance = i['type']
+            # print(class_instance)
+            try:
+                dictionary_of_json_entitites[class_instance]+=1
+            except:
+                dictionary_of_json_entitites[class_instance]=1
+    print(dictionary_of_json_entitites)
+
+
     
