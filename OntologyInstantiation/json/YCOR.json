@@ -1,0 +1,47 @@
+{
+	"ImageDataset" : "YCOR",
+	"Class": [
+	{
+		"type" : "smooth trail",
+		"polygon_instantiation" : "road",
+		"terrain_instantiation" : "soil"
+		
+	},
+
+	{
+		"type" : "grass",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "grass"
+	},
+
+	{
+		"type" : "rough trail",
+		"polygon_instantiation" : "road",
+		"terrain_instantiation" : "rock"
+	},
+
+	{
+		"type" : "obstacle",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : ""
+	},
+	
+	{
+		"type" : "low vegetation",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "plant"
+	},
+
+	{
+		"type" : "high vegetation",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "plant"
+	},
+
+	{
+		"type" : "sky",
+		"polygon_instantiation" : "sky",
+		"terrain_instantiation" : ""
+	}
+	]
+}

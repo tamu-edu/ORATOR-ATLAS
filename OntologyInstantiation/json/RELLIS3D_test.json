@@ -122,5 +122,16 @@
 		"terrain_instantiation" : "rock"
 	},
 	
+	{
+		"type" : "leaves",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "leaf"
+	},
+	
+	{
+		"type" : "rock",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "rock"
+	}
 	]
 }
