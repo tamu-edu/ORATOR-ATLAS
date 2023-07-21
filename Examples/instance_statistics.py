@@ -8,8 +8,12 @@ import numpy as np
 
 if __name__ == '__main__':
 
+    #parameters
     input_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
 
+    
+    #start of main script
+    
     file_list_owl=[]
     for file in os.listdir(input_owl_directory):
         if file.endswith(".owl"):
@@ -50,12 +54,11 @@ if __name__ == '__main__':
                     #     print(individual.is_a[0].name, value.python_name, material.name)
                     #     # above print example: Sky HasMaterial M1
                 elif (value.python_name=='Makes'):
-                    pass
-                    # for temp in value[individual]:
-                    #     print(individual.is_a[0].name, value.python_name, temp.name)
-                    #     temp_count=temp_count+1
-                    #     # above print example: Sky Makes F1
-                    #     #can use this to determine quantity of each material 
+                    for temp in value[individual]:
+                        # print(individual.is_a[0].name, value.python_name, temp.name)
+                        temp_count=temp_count+1
+                        # above print example: Sky Makes F1
+                        #can use this to determine quantity of each material 
                 else:
                     print('undefine value ',value.python_name )
             if(individual.name[0]=='M'):

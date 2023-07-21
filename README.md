@@ -22,7 +22,11 @@ The below image shows the high level view of the properties and corresponding OW
 ## Supported Datasets 
 The mappings from current datasets to ATLAS has been created for:
 
+- A2D2
+- DeepScene
 - RELLIS3D
+- RUGD
+- YCOR
 
 The converted datasets are available upon request. 
 
@@ -160,3 +164,6 @@ This work is a collaboration between USARMY GVSC and TAMU.
 - Example integration showing the distribution of objects/images for single dataset and multidataset
 - Example integration showing the images from different datasets in a unified ontology
 - Reorganize and cleanup repo 
+- What is .idea folder in Ontology Instantiation
+- What are the 2 Rellis3D owl mappings 
+- RGB color mappings for datasets

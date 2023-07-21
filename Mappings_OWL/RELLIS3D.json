@@ -120,7 +120,7 @@
 		"type" : "rubble",
 		"polygon_instantiation" : "geographic_feature",
 		"terrain_instantiation" : "rock"
-	},
+	}
 	
 	]
 }

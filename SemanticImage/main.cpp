@@ -21,10 +21,10 @@ int main (int argc, char *argv[])
 {
  
 //parameters
-string ATLAS_version = "2.1.2";
+string ATLAS_version = "2.0.3";
 string ext(".png");
 string input_directory = "../../Datasets/Rellis_3D_image_example/pylon_camera_node_label_color/";
-std::string input_json = "../json/Rellis3D_dataset.json";
+std::string input_json = "../../Mappings_RGB/Rellis3D_dataset.json";
 int min_polygon_area=100;
 int num_threads=std::thread::hardware_concurrency(); // number of parallel threads
 string output_directory = "../../Datasets/Rellis_3D_image_example/img_json/";
