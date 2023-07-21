@@ -1,0 +1,50 @@
+{
+   "Color_Information" : {
+      "background" : {
+         "blue_value" : 255,
+         "green_value" : 255,
+         "red_value" : 255
+      },
+      "high_vegetation" : {
+         "blue_value" : 0,
+         "green_value" : 80,
+         "red_value" : 40
+      },
+      "grass" : {
+         "blue_value" : 0,
+         "green_value" : 255,
+         "red_value" : 128
+      },
+      "smooth_trail" : {
+         "blue_value" : 153,
+         "green_value" : 176,
+         "red_value" : 178
+      },
+      "obstacle" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "sky" : {
+         "blue_value" : 255,
+         "green_value" : 88,
+         "red_value" : 1
+      },
+      "rough_trail" : {
+         "blue_value" : 30,
+         "green_value" : 76,
+         "red_value" : 156
+      },
+      "puddle" : {
+         "blue_value" : 128,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "low_vegetation" : {
+         "blue_value" : 0,
+         "green_value" : 160,
+         "red_value" : 0
+      }
+   }
+       
+}

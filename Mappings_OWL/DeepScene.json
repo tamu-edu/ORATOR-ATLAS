@@ -30,7 +30,7 @@
 		"type" : "vegetation",
 		"polygon_instantiation" : "vegetation",
 		"terrain_instantiation" : "wood"
-	},
+	}
 
 
 	]

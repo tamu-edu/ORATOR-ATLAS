@@ -1,0 +1,30 @@
+{
+   "Color_Information" : {
+      "grass" : {
+         "blue_value" : 0,
+         "green_value" : 255,
+         "red_value" : 0
+      },
+      "vegetation" : {
+         "blue_value" : 51,
+         "green_value" : 102,
+         "red_value" : 102
+      },
+      "trail" : {
+         "blue_value" : 170,
+         "green_value" : 170,
+         "red_value" : 170
+      },
+      "sky" : {
+         "blue_value" : 255,
+         "green_value" : 120,
+         "red_value" : 0
+      },
+      "object" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 0
+      }
+   }
+       
+}

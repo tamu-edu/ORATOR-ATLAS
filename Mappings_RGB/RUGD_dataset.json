@@ -1,0 +1,130 @@
+{
+   "Color_Information" : {
+      "void" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 0
+      },
+      "dirt" : {
+         "blue_value" : 20,
+         "green_value" : 64,
+         "red_value" : 108
+      },
+      "grass" : {
+         "blue_value" : 0,
+         "green_value" : 102,
+         "red_value" : 0
+      },
+      "tree" : {
+         "blue_value" : 0,
+         "green_value" : 255,
+         "red_value" : 0
+      },
+      "pole" : {
+         "blue_value" : 153,
+         "green_value" : 153,
+         "red_value" : 0
+      },
+      "water" : {
+         "blue_value" : 255,
+         "green_value" : 128,
+         "red_value" : 0
+      },
+      "sky" : {
+         "blue_value" : 255,
+         "green_value" : 0,
+         "red_value" : 0
+      },
+      "vehicle" : {
+         "blue_value" : 0,
+         "green_value" : 255,
+         "red_value" : 255
+      },
+      "container_and_generic_object" : {
+         "blue_value" : 127,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "asphalt" : {
+         "blue_value" : 64,
+         "green_value" : 64,
+         "red_value" : 64
+      },
+      "building" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "log" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 102
+      },
+      "person" : {
+         "blue_value" : 255,
+         "green_value" : 153,
+         "red_value" : 204
+      },
+      "fence" : {
+         "blue_value" : 204,
+         "green_value" : 0,
+         "red_value" : 102
+      },
+      "bush" : {
+         "blue_value" : 204,
+         "green_value" : 153,
+         "red_value" : 255
+      },
+      "concrete" : {
+         "blue_value" : 11,
+         "green_value" : 101,
+         "red_value" : 101
+      },
+      "sand" : {
+         "blue_value" : 204,
+         "green_value" : 229,
+         "red_value" : 255
+      },
+      "gravel" : {
+         "blue_value" : 0,
+         "green_value" : 128,
+         "red_value" : 255
+      },
+      "mulch" : {
+         "blue_value" : 0,
+         "green_value" : 76,
+         "red_value" : 153
+      },
+      "rock_bed" : {
+         "blue_value" : 0,
+         "green_value" : 102,
+         "red_value" : 102
+      },
+      "bicyle" : {
+         "blue_value" : 128,
+         "green_value" : 255,
+         "red_value" : 0
+      },
+      "sign" : {
+         "blue_value" : 102,
+         "green_value" : 102,
+         "red_value" : 0
+      },
+      "rock" : {
+         "blue_value" : 255,
+         "green_value" : 204,
+         "red_value" : 153
+      },
+      "bridge" : {
+         "blue_value" : 255,
+         "green_value" : 255,
+         "red_value" : 102
+      },
+      "picnic_table" : {
+         "blue_value" : 47,
+         "green_value" : 85,
+         "red_value" : 114
+      }
+   }
+       
+}

@@ -1,0 +1,281 @@
+{
+   "Color_Information" : {
+      "Car1" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "Car2" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 200
+      },
+      "Car3" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 150
+      },
+      "Car4" : {
+         "blue_value" : 0,
+         "green_value" : 0,
+         "red_value" : 128
+      },
+      "Bicycle1" : {
+         "blue_value" : 6,
+         "green_value" : 89,
+         "red_value" : 182
+      },
+      "Bicycle2" : {
+         "blue_value" : 4,
+         "green_value" : 50,
+         "red_value" : 150
+      },
+      "Bicycle3" : {
+         "blue_value" : 1,
+         "green_value" : 30,
+         "red_value" : 90
+      },
+      "Bicycle4" : {
+         "blue_value" : 30,
+         "green_value" : 30,
+         "red_value" : 90
+      },
+      "Pedestrian1" : {
+         "blue_value" : 255,
+         "green_value" : 153,
+         "red_value" : 204
+      },
+      "Pedestrian2" : {
+         "blue_value" : 155,
+         "green_value" : 73,
+         "red_value" : 189
+      },
+      "Pedestrian3" : {
+         "blue_value" : 191,
+         "green_value" : 89,
+         "red_value" : 239
+      },
+      "Truck1" : {
+         "blue_value" : 0,
+         "green_value" : 128,
+         "red_value" : 255
+      },
+      "Truck2" : {
+         "blue_value" : 0,
+         "green_value" : 128,
+         "red_value" : 200
+      },
+      "Truck3" : {
+         "blue_value" : 0,
+         "green_value" : 128,
+         "red_value" : 150
+      },
+      "Small_vehicles1" : {
+         "blue_value" : 0,
+         "green_value" : 255,
+         "red_value" : 0
+      },
+      "Small_vehicles2" : {
+         "blue_value" : 0,
+         "green_value" : 200,
+         "red_value" : 0
+      },
+      "Small_vehicles3" : {
+         "blue_value" : 0,
+         "green_value" : 150,
+         "red_value" : 0
+      },
+      "Traffic_signal1" : {
+         "blue_value" : 255,
+         "green_value" : 128,
+         "red_value" : 0
+      },
+      "Traffic_signal2" : {
+         "blue_value" : 158,
+         "green_value" : 28,
+         "red_value" : 30
+      },
+      "Traffic_signal3" : {
+         "blue_value" : 100,
+         "green_value" : 28,
+         "red_value" : 60
+      },
+      "Traffic_sign1" : {
+         "blue_value" : 255,
+         "green_value" : 255,
+         "red_value" : 0
+      },
+      "Traffic_sign2" : {
+         "blue_value" : 220,
+         "green_value" : 220,
+         "red_value" : 30
+      },
+      "Traffic_sign3" : {
+         "blue_value" : 199,
+         "green_value" : 157,
+         "red_value" : 60
+      },
+      "Utility_vehicle1" : {
+         "blue_value" : 0,
+         "green_value" : 255,
+         "red_value" : 255
+      },
+      "Utility_vehicle2" : {
+         "blue_value" : 200,
+         "green_value" : 255,
+         "red_value" : 255
+      },
+      "Sidebars" : {
+         "blue_value" : 0,
+         "green_value" : 100,
+         "red_value" : 233
+      },
+      "Speed_bumper" : {
+         "blue_value" : 0,
+         "green_value" : 110,
+         "red_value" : 110
+      },
+      "Curbstone" : {
+         "blue_value" : 0,
+         "green_value" : 128,
+         "red_value" : 128
+      },
+      "Solid_line" : {
+         "blue_value" : 37,
+         "green_value" : 193,
+         "red_value" : 255
+      },
+      "Irrelevant_signs" : {
+         "blue_value" : 64,
+         "green_value" : 0,
+         "red_value" : 64
+      },
+      "Road_blocks" : {
+         "blue_value" : 87,
+         "green_value" : 122,
+         "red_value" : 185
+      },
+      "Tractor" : {
+         "blue_value" : 100,
+         "green_value" : 0,
+         "red_value" : 0
+      },
+      "Non_drivable_street" : {
+         "blue_value" : 108,
+         "green_value" : 99,
+         "red_value" : 139
+      },
+      "Zebra_crossing" : {
+         "blue_value" : 115,
+         "green_value" : 50,
+         "red_value" : 210
+      },
+      "Obstacles_trash" : {
+         "blue_value" : 128,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "Poles" : {
+         "blue_value" : 143,
+         "green_value" : 246,
+         "red_value" : 255
+      },
+      "RD_restricted_area" : {
+         "blue_value" : 150,
+         "green_value" : 0,
+         "red_value" : 150
+      },
+      "Animals" : {
+         "blue_value" : 153,
+         "green_value" : 255,
+         "red_value" : 204
+      },
+      "Grid_structure" : {
+         "blue_value" : 173,
+         "green_value" : 162,
+         "red_value" : 238
+      },
+      "Signal_corpus" : {
+         "blue_value" : 177,
+         "green_value" : 44,
+         "red_value" : 33
+      },
+      "Drivable_cobblestone" : {
+         "blue_value" : 180,
+         "green_value" : 50,
+         "red_value" : 180
+      },
+      "Electronic_traffic" : {
+         "blue_value" : 185,
+         "green_value" : 70,
+         "red_value" : 255
+      },
+      "Slow_drive_area" : {
+         "blue_value" : 191,
+         "green_value" : 233,
+         "red_value" : 238
+      },
+      "Nature_object" : {
+         "blue_value" : 194,
+         "green_value" : 253,
+         "red_value" : 147
+      },
+      "Parking_area" : {
+         "blue_value" : 200,
+         "green_value" : 150,
+         "red_value" : 150
+      },
+      "Sidewalk" : {
+         "blue_value" : 200,
+         "green_value" : 150,
+         "red_value" : 180
+      },
+      "Ego_car" : {
+         "blue_value" : 204,
+         "green_value" : 209,
+         "red_value" : 72
+      },
+      "Painted_driv_instr" : {
+         "blue_value" : 210,
+         "green_value" : 125,
+         "red_value" : 200
+      },
+      "Traffic_guide_obj" : {
+         "blue_value" : 238,
+         "green_value" : 121,
+         "red_value" : 159
+      },
+      "Dashed_line" : {
+         "blue_value" : 255,
+         "green_value" : 0,
+         "red_value" : 128
+      },
+      "RD_normal_street" : {
+         "blue_value" : 255,
+         "green_value" : 0,
+         "red_value" : 255
+      },
+      "Sky" : {
+         "blue_value" : 255,
+         "green_value" : 206,
+         "red_value" : 135
+      },
+      "Buildings" : {
+         "blue_value" : 255,
+         "green_value" : 230,
+         "red_value" : 241
+      },
+      "Blurred_area" : {
+         "blue_value" : 143,
+         "green_value" : 69,
+         "red_value" : 96
+      },
+      "Rain_dirt" : {
+         "blue_value" : 82,
+         "green_value" : 46,
+         "red_value" : 53
+      }
+
+   }
+       
+}

@@ -22,11 +22,11 @@ The below image shows the high level view of the properties and corresponding OW
 ## Supported Datasets 
 The mappings from current datasets to ATLAS has been created for:
 
-- A2D2
-- DeepScene
-- RELLIS3D
-- RUGD
-- YCOR
+- [A2D2](https://www.a2d2.audi/a2d2/en/download.html)
+- [DeepScene (Freiburg Forest)](http://deepscene.cs.uni-freiburg.de/)
+- [RELLIS3D](https://github.com/unmannedlab/RELLIS-3D)
+- [RUGD](http://rugd.vision/)
+- [YCOR](https://theairlab.org/yamaha-offroad-dataset/)
 
 The converted datasets are available upon request. 
 
@@ -167,3 +167,5 @@ This work is a collaboration between USARMY GVSC and TAMU.
 - What is .idea folder in Ontology Instantiation
 - What are the 2 Rellis3D owl mappings 
 - RGB color mappings for datasets
+- Be able to take in 0-N Greyscale images rather than RGB
+- [CityScapes](https://github.com/NVIDIA/semantic-segmentation/blob/main/datasets/cityscapes_labels.py) color scheme, note that some rgb colors are repeated for some classes
