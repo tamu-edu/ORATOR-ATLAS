@@ -17,18 +17,34 @@ void EdgeDetection_Child(int id, int i, cv::Mat* output_image, cv::Mat* classifi
 cv::Mat EdgeDetection(cv::Mat classified_img, int num_threads );
 void Classification_Child(int id, int i, Mat* classified_img, Mat* edge_image, vector<vector<Point>>* contours_approx, vector<Vec4i>* hierarchy, vector <Vec3b>* contour_class);
 
+string getATLASVersion(string input_json);
+string getImgExt(string input_json);
+double getMinPolygonArea(string input_json);
+
 int main (int argc, char *argv[])
 {
  
 //parameters
-string ATLAS_version = "2.0.3";
-string ext(".png");
 string input_directory = "../../Datasets/Rellis_3D_image_example/pylon_camera_node_label_color/";
 std::string input_json = "../../Mappings_RGB/Rellis3D_dataset.json";
-int min_polygon_area=100;
 int num_threads=std::thread::hardware_concurrency(); // number of parallel threads
 string output_directory = "../../Datasets/Rellis_3D_image_example/img_json/";
 bool visualize=false;
+
+// you can either get the default values in the json file or use custom values for the below parameters
+// string ATLAS_version = "2.0.3";
+string ATLAS_version = getATLASVersion(input_json);
+// string ext(".png");
+string ext = getImgExt(input_json);
+// double min_polygon_area=100;
+double min_polygon_area = getMinPolygonArea(input_json);
+
+// set below parameters to true to save values or false to not save values in output json file
+// note that input_img path relative to this build directory, the semantic class, entity number, and ATLAS version will be saved
+bool saveArea=true;
+bool savePolygonVertices=true;
+
+
 
 //main code 
 cout<<"starting"<<endl;
@@ -162,7 +178,10 @@ for(int a=0; a<img_files.size(); a++)
                 }                     
                 //cout<<contours_approx[i]<<endl;
                 event["entities"][count]["properties"]["entity_number"] = count;
-                event["entities"][count]["properties"]["pixel_area"]= cv::contourArea(contours_approx[i]) ;
+                if (saveArea)
+                {
+                    event["entities"][count]["properties"]["pixel_area"]= cv::contourArea(contours_approx[i]) ;
+                }
                 if (i==0)
                 {
                     event["entities"][count]["type"]= "Ballpark";
@@ -172,9 +191,11 @@ for(int a=0; a<img_files.size(); a++)
                 {
                     event["entities"][count]["type"]= semantic_classes[index] ;
                 }
-                event["entities"][count]["geometry"]["type"] = "LineString";
-                event["entities"][count]["geometry"]["coordinates"]=vec;
-                
+                if(savePolygonVertices)
+                {
+                    event["entities"][count]["geometry"]["type"] = "LineString";
+                    event["entities"][count]["geometry"]["coordinates"]=vec;
+                }
                 count++;
                 
                 drawContours( drawing2, contours_approx, i, color2, FILLED, 8, hierarchy, 0, Point() );
@@ -331,3 +352,44 @@ void Classification_Child(int id, int i, Mat* classified_img, Mat* edge_image, v
         (*contour_class)[i]=  color_temp;
 }
 
+string getATLASVersion(string input_json)
+{
+    
+    //read json file of paramter valuet
+    std::ifstream ifs(input_json);
+    Json::Reader reader;
+    Json::Value completeJsonData;
+    reader.parse(ifs,completeJsonData);
+
+    string result = completeJsonData["Processing_Properties"]["parameters"]["ATLAS_version"].asString();
+    return result;
+
+}
+
+string getImgExt(string input_json)
+{
+    
+    //read json file of paramter valuet
+    std::ifstream ifs(input_json);
+    Json::Reader reader;
+    Json::Value completeJsonData;
+    reader.parse(ifs,completeJsonData);
+
+    string result = completeJsonData["Processing_Properties"]["parameters"]["img_extension"].asString();
+    return result;
+
+}
+
+double getMinPolygonArea(string input_json)
+{
+    
+    //read json file of paramter valuet
+    std::ifstream ifs(input_json);
+    Json::Reader reader;
+    Json::Value completeJsonData;
+    reader.parse(ifs,completeJsonData);
+
+    double result = completeJsonData["Processing_Properties"]["parameters"]["min_polygon_size"].asDouble();
+    return result;
+
+}

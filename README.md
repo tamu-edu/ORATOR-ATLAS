@@ -108,6 +108,10 @@ This package is used to start the conversion of existing semantically segmented 
 
 **output_directory** - The output json directory is the name of the directory that files are to be written after analysis. 
 
+**saveArea** - This parameter will save the area for each of the extracted polygons if set to true. If set to false, the output file will not contain this information. 
+
+**savePolygonVertices** - This parameter will save the polygon vertices for each of the extracted polygons if set to true. If set to false, the output will not contain this information. This information is needed for the Example script "img_from_json.py" for image reconstruction from the json file. 
+
 **visualize** - This is a variable to see the images that are being processed.  It will display the input image, the detected edges, and the extracted contours that are written to the output json file. This default is set to false, since it slows down processing times. 
 
 
@@ -154,6 +158,16 @@ From the OntologyInstantiation directory, the code can be run with:
 
 `python3 main.py`
 
+## Examples
+These example scripts show how the resulting OWL files for a dataset can be used. Currently there are two example with base capabilities to show how the resulting OWL files can be used. Additional functionalities are being researched and will be added as they are developed. 
+
+### img_from_json.py
+This example is able to recreate an image from a json file that includes the class label for each entitity and the corresponding vertices. This functionality is helpful when combining datasets into a unified color scheme. This will allow machine learning models to be cross-trained on existing datasets using a common color scheme and ontology. 
+
+### instance_statistics.py
+This example is able to display statistics related to the classes found in the analyzed files. This is helpful in determing if there are sufficient examples for the desired semantic classes. 
+
+
 ## Acknowledgements
 This work is a collaboration between USARMY GVSC and TAMU. 
 
@@ -169,3 +183,5 @@ This work is a collaboration between USARMY GVSC and TAMU.
 - RGB color mappings for datasets
 - Be able to take in 0-N Greyscale images rather than RGB
 - [CityScapes](https://github.com/NVIDIA/semantic-segmentation/blob/main/datasets/cityscapes_labels.py) color scheme, note that some rgb colors are repeated for some classes
+- img from owl file instead of json file
+- unified color scheme 
