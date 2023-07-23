@@ -65,7 +65,7 @@ if __name__ == '__main__':
             onto.imaging_conditions.ImageDataset = jsonMapping["ImageDataset"]
             onto.instance_ontology.ImageDataset = jsonMapping["ImageDataset"]
             onto.property.ImageDataset = jsonMapping["ImageDataset"]
-
+           
             for i in polygonInfo['entities']:
                 class_instance = i['type']
                 if class_instance != 'Ballpark':
@@ -77,7 +77,8 @@ if __name__ == '__main__':
                     poly_instance_name = 'F' + str(properties['entity_number'])
                     ind1 = onto[poly_type](poly_instance_name)
 
-                    onto[poly_instance_name].Size = [properties['pixel_area']]
+
+                    onto[poly_instance_name].Size = [(properties['pixel_area'])]
 
                     if terrain_type != '':
                         if terrain_type in dict_material.keys():
