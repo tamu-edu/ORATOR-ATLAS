@@ -84,7 +84,7 @@
             "entity_number" : 1,
             "pixel_area" : 3395.5
          },
-         "type" : "mud"
+         "type" : "void"
       },
       {
          "geometry" : {
@@ -146,7 +146,7 @@
             "entity_number" : 2,
             "pixel_area" : 2772.0
          },
-         "type" : "mud"
+         "type" : "void"
       },
       {
          "geometry" : {
@@ -980,7 +980,7 @@
             "entity_number" : 3,
             "pixel_area" : 952917.0
          },
-         "type" : "grass"
+         "type" : "void"
       },
       {
          "geometry" : {
@@ -1048,7 +1048,7 @@
             "entity_number" : 4,
             "pixel_area" : 1490.0
          },
-         "type" : "mud"
+         "type" : "void"
       },
       {
          "geometry" : {
@@ -1116,7 +1116,7 @@
             "entity_number" : 5,
             "pixel_area" : 1266.0
          },
-         "type" : "mud"
+         "type" : "void"
       },
       {
          "geometry" : {
@@ -1239,7 +1239,7 @@
             "entity_number" : 7,
             "pixel_area" : 1157.0
          },
-         "type" : "mud"
+         "type" : "void"
       },
       {
          "geometry" : {
@@ -1299,7 +1299,7 @@
             "entity_number" : 8,
             "pixel_area" : 1119.5
          },
-         "type" : "mud"
+         "type" : "void"
       },
       {
          "geometry" : {
@@ -2663,7 +2663,7 @@
             "entity_number" : 10,
             "pixel_area" : 214886.5
          },
-         "type" : "bush"
+         "type" : "void"
       },
       {
          "geometry" : {
@@ -5889,7 +5889,7 @@
             "entity_number" : 12,
             "pixel_area" : 864769.0
          },
-         "type" : "sky"
+         "type" : "void"
       }
    ],
    "input_img" : "../../Datasets/Rellis_3D_image_example/pylon_camera_node_label_color/frame000000-1581623790_349.png"
