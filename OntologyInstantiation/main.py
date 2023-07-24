@@ -18,6 +18,12 @@ if __name__ == '__main__':
     #start of main code 
     f1 = open(input_ontology_mapping)
     jsonMapping = json.load(f1)
+    count = 0
+    dict_mapping = {}
+    for i in jsonMapping['Class']:
+        dict_mapping[i['type']] = count
+        count = count + 1
+
 
     #list files in input_image_json_directory
     file_list_json=[]
@@ -49,11 +55,7 @@ if __name__ == '__main__':
         f2 = open(input_image_json)
         polygonInfo = json.load(f2)
 
-        count = 0
-        dict_mapping = {}
-        for i in jsonMapping['Class']:
-            dict_mapping[i['type']] = count
-            count = count + 1
+
 
         count_polygon = 0
         count_terrain = 0
@@ -65,7 +67,11 @@ if __name__ == '__main__':
             onto.imaging_conditions.ImageDataset = jsonMapping["ImageDataset"]
             onto.instance_ontology.ImageDataset = jsonMapping["ImageDataset"]
             onto.property.ImageDataset = jsonMapping["ImageDataset"]
-           
+            temp_val = input_image_json.rfind('/')
+            onto.imaging_conditions.ImageName = input_image_json[temp_val+1:-5]
+            onto.instance_ontology.ImageName = input_image_json[temp_val+1:-5]
+            onto.property.ImageName = input_image_json[temp_val+1:-5]
+
             for i in polygonInfo['entities']:
                 class_instance = i['type']
                 if class_instance != 'Ballpark':
@@ -93,6 +99,8 @@ if __name__ == '__main__':
 
 
             onto.save(file=output_owl, format="rdfxml")
+            onto.destroy()
+            del polygonInfo
             
         
     print("finished conversion")

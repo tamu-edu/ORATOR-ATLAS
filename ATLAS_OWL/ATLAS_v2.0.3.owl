@@ -111,9 +111,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageNumber -->
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageNumber">
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageName">
         <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
