@@ -13,7 +13,7 @@
          },
          "properties" : {
             "entity_number" : 0,
-            "pixel_area" : 2300881.0
+            "pixel_area" : 2300881
          },
          "type" : "Ballpark"
       },
@@ -4890,7 +4890,7 @@
          },
          "properties" : {
             "entity_number" : 5,
-            "pixel_area" : 122773.0
+            "pixel_area" : 122773
          },
          "type" : "bush"
       },
@@ -5332,7 +5332,7 @@
          },
          "properties" : {
             "entity_number" : 7,
-            "pixel_area" : 4052.0
+            "pixel_area" : 4052
          },
          "type" : "fence"
       },
@@ -5408,7 +5408,7 @@
          },
          "properties" : {
             "entity_number" : 8,
-            "pixel_area" : 2398.0
+            "pixel_area" : 2398
          },
          "type" : "tree"
       },
@@ -7345,7 +7345,7 @@
          },
          "properties" : {
             "entity_number" : 13,
-            "pixel_area" : 34743.0
+            "pixel_area" : 34743
          },
          "type" : "tree"
       },

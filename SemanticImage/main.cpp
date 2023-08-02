@@ -25,10 +25,12 @@ int main (int argc, char *argv[])
 {
  
 //parameters
-string input_directory = "../../Datasets/Rellis_3D_image_example/pylon_camera_node_label_color/";
+//string input_directory = "../../Datasets/Rellis_3D_image_example/pylon_camera_node_label_color/";
+string input_directory = "../../Datasets/Rellis_3D_pylon_camera_node_label_color/Rellis-3D/00000/pylon_camera_node_label_color/";
 std::string input_json = "../../Mappings_RGB/Rellis3D_dataset.json";
 int num_threads=std::thread::hardware_concurrency(); // number of parallel threads
-string output_directory = "../../Datasets/Rellis_3D_image_example/img_json/";
+//string output_directory = "../../Datasets/Rellis_3D_image_example/img_json/";
+string output_directory = "../../Datasets/Rellis_3D_pylon_camera_node_label_color/00000_json/";
 bool visualize=false;
 
 // you can either get the default values in the json file or use custom values for the below parameters
@@ -98,6 +100,7 @@ ctpl::thread_pool p(num_threads);
 
 for(int a=0; a<img_files.size(); a++)
 {
+    cout<<a<<endl;
     input_image = input_directory + img_files[a] + ext;
     output_json = output_directory + img_files[a] + ".json";
 
@@ -203,8 +206,40 @@ for(int a=0; a<img_files.size(); a++)
             }
             else
             {   
-                cout<<color<<" not defined in json \n exiting program "<<endl;
-                return -2;
+                 cout<<color<<" not defined in json \n "<<endl;
+                //return -2;
+                Vec3b color2=cv::Vec3b(color[1],color[0],color[2]);
+                               
+                Json::Value vec(Json::arrayValue);
+                for (int j = 0; j< contours_approx[i].size(); j++){
+                    Json::Value arr(Json::arrayValue);
+                    arr.append(contours_approx[i][j].x);
+                    arr.append(contours_approx[i][j].y);
+                    vec.append(arr);
+                }                     
+                //cout<<contours_approx[i]<<endl;
+                event["entities"][count]["properties"]["entity_number"] = count;
+                if (saveArea)
+                {
+                    event["entities"][count]["properties"]["pixel_area"]= cv::contourArea(contours_approx[i]) ;
+                }
+                if (i==0)
+                {
+                    event["entities"][count]["type"]= "Ballpark";
+                    color2=cv::Vec3b(0,0,0);
+                }
+                else
+                {
+                    event["entities"][count]["type"]= "unknown_class" ;
+                }
+                if(savePolygonVertices)
+                {
+                    event["entities"][count]["geometry"]["type"] = "LineString";
+                    event["entities"][count]["geometry"]["coordinates"]=vec;
+                }
+                count++;
+                
+                drawContours( drawing2, contours_approx, i, color2, FILLED, 8, hierarchy, 0, Point() );
             }
         }
     }
@@ -217,16 +252,16 @@ for(int a=0; a<img_files.size(); a++)
     if (visualize)
     {
         //input image
-        cv::imshow("Image", segmented_img);
-        cv::waitKey(500);
+        //cv::imshow("Image", segmented_img);
+        //cv::waitKey(500);
         //detected edges
-        cv::imshow("Image", edge_img);
-        cv::waitKey(500);
+        //cv::imshow("Image", edge_img);
+        //cv::waitKey(500);
         //convert opencv image BGR to RGB format 
         cvtColor( drawing2, drawing2, COLOR_BGR2RGB );
         //filtered polygons for output json file
         cv::imshow("Image", drawing2);
-        cv::waitKey(500);
+        cv::waitKey(200);
     }
 
 }
@@ -257,6 +292,12 @@ cv::Mat EdgeDetection(cv::Mat classified_img, int num_threads )
     {
         p.push(EdgeDetection_Child,i,&output_image,&classified_img);
     }  
+    // wait until threadpool is finished here
+    while(p.n_idle()<num_threads)
+    {
+        //cout<<" running threads "<< p.size()  <<" idle threads "<<  p.n_idle()  <<endl;
+        //do nothing 
+    }
 
     cv::Mat edge_img= output_image;
     return edge_img;
