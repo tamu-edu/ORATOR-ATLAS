@@ -558,27 +558,23 @@
 <owl:NamedIndividual rdf:about="#F2">
   <rdf:type rdf:resource="#geographic_feature"/>
   <HasMaterial rdf:resource="#M1"/>
-  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2606.0</Size>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2606</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#F3">
+  <rdf:type rdf:resource="#ground_cover"/>
+  <HasMaterial rdf:resource="#M2"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">959446</Size>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#M2">
   <rdf:type rdf:resource="#grass"/>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#F3">
-  <rdf:type rdf:resource="#ground_cover"/>
-  <HasMaterial rdf:resource="#M2"/>
-  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">959446.0</Size>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#F4">
   <rdf:type rdf:resource="#geographic_feature"/>
   <HasMaterial rdf:resource="#M1"/>
-  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1049.0</Size>
-</owl:NamedIndividual>
-
-<owl:NamedIndividual rdf:about="#M3">
-  <rdf:type rdf:resource="#plant"/>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1049</Size>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F5">
@@ -587,14 +583,10 @@
   <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8442.5</Size>
 </owl:NamedIndividual>
 
-<owl:NamedIndividual rdf:about="#M4">
-  <rdf:type rdf:resource="#tree_log"/>
-</owl:NamedIndividual>
-
 <owl:NamedIndividual rdf:about="#F6">
   <rdf:type rdf:resource="#bush_and_tree"/>
   <HasMaterial rdf:resource="#M3"/>
-  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">211605.0</Size>
+  <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">211605</Size>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F7">
@@ -606,6 +598,14 @@
 <owl:NamedIndividual rdf:about="#F8">
   <rdf:type rdf:resource="#sky"/>
   <Size rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">866970.5</Size>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M3">
+  <rdf:type rdf:resource="#plant"/>
+</owl:NamedIndividual>
+
+<owl:NamedIndividual rdf:about="#M4">
+  <rdf:type rdf:resource="#tree_log"/>
 </owl:NamedIndividual>
 
 <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
@@ -695,9 +695,9 @@
       <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
     </swrl:AtomList>
   </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
   <rdfs:comment></rdfs:comment>
   <rdfs:label>S1</rdfs:label>
-  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
 </swrl:Imp>
 
 <swrl:Imp>
@@ -774,9 +774,9 @@
       <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
     </swrl:AtomList>
   </swrl:head>
+  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
   <rdfs:comment></rdfs:comment>
   <rdfs:label>S2</rdfs:label>
-  <swrl2:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrl2:isRuleEnabled>
 </swrl:Imp>
 
 <owl:AllDisjointClasses>
