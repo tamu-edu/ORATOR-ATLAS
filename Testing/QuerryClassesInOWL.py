@@ -13,7 +13,7 @@ if __name__ == '__main__':
 
     
     #start of main script
-    list_files = []
+    list_files = [] #list of files which have the requested class
     file_list_owl=[]
     for file in os.listdir(input_owl_directory):
         if file.endswith(".owl"):
@@ -21,10 +21,7 @@ if __name__ == '__main__':
             file_list_owl.append(temp_file_owl)
             #print(temp_file_owl)
 
-
-    list_mappings = []
     file_list_mappings = []
-
     dict_mapping = {}
 
     for file in os.listdir(owl_mappings_directory):
@@ -38,26 +35,16 @@ if __name__ == '__main__':
                 if i['type'] not in dict_mapping:
                     dict_mapping[i['type'].lower()] = [i['polygon_instantiation'], i['terrain_instantiation']]
 
-
-
-    dictionary_of_materials = {}
-    dictionary_of_instances = {}
-    dictionary_of_instance_pixels = {}
-
-    # classOfInterest = "geographic_feature"
-
+    ## Creating GUI to take input from user
     ROOT = tk.Tk()
     ROOT.withdraw()
     # the input dialog
     classOfInterest = simpledialog.askstring(title="Search",
                                       prompt="What semantic class images do you want to extract?:")
-    # check it
-    print("Hello", classOfInterest)
     classOfInterest = classOfInterest.lower()
 
     for input_owl in file_list_owl:
         #load owl ontology
-
         onto = get_ontology(input_owl)
         onto.load()
 
@@ -65,16 +52,16 @@ if __name__ == '__main__':
         imageDataset = onto.imaging_conditions.ImageDataset
 
         if onto[classOfInterest]:
-            print("Ontology Hierarchy")
+            # print("Ontology Hierarchy")
             ontoClassOfInterest = onto[classOfInterest]
             if ontoClassOfInterest.instances():
-                print("Found")
+                # print("Found")
                 list_files.append([imageName[0], imageDataset[0]])
-            else:
-                print("Not Found")
+            # else:
+            #     print("Not Found")
 
         elif classOfInterest in dict_mapping:
-            print("From some dataset")
+            # print("From some dataset")
 
             if dict_mapping[classOfInterest][1]!= '':
                 ontoClassOfInterestP = onto[dict_mapping[classOfInterest][0]]
@@ -82,7 +69,7 @@ if __name__ == '__main__':
                 counter = 0
                 for inst in ontoClassOfInterestP.instances():
                     if inst.HasMaterial == ontoClassOfInterestM_I:
-                        print("Found")
+                        # print("Found")
                         list_files.append([imageName[0], imageDataset[0]])
                         counter = 1
                         break
@@ -92,19 +79,19 @@ if __name__ == '__main__':
             else:
                 ontoClassOfInterest = onto[dict_mapping[classOfInterest][0]]
                 if ontoClassOfInterest.instances():
-                    print("Found")
+                    # print("Found")
                     list_files.append([imageName[0], imageDataset[0]])
-                else:
-                    print("Not Found")
+                # else:
+                #     print("Not Found")
 
-        else:
-            print("Not Found")
+        # else:
+        #     print("Not Found")
 
 
         onto.destroy()
 
-       
-        #print('end of file ------')
-        
-
+    if list_files:
+        print(list_files)
+    else:
+        print("Not Found", classOfInterest)
     print("done")
