@@ -27,8 +27,10 @@ if __name__ == '__main__':
 
     for input_owl in file_list_owl:
         #load owl ontology
+
         onto = get_ontology(input_owl)
         onto.load()
+
 
         named_individuals = list(onto.individuals())
         for individual in named_individuals:
@@ -72,8 +74,8 @@ if __name__ == '__main__':
                     dictionary_of_instances[individual.is_a[0].name]+=1
                 except:
                     dictionary_of_instances[individual.is_a[0].name]=1
-                    
-                    
+
+        onto.destroy()
 
        
         #print('end of file ------')

@@ -224,8 +224,7 @@
 		"type" : "Rain dirt",
 		"polygon_instantiation" : "geographic_feature",
 		"terrain_instantiation" : "soil"
-	},
-	
+	}
 	]
 	
 }

@@ -120,6 +120,11 @@
 		"type" : "rubble",
 		"polygon_instantiation" : "geographic_feature",
 		"terrain_instantiation" : "rock"
+	},
+	{
+		"type" : "unknown_error",
+		"polygon_instantiation" : "null",
+		"terrain_instantiation" : ""
 	}
 	
 	]

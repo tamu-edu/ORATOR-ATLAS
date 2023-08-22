@@ -20,6 +20,7 @@ if __name__ == '__main__':
     jsonMapping = json.load(f1)
     count = 0
     dict_mapping = {}
+
     for i in jsonMapping['Class']:
         dict_mapping[i['type']] = count
         count = count + 1
@@ -76,9 +77,13 @@ if __name__ == '__main__':
                 class_instance = i['type']
                 if class_instance != 'Ballpark':
                     properties = i["properties"]
-                    idx = dict_mapping[class_instance]
-                    poly_type = jsonMapping['Class'][idx]['polygon_instantiation']
-                    terrain_type = jsonMapping['Class'][idx]['terrain_instantiation']
+                    if class_instance != "unknown_error":
+                        idx = dict_mapping[class_instance]
+                        poly_type = jsonMapping['Class'][idx]['polygon_instantiation']
+                        terrain_type = jsonMapping['Class'][idx]['terrain_instantiation']
+                    else:
+                        poly_type = "null"
+                        terrain_type = ""
 
                     poly_instance_name = 'F' + str(properties['entity_number'])
                     ind1 = onto[poly_type](poly_instance_name)

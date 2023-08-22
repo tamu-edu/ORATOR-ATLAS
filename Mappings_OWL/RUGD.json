@@ -124,13 +124,13 @@
 		"type" : "rock",
 		"polygon_instantiation" : "geographic_feature",
 		"terrain_instantiation" : "rock"
-	}
+	},
 	
 	{
 		"type" : "bridge",
 		"polygon_instantiation" : "bridge",
 		"terrain_instantiation" : "artificial"
-	}
+	},
 	
 	{
 		"type" : "concrete",
