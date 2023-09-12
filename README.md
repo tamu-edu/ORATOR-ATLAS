@@ -167,6 +167,11 @@ This example is able to recreate an image from a json file that includes the cla
 ### instance_statistics.py
 This example is able to display statistics related to the classes found in the analyzed files. This is helpful in determing if there are sufficient examples for the desired semantic classes. 
 
+### PixelAnalysisOWLFiles.py
+This example script is used to find the total number of pixels in each of the class present in the proposed ontology. It does this for all the images for the various datasets that have been unified and for the images in the unified ontology as well.  
+
+### QuerryClassesInOWL.py
+This  example script takes a class of interest, and find all images from the unified ontology which might have instances of the relevant classes. 
 
 ## Acknowledgements
 This work is a collaboration between USARMY GVSC and TAMU. 
