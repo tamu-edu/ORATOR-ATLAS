@@ -605,15 +605,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#leaf -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#leaf">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tree_log"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material">
@@ -1042,14 +1033,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#winter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wood -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wood">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tree_log"/>
     </owl:Class>
     
 

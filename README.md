@@ -1,7 +1,19 @@
 # ORATOR-ATLAS
-This repo holds the relevant code for an All-Terrain Labelset for Autonomous Systems (ATLAS) developed by the Off-Road Annotation TOols & Resources (ORATOR) team and Texas A&M Univsity. The goal of this effort is to develop a standardized ontology for off-road datasets to unify exisiting and future dataset ontologies. This standardized ontological framework can be used to aid training AI-models on data that is collected from multiple datasets. Moreover, the integration of W3C Web Ontology Language (OWL) allows for easy addition to the proposed ontology and the ability to analyze data for inconsistencies. 
+This repo holds the relevant code for an All-Terrain Labelset for Autonomous Systems (ATLAS) developed by the Off-Road Annotation TOols & Resources (ORATOR) team and Texas A&M University. The goal of this effort is to develop a standardized ontology for visual datasets to unify existing and future dataset ontologies. This standardized ontological framework can be used to aid training AI-models on data that is collected from multiple datasets. Moreover, the integration of W3C Web Ontology Language (OWL) allows for easy addition to the proposed ontology and the ability to analyze data for inconsistencies through open-source reasoners. This allows users to adapt the ontology to meet their needs.  
 
-There are 3 different parts of the ontology - instance ontology, imaging conditions, and properties. The imaging conditions typically apply to an entire dataset, whereas the instance onotology corresponds to objects within a single image. The different objects can have associated properties. Overviews are shown for the different parts below within the OWL framework. There are  changes from the original ATLAS version that was previously published and viewable in the manuscript in this repo. 
+There are 4 different parts of the ontology - image labels, instance labels, instance attributes, and properties. 
+
+- Image Labels - 
+- Instance Labels - 
+- Instance Attributes - 
+- Properties - 
+    - Data Properties -
+    - Object Properties -
+
+
+
+
+<!-- The image labels are labels that are assigned to the entirety of the image; moreover, they typically apply to an entire dataset, whereas the instance onotology corresponds to objects within a single image. The different objects can have associated properties. Overviews are shown for the different parts below within the OWL framework. There are  changes from the original ATLAS version that was previously published and viewable in the manuscript in this repo. 
 
 The below image shows the high level view of the Imaging Conditions and corresponding OWL representation. 
 ![imaging_conditions_chart](Documentation/image_labels.PNG)
@@ -15,7 +27,7 @@ The below image shows the high level view of the instance ontology and correspon
 
 The below image shows the high level view of the properties and corresponding OWL representation. 
 ![properties_chart](Documentation/Properties_chart.PNG)
-![properties](Documentation/properties.png)
+![properties](Documentation/properties.png) -->
 
 
 
@@ -82,9 +94,9 @@ The dependencies for OnotologyInstantiation can be installed by the below comman
 
 ### W3C Web Ontology Language (OWL) - Protege
 
-OWL is used to represent the ontology in a hierarchical manner and leverage open-source packages for analyzing and modifying ATLAS. OWL allows us to take ATLAS one step further from the previous version and allow objects to have the ability to have multiple parents and assign properties to individual objects. This facilitates the addition of context to images and objects. Moreover, there are tools that can be used to determine if labellers assign inconsistent labels or properties to an object.
+OWL is used to represent the ontology in a hierarchical manner, leverage open-source reasoners, analyze images, and modify the proposed ontology to meet the needs of the user. OWL allows objects to have improved annotation capabilities, compared to traditional methods of classes associated with specific RGB values for images or json-based annotation methods. The proposed framework allows multiple labels and properties to be assigned to a single object and for complex ontologies to be developed. This facilitates the addition of context to images and objects. Moreover, there are tools that can be used to determine if labelers assign inconsistent labels or properties to an object.
 
-The recommended software package to use is Protege. The link to Protege can be found [here](https://protege.stanford.edu/). It is recommended to install Protege  Desktop. This application allows for viewing and modifying the onotology. 
+The recommended software package to use is Protege. The link to Protege can be found [here](https://protege.stanford.edu/). It is recommended to install Protege Desktop. This application allows for viewing and modifying the ontology, as well as the creation and reasoning of created rules. 
 
 The onotology can be loaded into the software by File->Open and then selecting the relevant "***.owl" file. 
 
@@ -162,26 +174,11 @@ From the OntologyInstantiation directory, the code can be run with:
 These example scripts show how the resulting OWL files for a dataset can be used. Currently there are two example with base capabilities to show how the resulting OWL files can be used. Additional functionalities are being researched and will be added as they are developed. 
 
 ### img_from_json.py
-This example is able to recreate an image from a json file that includes the class label for each entitity and the corresponding vertices. This functionality is helpful when combining datasets into a unified color scheme. This will allow machine learning models to be cross-trained on existing datasets using a common color scheme and ontology. 
+This example is able to recreate an image from a json file that includes the class label for each entity and the corresponding vertices. This functionality is helpful when combining datasets into a unified color scheme. This will allow machine learning models to be cross-trained on existing datasets using a common color scheme and ontology. 
 
 ### instance_statistics.py
-This example is able to display statistics related to the classes found in the analyzed files. This is helpful in determing if there are sufficient examples for the desired semantic classes. 
+This example is able to display statistics related to the classes found in the analyzed files. This is helpful in determining if there are sufficient examples for the desired semantic classes. 
 
 
 ## Acknowledgements
 This work is a collaboration between USARMY GVSC and TAMU. 
-
-
-## TO-DO
-- Update readme for changes
-- Update list of supported datasets
-- Example integration showing the distribution of objects/images for single dataset and multidataset
-- Example integration showing the images from different datasets in a unified ontology
-- Reorganize and cleanup repo 
-- What is .idea folder in Ontology Instantiation
-- What are the 2 Rellis3D owl mappings 
-- RGB color mappings for datasets
-- Be able to take in 0-N Greyscale images rather than RGB
-- [CityScapes](https://github.com/NVIDIA/semantic-segmentation/blob/main/datasets/cityscapes_labels.py) color scheme, note that some rgb colors are repeated for some classes
-- img from owl file instead of json file
-- unified color scheme 
