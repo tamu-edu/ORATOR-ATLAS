@@ -1,34 +1,48 @@
 # ORATOR-ATLAS
+**Note:**  This is a current work in progress and is currently under development. 
+
 This repo holds the relevant code for an All-Terrain Labelset for Autonomous Systems (ATLAS) developed by the Off-Road Annotation TOols & Resources (ORATOR) team and Texas A&M University. The goal of this effort is to develop a standardized ontology for visual datasets to unify existing and future dataset ontologies. This standardized ontological framework can be used to aid training AI-models on data that is collected from multiple datasets. Moreover, the integration of W3C Web Ontology Language (OWL) allows for easy addition to the proposed ontology and the ability to analyze data for inconsistencies through open-source reasoners. This allows users to adapt the ontology to meet their needs.  
 
 There are 4 different parts of the ontology - image labels, instance labels, instance attributes, and properties. 
 
-- Image Labels - 
-- Instance Labels - 
-- Instance Attributes - 
-- Properties - 
-    - Data Properties -
-    - Object Properties -
+- Image Labels - Imaging conditions that describe the environment 
+- Instance Labels - High-level descriptions of objects in an image. 
+- Instance Attributes - Typically sub-masks for image labels, since they define  entities at a low-level. 
+- Properties - Further define the instances. 
+    - Data Properties - Define and quantify unique characteristics of an individual. 
+        - ConfidenceLevel - Associated with the detection of an entity and the confidence value in its detection.
+        - ElevationChange - Goes with the corresponding instance attribute to define how much elevation change is present. Positive values correspond to an increase in elevation and negative values correspond to a decrease in elevation.
+        - ImageDataset - Used to assign the name of the dataset from where the image originates.
+        - ImageName - Used as a reference to the corresponding image.
+        - IsAdversary - Specifies whether an agent is an enemy or friendly.
+        - IsBoulder - Denotes the boulders in the image, since it may be hard to distinguish the size of rocks using the size property. The size property is designed to be used to mark the entire area that corresponds to boulders.
+        - IsFreshWater - Differentiates saltwater from fresh water and should be used in conjunction with a H20 material from instance properties.
+        - IsGravel - Identify gravel in the image, since it may be hard to distinguish the size of rocks using the size property. The size property is designed to be used to denote the entire area that corresponds to gravel.
+        - IsShadow - Signifies if a shadow is present for the detected entity.
+        - SensorIssue - Specifies what type of sensor issue is present. This can include decalibrations, lens flares, loss of focus, and degraded sensor capabilities, etc.
+        - Size - Currently, this is being used to denote the number of pixels in the image that makes up the corresponding instance. This can also be used for physical units such as $m^2$.
+        - Traversability - Specifies the ease for an agent to traverse the corresponding entity. A higher value is associated with higher cost to traverse.
+        - Version - Used to denote the ATLAS version being used to instantiate the ontology.
+    - Object Properties - Define the relationship between two objects. For example, it can be used to assign instance attributes to the instance labels. 
+        - HasMaterial - Defines what material makes up an entity, for example, a trail in an image can be made up of soil, or a geographic feature can be made up of grass.
+        - Makes - This is the inverse property of HasMaterial. It specifies what all individuals in an image are made up of by a specific material. For example, soil can be the material for two unique individuals in an image like a trail and a geographic feature.
 
+Visual representations of parts of the ontology can be seen below. They can also be viewed in Protege, for a more accurate representation of the hierarchies. 
 
+<div align="center">
 
+## **Image Labels**
 
-<!-- The image labels are labels that are assigned to the entirety of the image; moreover, they typically apply to an entire dataset, whereas the instance onotology corresponds to objects within a single image. The different objects can have associated properties. Overviews are shown for the different parts below within the OWL framework. There are  changes from the original ATLAS version that was previously published and viewable in the manuscript in this repo. 
+![Image Labels](Documentation/image_labels.png)
 
-The below image shows the high level view of the Imaging Conditions and corresponding OWL representation. 
-![imaging_conditions_chart](Documentation/image_labels.PNG)
-![imaging_conditions](Documentation/imaging_conditions.png)
+## **Instance Labels**
 
+![Instance Labels](Documentation/instance_labels.png)
 
+## **Instance Attributes**
 
-The below image shows the high level view of the instance ontology and corresponding OWL representation. 
-![instance_ontology_chart](Documentation/instance_chart.PNG)![instance_ontology](Documentation/instance_ontology.png)
-
-
-The below image shows the high level view of the properties and corresponding OWL representation. 
-![properties_chart](Documentation/Properties_chart.PNG)
-![properties](Documentation/properties.png) -->
-
+![Instance Attributes](Documentation/instance_attributes.png)
+</div>
 
 
 ## Supported Datasets 
@@ -40,7 +54,7 @@ The mappings from current datasets to ATLAS has been created for:
 - [RUGD](http://rugd.vision/)
 - [YCOR](https://theairlab.org/yamaha-offroad-dataset/)
 
-The converted datasets are available upon request. 
+The converted datasets are available upon request or can be created using this package. 
 
 
 ## Installation 
@@ -101,7 +115,7 @@ The recommended software package to use is Protege. The link to Protege can be f
 The onotology can be loaded into the software by File->Open and then selecting the relevant "***.owl" file. 
 
 ## SemanticImage 
-This package is used to start the conversion of existing semantically segmented datasets into a more standarized format. The input to this step is a semantically segmented image and a json file containing the RGB value and corresponding semantic class. The output file contains the necessary information for input into OntologyInstantiation, such as the input image, ATLAS version, object class, object size, and polygon vertices.
+This package is used to start the conversion of existing semantically segmented datasets into a more standardized format. The input to this step is a semantically segmented image and a json file containing the RGB value and corresponding semantic class. The output file contains the necessary information for input into OntologyInstantiation, such as the input image, ATLAS version, object class, object size, and polygon vertices.
 
 
 ### Parameters: 
@@ -116,7 +130,7 @@ This package is used to start the conversion of existing semantically segmented 
 
 **min_polygon_area** - This is the minimum number of pixels that a contour needs or else it is filtered out and not outputted to the output json file. 
 
-**num_threads** - This is the number of threads that can be used to help speed up processing times. The default is to use all threads on the machine. 
+**num_threads** - This is the number of threads that can be used to help speed up processing times. The default is to use all threads on the machine. In some cases, this may cause an error to occur, if processing is too fast. In order to fix this, either reduce the number of threads or set **visualize** to true. 
 
 **output_directory** - The output json directory is the name of the directory that files are to be written after analysis. 
 
