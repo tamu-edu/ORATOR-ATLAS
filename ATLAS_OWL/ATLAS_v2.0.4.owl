@@ -184,7 +184,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Size -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Size">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
     </owl:DatatypeProperty>
     
@@ -238,7 +238,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
     </owl:Class>
     
 
@@ -270,7 +270,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
     </owl:Class>
     
 
@@ -302,7 +302,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
     </owl:Class>
     
 
@@ -310,7 +310,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bridge -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bridge">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#crossing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path"/>
     </owl:Class>
     
 
@@ -387,15 +387,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#crossing -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#crossing">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dawn -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dawn">
@@ -447,7 +438,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes"/>
     </owl:Class>
     
 
@@ -495,7 +486,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
     </owl:Class>
     
 
@@ -564,9 +555,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions -->
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
     
 
 
@@ -578,9 +569,15 @@
     
 
 
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology -->
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
     
 
 
@@ -620,7 +617,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes"/>
     </owl:Class>
     
 
@@ -713,12 +710,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property"/>
-    
-
-
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#puddle -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#puddle">
@@ -778,7 +769,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
     </owl:Class>
     
 
@@ -794,7 +785,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#shape -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#shape">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#property"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes"/>
     </owl:Class>
     
 
@@ -874,7 +865,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
     </owl:Class>
     
 
@@ -922,7 +913,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tunnel -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tunnel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#crossing"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path"/>
     </owl:Class>
     
 
@@ -930,7 +921,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_ontology"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
     </owl:Class>
     
 
@@ -1033,7 +1024,7 @@
     <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#imaging_conditions"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
     </owl:Class>
     
 
