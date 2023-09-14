@@ -33,7 +33,7 @@ Visual representations of parts of the ontology can be seen below. They can also
 
 ## **Image Labels**
 
-![Image Labels](Documentation/image_labels.png)
+![Image Labels](Documentation/image_labels.PNG)
 
 ## **Instance Labels**
 
