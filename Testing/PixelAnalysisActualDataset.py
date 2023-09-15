@@ -11,48 +11,29 @@ from datetime import datetime
 
 if __name__ == '__main__':
     # Find no of pixels in each semantic class from JSON files
-
-    input_ATLAS_ontology = "../ATLAS_OWL/ATLAS_v2.0.3.owl"
     input_image_json_directory = "../Datasets/Rellis_3D_image_example/img_json/"
     input_ontology_mapping = "../Mappings_OWL/RELLIS3D.json"
-    output_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
 
     # start of main code
     f1 = open(input_ontology_mapping)
     jsonMapping = json.load(f1)
-    count = 0
-    dict_mapping = {}
     pixelCount = {}
     for i in jsonMapping['Class']:
-        dict_mapping[i['type']] = count
-        count = count + 1
         pixelCount[i['type']] = 0
 
     # list files in input_image_json_directory
     file_list_json = []
-    file_list_owl = []
     for file in os.listdir(input_image_json_directory):
         if file.endswith(".json"):
             temp_file_json = os.path.join(input_image_json_directory, file)
             # print(temp_file_json)
             file_list_json.append(temp_file_json)
-            temp_file_owl = os.path.join(output_owl_directory, file[:-5] + ".owl")
-            file_list_owl.append(temp_file_owl)
             # print(temp_file_owl)
 
     print("starting conversion")
 
     owl_count = -1
     for input_image_json in file_list_json:
-
-        # set output owl filename
-        owl_count = owl_count + 1
-        output_owl = file_list_owl[owl_count]
-
-        # load owl ontology
-        onto = get_ontology(input_ATLAS_ontology)
-        onto.load()
-
         # load json file from SemanticImage
         f2 = open(input_image_json)
         polygonInfo = json.load(f2)
@@ -64,7 +45,7 @@ if __name__ == '__main__':
                 pixelCount[class_instance] = pixelCount[class_instance] + int(properties['pixel_area'])
 
 
-
+    print(pixelCount)
     print("finished conversion")
 
 

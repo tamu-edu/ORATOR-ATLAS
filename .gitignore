@@ -40,3 +40,7 @@
 
 #datasets 
 **/Datasets/*
+
+#ontology instantiation project
+**/.idea/*
+**/venv/*
