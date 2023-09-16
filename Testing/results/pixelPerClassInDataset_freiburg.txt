@@ -1,0 +1,6 @@
+'object': 441762
+'trail': 13732978
+'grass': 39719160
+'sky': 34739739
+'vegetation': 61190727
+'unknown_error': 1268381

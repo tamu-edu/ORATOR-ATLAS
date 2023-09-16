@@ -8,7 +8,8 @@ from tkinter import simpledialog
 if __name__ == '__main__':
 
     #parameters
-    input_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
+    # input_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
+    input_owl_directory = "../Datasets/Rellis_3D_image_example/rellis/"
     owl_mappings_directory = "../Mappings_OWL/"
 
     
@@ -23,6 +24,7 @@ if __name__ == '__main__':
 
     file_list_mappings = []
     dict_mapping = {}
+    pixelMinArea = 0000
 
     for file in os.listdir(owl_mappings_directory):
         if file.endswith(".json"):
@@ -56,7 +58,20 @@ if __name__ == '__main__':
             ontoClassOfInterest = onto[classOfInterest]
             if ontoClassOfInterest.instances():
                 # print("Found")
-                list_files.append([imageName[0], imageDataset[0]])
+                for k in list(ontoClassOfInterest.instances()):
+                    if k.Size:
+                        if int(k.Size[0]) > pixelMinArea:
+                            list_files.append([imageName[0], imageDataset[0]])
+                            break
+                    else:
+                        sz_n = 0
+                        for j in list(k.Makes):
+                            sz_n = sz_n + int(j.Size[0])
+
+                        if sz_n > pixelMinArea:
+                            list_files.append([imageName[0], imageDataset[0]])
+                            break
+               # list_files.append([imageName[0], imageDataset[0]])
             # else:
             #     print("Not Found")
 
@@ -68,7 +83,7 @@ if __name__ == '__main__':
                 ontoClassOfInterestM_I = onto[dict_mapping[classOfInterest][1]].instances()
                 counter = 0
                 for inst in ontoClassOfInterestP.instances():
-                    if inst.HasMaterial == ontoClassOfInterestM_I:
+                    if inst.HasMaterial == ontoClassOfInterestM_I and int(inst.Size[0]) > pixelMinArea:
                         # print("Found")
                         list_files.append([imageName[0], imageDataset[0]])
                         counter = 1
@@ -80,7 +95,13 @@ if __name__ == '__main__':
                 ontoClassOfInterest = onto[dict_mapping[classOfInterest][0]]
                 if ontoClassOfInterest.instances():
                     # print("Found")
-                    list_files.append([imageName[0], imageDataset[0]])
+                    for k in list(ontoClassOfInterest.instances()):
+                        if k.Size:
+                            if int(k.Size[0]) > pixelMinArea:
+                                list_files.append([imageName[0], imageDataset[0]])
+                                break
+
+                    # list_files.append([imageName[0], imageDataset[0]])
                 # else:
                 #     print("Not Found")
 

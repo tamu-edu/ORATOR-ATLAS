@@ -1,0 +1,10 @@
+'background': 17560250
+'smooth_trail': 88942419
+'grass': 80352022
+'rough_trail': 90239860
+'obstacle': 5903464
+'low_vegetation': 36692192
+'high_vegetation': 209635043
+'sky': 59801138
+'puddle': 1070715
+'unknown_error': 1224
