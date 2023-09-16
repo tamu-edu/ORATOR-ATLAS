@@ -3,6 +3,11 @@
 	"Class": [
 
 	{
+		"type" : "void",
+		"polygon_instantiation" : "unknown",
+		"terrain_instantiation" : ""
+		
+	},{
 		"type" : "dirt",
 		"polygon_instantiation" : "land_body",
 		"terrain_instantiation" : "soil"
@@ -52,7 +57,7 @@
 	},
 
 	{
-		"type" : "container",
+		"type" : "container_and_generic_object",
 		"polygon_instantiation" : "geographic_feature",
 		"terrain_instantiation" : ""
 	},
@@ -78,7 +83,7 @@
 	},
 	
 	{
-		"type" : "rockbed",
+		"type" : "rock_bed",
 		"polygon_instantiation" : "geographic_feature",
 		"terrain_instantiation" : "rock"
 		
@@ -91,7 +96,7 @@
 	},
 
 	{
-		"type" : "bicycle",
+		"type" : "bicyle",
 		"polygon_instantiation" : "ground_vehicle",
 		"terrain_instantiation" : "artificial"
 	},
@@ -139,7 +144,7 @@
 	},
 
 	{
-		"type" : "table",
+		"type" : "picnic_table",
 		"polygon_instantiation" : "infrastructure",
 		"terrain_instantiation" : "artificial"
 	},
@@ -148,7 +153,13 @@
 		"type" : "building",
 		"polygon_instantiation" : "building",
 		"terrain_instantiation" : "artificial"
+	},
+	{
+		"type" : "unknown_error",
+		"polygon_instantiation" : "null",
+		"terrain_instantiation" : ""
 	}
+
 	
 
 	]

@@ -11,8 +11,8 @@ from datetime import datetime
 
 if __name__ == '__main__':
     # Find no of pixels in each semantic class from JSON files
-    input_image_json_directory = "../Datasets/Rellis_3D_image_example/img_json/"
-    input_ontology_mapping = "../Mappings_OWL/RELLIS3D.json"
+    input_image_json_directory = "../../atlas_prerelease_data/JSON_datasets/a2d2/"
+    input_ontology_mapping = "../Mappings_OWL/A2D2.json"
 
     # start of main code
     f1 = open(input_ontology_mapping)

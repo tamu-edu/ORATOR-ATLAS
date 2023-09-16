@@ -2,7 +2,12 @@
 	"ImageDataset" : "YCOR",
 	"Class": [
 	{
-		"type" : "smooth trail",
+		"type" : "background",
+		"polygon_instantiation" : "unknown",
+		"terrain_instantiation" : ""
+		
+	},{
+		"type" : "smooth_trail",
 		"polygon_instantiation" : "road",
 		"terrain_instantiation" : "soil"
 		
@@ -15,7 +20,7 @@
 	},
 
 	{
-		"type" : "rough trail",
+		"type" : "rough_trail",
 		"polygon_instantiation" : "road",
 		"terrain_instantiation" : "rock"
 	},
@@ -27,13 +32,13 @@
 	},
 	
 	{
-		"type" : "low vegetation",
+		"type" : "low_vegetation",
 		"polygon_instantiation" : "ground_cover",
 		"terrain_instantiation" : "plant"
 	},
 
 	{
-		"type" : "high vegetation",
+		"type" : "high_vegetation",
 		"polygon_instantiation" : "ground_cover",
 		"terrain_instantiation" : "plant"
 	},
@@ -41,6 +46,17 @@
 	{
 		"type" : "sky",
 		"polygon_instantiation" : "sky",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "puddle",
+		"polygon_instantiation" : "puddle",
+		"terrain_instantiation" : "water"
+	},
+	{
+		"type" : "unknown_error",
+		"polygon_instantiation" : "null",
 		"terrain_instantiation" : ""
 	}
 	]

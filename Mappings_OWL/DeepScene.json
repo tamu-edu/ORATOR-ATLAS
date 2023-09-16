@@ -30,6 +30,11 @@
 		"type" : "vegetation",
 		"polygon_instantiation" : "vegetation",
 		"terrain_instantiation" : "wood"
+	},
+	{
+		"type" : "unknown_error",
+		"polygon_instantiation" : "null",
+		"terrain_instantiation" : ""
 	}
 
 

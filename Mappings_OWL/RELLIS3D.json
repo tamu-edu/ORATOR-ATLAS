@@ -63,7 +63,7 @@
 	},
 
 	{
-		"type" : "build",
+		"type" : "building",
 		"polygon_instantiation" : "building",
 		"terrain_instantiation" : "artificial"
 	},
