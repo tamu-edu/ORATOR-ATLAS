@@ -1,0 +1,368 @@
+{
+	"ImageDataset" : "GOOSE",
+	"Class": [
+	{
+		"type" : "animal",
+		"polygon_instantiation" : "animal",
+		"terrain_instantiation" : ""
+		
+	},
+		
+	{
+		"type" : "bridge",
+		"polygon_instantiation" : "bridge",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "building",
+		"polygon_instantiation" : "building",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "container",
+		"polygon_instantiation" : "container",
+		"terrain_instantiation" : ""
+	},
+	
+	{
+		"type" : "debris",
+		"polygon_instantiation" : "?",
+		"terrain_instantiation" : "?"
+	},
+{
+		"type" : "fence",
+		"polygon_instantiation" : "fence",
+		"terrain_instantiation" : ""
+	},
+{
+		"type" : "guard_rail",
+		"polygon_instantiation" : "guard_rail",
+		"terrain_instantiation" : ""
+	},
+{
+		"type" : "tunnel",
+		"polygon_instantiation" : "tunnel",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "wall",
+		"polygon_instantiation" : "wall",
+		"terrain_instantiation" : ""
+	},
+	
+	{
+		"type" : "wire",
+		"polygon_instantiation" : "infrastructure(?)",
+		"terrain_instantiation" : ""
+	},{
+		"type" : "person",
+		"polygon_instantiation" : "person",
+		"terrain_instantiation" : ""
+	},{
+		"type" : "rider",
+		"polygon_instantiation" : "person",
+		"terrain_instantiation" : "",
+		"define propoerty": "?"
+	},
+
+	{
+		"type" : "obstacle",
+		"polygon_instantiation" : "barrier ?",
+		"terrain_instantiation" : "",
+		"traversability property": "?"
+	},
+
+	{
+		"type" : "pole",
+		"polygon_instantiation" : "pole",
+		"terrain_instantiation" : ""
+	},	
+	
+	{
+		"type" : "street_light",
+		"polygon_instantiation" : "street_light",
+		"terrain_instantiation" : ""
+	},
+	
+	{
+		"type" : "rock",
+		"polygon_instantiation" : "land_body",
+		"terrain_instantiation" : "rock"
+	},	
+	
+	
+	{
+		"type" : "barrel",
+		"polygon_instantiation" : "container",
+		"terrain_instantiation" : ""
+	},	
+	
+	
+	{
+		"type" : "pipe",
+		"polygon_instantiation" : "infrastructure",
+		"terrain_instantiation" : ""
+	},	
+	
+	{
+		"type" : "bikeway",
+		"polygon_instantiation" : "road",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "curb",
+		"polygon_instantiation" : "barrier ?",
+		"terrain_instantiation" : ""
+	},	
+	
+	{
+		"type" : "pedestrian_crossing",
+		"polygon_instantiation" : "path",
+		"terrain_instantiation" : ""
+	},
+
+{
+		"type" : "rail_track",
+		"polygon_instantiation" : "path",
+		"terrain_instantiation" : ""
+	},	
+	
+	{
+		"type" : "road_marking",
+		"polygon_instantiation" : "regulatory",
+		"terrain_instantiation" : ""
+	},		
+	
+	{
+		"type" : "sidewalk",
+		"polygon_instantiation" : "path",
+		"terrain_instantiation" : ""
+	},	
+
+	{
+		"type" : "barrier_tape",
+		"polygon_instantiation" : "barrier / regulatory ?",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "misc_sign",
+		"polygon_instantiation" : "regulatory",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "traffic_cone",
+		"polygon_instantiation" : "regulatory",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "traffic_light",
+		"polygon_instantiation" : "traffic_light",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "traffic_sign",
+		"polygon_instantiation" : "traffic_sign",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "road_block",
+		"polygon_instantiation" : "barrier",
+		"terrain_instantiation" : ""
+	},
+
+	{
+		"type" : "boom_barrier",
+		"polygon_instantiation" : "barrier / regulatory ?",
+		"terrain_instantiation" : ""
+	},
+	{
+		"type" : "sky",
+		"polygon_instantiation" : "sky",
+		"terrain_instantiation" : ""
+	},
+	{
+		"type" : "asphalt",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "asphalt"
+	},
+	
+	{
+		"type" : "cobble",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "rock"
+	},
+	
+	{
+		"type" : "gravel",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "rock"
+	},
+	
+	{
+		"type" : "soil",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "soil"
+	},
+	
+	{
+		"type" : "snow",
+		"polygon_instantiation" : "geographic_feature",
+		"terrain_instantiation" : "snow"
+	},
+	
+	{
+		"type" : "bush",
+		"polygon_instantiation" : "bush_and_tree",
+		"terrain_instantiation" : "plant"
+	},
+	
+	{
+		"type" : "crops",
+		"polygon_instantiation" : "vegetation",
+		"terrain_instantiation" : "plant"
+	},
+	
+	{
+		"type" : "forest",
+		"polygon_instantiation" : "?",
+		"terrain_instantiation" : "?"
+	},
+	
+	{
+		"type" : "hedge",
+		"polygon_instantiation" : "bush_and_tree",
+		"terrain_instantiation" : "plant"
+	},
+
+	
+	{
+		"type" : "high_grass",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "grass"
+	},
+	{
+		"type" : "leaves",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "?"
+	},
+{
+		"type" : "low_grass",
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "grass"
+	},
+{
+		"type" : "moss",
+		"polygon_instantiation" : "ground_cover ?",
+		"terrain_instantiation" : "plant ?"
+	},
+{
+		"type" : "scenery_vegetation",
+		"polygon_instantiation" : "vegetation",
+		"terrain_instantiation" : "plant"
+	},
+
+	{
+		"type" : "tree_crown",
+		"polygon_instantiation" : "bush_and_tree",
+		"terrain_instantiation" : "tree_log"
+	},
+
+	{
+		"type" : "tree_trunk",
+		"polygon_instantiation" : "bush_and_tree",
+		"terrain_instantiation" : "tree_log"
+	},
+
+	{
+		"type" : "tree_root",
+		"polygon_instantiation" : "ground_cover / ? ",
+		"terrain_instantiation" : "tree_log"
+	},
+
+	{
+		"type" : "bicycle",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	{
+		"type" : "bus",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	{
+		"type" : "car",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	{
+		"type" : "caravan",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	{
+		"type" : "heavy_machinery",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	{
+		"type" : "kick_scooter",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "motorcycle",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},	
+	
+	{
+		"type" : "on_rails",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},	
+	{
+		"type" : "trailer",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+
+	{
+		"type" : "truck",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	
+	{
+		"type" : "ego_vehicle",
+		"polygon_instantiation" : "ground_vehicle",
+		"terrain_instantiation" : "artificial"
+	},
+	{
+		"type" : "outlier",
+		"polygon_instantiation" : "unclassified / ?",
+		"terrain_instantiation" : ""
+	},
+	{
+		"type" : "undefined",
+		"polygon_instantiation" : "unclassified / ?",
+		"terrain_instantiation" : ""
+	},
+	
+	{
+		"type" : "water",
+		"polygon_instantiation" : "water_body",
+		"terrain_instantiation" : "water"
+	}
+	]
+	
+}
