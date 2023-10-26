@@ -1,0 +1,331 @@
+{
+   "Processing_Properties": {
+      "parameters": {
+         "ATLAS_version": "2.0.5",
+         "img_extension": ".png",
+         "min_polygon_size": 1000
+      }
+   },
+   "Color_Information": {
+      "undefined": {
+         "blue_value": 0,
+         "green_value": 0,
+         "red_value": 0
+      },
+      "traffic_cone": {
+         "blue_value": 0,
+         "green_value": 255,
+         "red_value": 255
+      },
+      "snow": {
+         "blue_value": 160,
+         "green_value": 87,
+         "red_value": 209
+      },
+      "cobble": {
+         "blue_value": 255,
+         "green_value": 52,
+         "red_value": 255
+      },
+      "fire_hydrant": {
+         "blue_value": 0,
+         "green_value": 0,
+         "red_value": 0
+      },
+      "leaves": {
+         "blue_value": 65,
+         "green_value": 137,
+         "red_value": 0
+      },
+      "street_light": {
+         "blue_value": 166,
+         "green_value": 111,
+         "red_value": 0
+      },
+      "bikeway": {
+         "blue_value": 89,
+         "green_value": 0,
+         "red_value": 163
+      },
+      "ego_vehicle": {
+         "blue_value": 229,
+         "green_value": 219,
+         "red_value": 255
+      },
+      "pedestrian_crossing": {
+         "blue_value": 0,
+         "green_value": 73,
+         "red_value": 122
+      },
+      "roadblock": {
+         "blue_value": 166,
+         "green_value": 0,
+         "red_value": 0
+      },
+      "roadmarking": {
+         "blue_value": 172,
+         "green_value": 255,
+         "red_value": 99
+      },
+      "car": {
+         "blue_value": 98,
+         "green_value": 151,
+         "red_value": 183
+      },
+      "bicycle": {
+         "blue_value": 67,
+         "green_value": 77,
+         "red_value": 0
+      },
+      "person": {
+         "blue_value": 255,
+         "green_value": 176,
+         "red_value": 143
+      },
+      "bus": {
+         "blue_value": 135,
+         "green_value": 125,
+         "red_value": 153
+      },
+      "forest": {
+         "blue_value": 7,
+         "green_value": 0,
+         "red_value": 90
+      },
+      "bush": {
+         "blue_value": 147,
+         "green_value": 150,
+         "red_value": 128
+      },
+      "moss": {
+         "blue_value": 189,
+         "green_value": 168,
+         "red_value": 180
+      },
+      "traffic_light": {
+         "blue_value": 0,
+         "green_value": 68,
+         "red_value": 27
+      },
+      "motorcycle": {
+         "blue_value": 1,
+         "green_value": 198,
+         "red_value": 79
+      },
+      "sidewalk": {
+         "blue_value": 255,
+         "green_value": 93,
+         "red_value": 59
+      },
+      "curb": {
+         "blue_value": 83,
+         "green_value": 59,
+         "red_value": 74
+      },
+      "parking": {
+         "blue_value": 128,
+         "green_value": 47,
+         "red_value": 255
+      },
+      "gravel": {
+         "blue_value": 90,
+         "green_value": 97,
+         "red_value": 97
+      },
+      "boom_barrier": {
+         "blue_value": 45,
+         "green_value": 54,
+         "red_value": 52
+      },
+      "rail_track": {
+         "blue_value": 0,
+         "green_value": 121,
+         "red_value": 107
+      },
+      "branch": {
+         "blue_value": 160,
+         "green_value": 194,
+         "red_value": 0
+      },
+      "tree_stump": {
+         "blue_value": 146,
+         "green_value": 170,
+         "red_value": 255
+      },
+      "tree_log": {
+         "blue_value": 76,
+         "green_value": 111,
+         "red_value": 136
+      },
+      "crops": {
+         "blue_value": 237,
+         "green_value": 134,
+         "red_value": 0
+      },
+      "ditch": {
+         "blue_value": 0,
+         "green_value": 97,
+         "red_value": 209
+      },
+      "rider": {
+         "blue_value": 255,
+         "green_value": 239,
+         "red_value": 221
+      },
+      "animal": {
+         "blue_value": 53,
+         "green_value": 0,
+         "red_value": 0
+      },
+      "truck": {
+         "blue_value": 75,
+         "green_value": 79,
+         "red_value": 123
+      },
+      "on_rails": {
+         "blue_value": 153,
+         "green_value": 194,
+         "red_value": 161
+      },
+      "caravan": {
+         "blue_value": 24,
+         "green_value": 0,
+         "red_value": 48
+      },
+      "trailer": {
+         "blue_value": 216,
+         "green_value": 166,
+         "red_value": 10
+      },
+      "building": {
+         "blue_value": 73,
+         "green_value": 51,
+         "red_value": 1
+      },
+      "crowd_barrier": {
+         "blue_value": 111,
+         "green_value": 132,
+         "red_value": 0
+      },
+      "rock": {
+         "blue_value": 1,
+         "green_value": 33,
+         "red_value": 55
+      },
+      "fence": {
+         "blue_value": 0,
+         "green_value": 181,
+         "red_value": 255
+      },
+      "vehicle_barrier": {
+         "blue_value": 237,
+         "green_value": 255,
+         "red_value": 194
+      },
+      "bridge": {
+         "blue_value": 191,
+         "green_value": 121,
+         "red_value": 160
+      },
+      "tunnel": {
+         "blue_value": 68,
+         "green_value": 7,
+         "red_value": 204
+      },
+      "pole": {
+         "blue_value": 178,
+         "green_value": 185,
+         "red_value": 192
+      },
+      "traffic_sign": {
+         "blue_value": 153,
+         "green_value": 255,
+         "red_value": 194
+      },
+      "misc_sign": {
+         "blue_value": 9,
+         "green_value": 30,
+         "red_value": 0
+      },
+      "barrier_type": {
+         "blue_value": 89,
+         "green_value": 196,
+         "red_value": 190
+      },
+      "kick_scooter": {
+         "blue_value": 98,
+         "green_value": 0,
+         "red_value": 111
+      },
+      "low_grass": {
+         "blue_value": 102,
+         "green_value": 189,
+         "red_value": 12
+      },
+      "high_grass": {
+         "blue_value": 255,
+         "green_value": 195,
+         "red_value": 238
+      },
+      "misc_vegetation": {
+         "blue_value": 117,
+         "green_value": 109,
+         "red_value": 69
+      },
+      "sky": {
+         "blue_value": 104,
+         "green_value": 123,
+         "red_value": 183
+      },
+      "water": {
+         "blue_value": 161,
+         "green_value": 135,
+         "red_value": 122
+      },
+      "wire": {
+         "blue_value": 0,
+         "green_value": 140,
+         "red_value": 255
+      },
+      "outlier": {
+         "blue_value": 102,
+         "green_value": 141,
+         "red_value": 120
+      },
+      "heavy_machinery": {
+         "blue_value": 159,
+         "green_value": 208,
+         "red_value": 250
+      },
+      "container": {
+         "blue_value": 154,
+         "green_value": 138,
+         "red_value": 255
+      },
+      "hedge": {
+         "blue_value": 160,
+         "green_value": 87,
+         "red_value": 209
+      },
+      "barrel": {
+         "blue_value": 0,
+         "green_value": 208,
+         "red_value": 208
+      },
+      "pipe": {
+         "blue_value": 0,
+         "green_value": 0,
+         "red_value": 221
+      },
+      "tree_root": {
+         "blue_value": 132,
+         "green_value": 164,
+         "red_value": 196
+      },
+      "military_vehicle": {
+         "blue_value": 64,
+         "green_value": 64,
+         "red_value": 64
+      }
+   }
+}
