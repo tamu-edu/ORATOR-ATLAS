@@ -28,8 +28,8 @@
 	
 	{
 		"type" : "debris",
-		"polygon_instantiation" : "?",
-		"terrain_instantiation" : "?"
+		"polygon_instantiation" : "debris",
+		"terrain_instantiation" : ""
 	},
 {
 		"type" : "fence",
@@ -55,7 +55,7 @@
 	
 	{
 		"type" : "wire",
-		"polygon_instantiation" : "infrastructure(?)",
+		"polygon_instantiation" : "regulatory",
 		"terrain_instantiation" : ""
 	},{
 		"type" : "person",
@@ -65,14 +65,13 @@
 		"type" : "rider",
 		"polygon_instantiation" : "person",
 		"terrain_instantiation" : "",
-		"define propoerty": "?"
+		"define property": "rider:true"
 	},
 
 	{
 		"type" : "obstacle",
-		"polygon_instantiation" : "barrier ?",
-		"terrain_instantiation" : "",
-		"traversability property": "?"
+		"polygon_instantiation" : "obstacle",
+		"terrain_instantiation" : ""
 	},
 
 	{
@@ -96,56 +95,56 @@
 	
 	{
 		"type" : "barrel",
-		"polygon_instantiation" : "container",
+		"polygon_instantiation" : "barrel",
 		"terrain_instantiation" : ""
 	},	
 	
 	
 	{
 		"type" : "pipe",
-		"polygon_instantiation" : "infrastructure",
+		"polygon_instantiation" : "pipe",
 		"terrain_instantiation" : ""
 	},	
 	
 	{
 		"type" : "bikeway",
-		"polygon_instantiation" : "road",
+		"polygon_instantiation" : "bikeway",
 		"terrain_instantiation" : ""
 	},
 
 	{
 		"type" : "curb",
-		"polygon_instantiation" : "barrier ?",
+		"polygon_instantiation" : "curb",
 		"terrain_instantiation" : ""
 	},	
 	
 	{
 		"type" : "pedestrian_crossing",
-		"polygon_instantiation" : "path",
+		"polygon_instantiation" : "pedestrian_crossing",
 		"terrain_instantiation" : ""
 	},
 
 {
 		"type" : "rail_track",
-		"polygon_instantiation" : "path",
+		"polygon_instantiation" : "rail_track",
 		"terrain_instantiation" : ""
 	},	
 	
 	{
 		"type" : "road_marking",
-		"polygon_instantiation" : "regulatory",
+		"polygon_instantiation" : "road_marking",
 		"terrain_instantiation" : ""
 	},		
 	
 	{
 		"type" : "sidewalk",
-		"polygon_instantiation" : "path",
+		"polygon_instantiation" : "sidewalk",
 		"terrain_instantiation" : ""
 	},	
 
 	{
 		"type" : "barrier_tape",
-		"polygon_instantiation" : "barrier / regulatory ?",
+		"polygon_instantiation" : "barrier, regulatory",
 		"terrain_instantiation" : ""
 	},
 
@@ -157,7 +156,7 @@
 
 	{
 		"type" : "traffic_cone",
-		"polygon_instantiation" : "regulatory",
+		"polygon_instantiation" : "traffic_cone",
 		"terrain_instantiation" : ""
 	},
 
@@ -181,7 +180,7 @@
 
 	{
 		"type" : "boom_barrier",
-		"polygon_instantiation" : "barrier / regulatory ?",
+		"polygon_instantiation" : "barrier, regulatory",
 		"terrain_instantiation" : ""
 	},
 	{
@@ -191,20 +190,21 @@
 	},
 	{
 		"type" : "asphalt",
-		"polygon_instantiation" : "geographic_feature",
+		"polygon_instantiation" : "road",
 		"terrain_instantiation" : "asphalt"
 	},
 	
 	{
 		"type" : "cobble",
-		"polygon_instantiation" : "geographic_feature",
+		"polygon_instantiation" : "road",
 		"terrain_instantiation" : "rock"
 	},
 	
 	{
 		"type" : "gravel",
-		"polygon_instantiation" : "geographic_feature",
-		"terrain_instantiation" : "rock"
+		"polygon_instantiation" : "trail",
+		"terrain_instantiation" : "rock",
+		"isGravel": "true"
 	},
 	
 	{
@@ -233,8 +233,8 @@
 	
 	{
 		"type" : "forest",
-		"polygon_instantiation" : "?",
-		"terrain_instantiation" : "?"
+		"polygon_instantiation" : "bush_and_tree",
+		"terrain_instantiation" : "tree_log"
 	},
 	
 	{
@@ -252,7 +252,7 @@
 	{
 		"type" : "leaves",
 		"polygon_instantiation" : "ground_cover",
-		"terrain_instantiation" : "?"
+		"terrain_instantiation" : "leaf"
 	},
 {
 		"type" : "low_grass",
@@ -261,67 +261,67 @@
 	},
 {
 		"type" : "moss",
-		"polygon_instantiation" : "ground_cover ?",
-		"terrain_instantiation" : "plant ?"
+		"polygon_instantiation" : "ground_cover",
+		"terrain_instantiation" : "moss"
 	},
 {
 		"type" : "scenery_vegetation",
-		"polygon_instantiation" : "vegetation",
+		"polygon_instantiation" : "land_body",
 		"terrain_instantiation" : "plant"
 	},
 
 	{
 		"type" : "tree_crown",
-		"polygon_instantiation" : "bush_and_tree",
+		"polygon_instantiation" : "tree_crown",
 		"terrain_instantiation" : "tree_log"
 	},
 
 	{
 		"type" : "tree_trunk",
-		"polygon_instantiation" : "bush_and_tree",
-		"terrain_instantiation" : "tree_log"
+		"polygon_instantiation" : "tree_trunk",
+		"terrain_instantiation" : "wood"
 	},
 
 	{
 		"type" : "tree_root",
-		"polygon_instantiation" : "ground_cover / ? ",
-		"terrain_instantiation" : "tree_log"
+		"polygon_instantiation" : "tree_root ",
+		"terrain_instantiation" : "wood"
 	},
 
 	{
 		"type" : "bicycle",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "bicycle",
 		"terrain_instantiation" : "artificial"
 	},
 	{
 		"type" : "bus",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "bus",
 		"terrain_instantiation" : "artificial"
 	},
 	{
 		"type" : "car",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "car",
 		"terrain_instantiation" : "artificial"
 	},
 	{
 		"type" : "caravan",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "RV/Travel_trailer",
 		"terrain_instantiation" : "artificial"
 	},
 	{
 		"type" : "heavy_machinery",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "Construction_agriculture_vehicles",
 		"terrain_instantiation" : "artificial"
 	},
 	{
 		"type" : "kick_scooter",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "kick_scooter",
 		"terrain_instantiation" : "artificial"
 	},
 
 	{
 		"type" : "motorcycle",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "motorcycle",
 		"terrain_instantiation" : "artificial"
 	},	
 	
@@ -332,13 +332,13 @@
 	},	
 	{
 		"type" : "trailer",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "trailer",
 		"terrain_instantiation" : "artificial"
 	},
 
 	{
 		"type" : "truck",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "semi-truck",
 		"terrain_instantiation" : "artificial"
 	},
 	
@@ -349,12 +349,12 @@
 	},
 	{
 		"type" : "outlier",
-		"polygon_instantiation" : "unclassified / ?",
+		"polygon_instantiation" : "null",
 		"terrain_instantiation" : ""
 	},
 	{
 		"type" : "undefined",
-		"polygon_instantiation" : "unclassified / ?",
+		"polygon_instantiation" : "void",
 		"terrain_instantiation" : ""
 	},
 	
