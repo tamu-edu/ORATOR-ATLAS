@@ -313,7 +313,7 @@
 	},
 	{
 		"type" : "heavy_machinery",
-		"polygon_instantiation" : "construction_and_agriculture_vehicle",
+		"polygon_instantiation" : "construction_and_agricultural_vehicle",
 		"terrain_instantiation" : "artificial"
 	},
 	{

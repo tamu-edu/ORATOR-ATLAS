@@ -103,7 +103,7 @@
         <Class IRI="#coastal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#construction_and_agriculture_vehicle"/>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#container"/>
@@ -615,7 +615,7 @@
         <Class IRI="#biome"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#construction_and_agriculture_vehicle"/>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
         <Class IRI="#wheeled_vehicle"/>
     </SubClassOf>
     <SubClassOf>
