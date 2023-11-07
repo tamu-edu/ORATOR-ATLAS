@@ -55,7 +55,7 @@
 	
 	{
 		"type" : "wire",
-		"polygon_instantiation" : "regulatory",
+		"polygon_instantiation" : "wire",
 		"terrain_instantiation" : ""
 	},{
 		"type" : "person",
@@ -65,7 +65,7 @@
 		"type" : "rider",
 		"polygon_instantiation" : "person",
 		"terrain_instantiation" : "",
-		"define property": "rider:true"
+		"IsRider ": "true"
 	},
 
 	{
@@ -204,7 +204,7 @@
 		"type" : "gravel",
 		"polygon_instantiation" : "trail",
 		"terrain_instantiation" : "rock",
-		"isGravel": "true"
+		"IsGravel": "true"
 	},
 	
 	{
@@ -221,33 +221,36 @@
 	
 	{
 		"type" : "bush",
-		"polygon_instantiation" : "bush_and_tree",
+		"polygon_instantiation" : "bush",
 		"terrain_instantiation" : "plant"
 	},
 	
 	{
 		"type" : "crops",
 		"polygon_instantiation" : "vegetation",
-		"terrain_instantiation" : "plant"
+		"terrain_instantiation" : "plant",
+		"IsVegetationClump" : "true"
 	},
 	
 	{
 		"type" : "forest",
-		"polygon_instantiation" : "bush_and_tree",
-		"terrain_instantiation" : "tree_log"
+		"polygon_instantiation" : "vegetation",
+		"terrain_instantiation" : "tree_log",
+		"IsVegetationClump" : "true"
 	},
 	
 	{
 		"type" : "hedge",
-		"polygon_instantiation" : "bush_and_tree",
-		"terrain_instantiation" : "plant"
+		"polygon_instantiation" : "bush",
+		"terrain_instantiation" : "plant",
+		"IsVegetationClump" : "true"
 	},
 
 	
 	{
 		"type" : "high_grass",
 		"polygon_instantiation" : "ground_cover",
-		"terrain_instantiation" : "grass"
+		"terrain_instantiation" : "high_grass"
 	},
 	{
 		"type" : "leaves",
@@ -257,7 +260,7 @@
 {
 		"type" : "low_grass",
 		"polygon_instantiation" : "ground_cover",
-		"terrain_instantiation" : "grass"
+		"terrain_instantiation" : "low_grass"
 	},
 {
 		"type" : "moss",
@@ -305,12 +308,12 @@
 	},
 	{
 		"type" : "caravan",
-		"polygon_instantiation" : "RV/Travel_trailer",
+		"polygon_instantiation" : "RV_and_travel_trailer",
 		"terrain_instantiation" : "artificial"
 	},
 	{
 		"type" : "heavy_machinery",
-		"polygon_instantiation" : "Construction_agriculture_vehicles",
+		"polygon_instantiation" : "construction_and_agriculture_vehicle",
 		"terrain_instantiation" : "artificial"
 	},
 	{
@@ -327,25 +330,26 @@
 	
 	{
 		"type" : "on_rails",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "tracked_vehicle",
 		"terrain_instantiation" : "artificial"
 	},	
 	{
 		"type" : "trailer",
-		"polygon_instantiation" : "trailer",
+		"polygon_instantiation" : "trailer_unattached",
 		"terrain_instantiation" : "artificial"
 	},
 
 	{
 		"type" : "truck",
-		"polygon_instantiation" : "semi-truck",
+		"polygon_instantiation" : "semi_truck",
 		"terrain_instantiation" : "artificial"
 	},
 	
 	{
 		"type" : "ego_vehicle",
 		"polygon_instantiation" : "ground_vehicle",
-		"terrain_instantiation" : "artificial"
+		"terrain_instantiation" : "artificial",
+		"IsEgoVehicle" : "true"
 	},
 	{
 		"type" : "outlier",
