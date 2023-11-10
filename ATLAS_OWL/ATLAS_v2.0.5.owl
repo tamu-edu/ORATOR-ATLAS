@@ -19,7 +19,16 @@
         <Class IRI="#H2O"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#RGB"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#RV_and_travel_trailer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#active"/>
     </Declaration>
     <Declaration>
         <Class IRI="#aerial_vehicle"/>
@@ -28,7 +37,13 @@
         <Class IRI="#agent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#agricultural"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#area_jurisdiction"/>
     </Declaration>
     <Declaration>
         <Class IRI="#artificial"/>
@@ -82,6 +97,9 @@
         <Class IRI="#cacti"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#camera"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#canyon"/>
     </Declaration>
     <Declaration>
@@ -103,10 +121,16 @@
         <Class IRI="#coastal"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#collection_platform"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#construction_and_agricultural_vehicle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#crowded"/>
     </Declaration>
     <Declaration>
         <Class IRI="#curb"/>
@@ -130,10 +154,19 @@
         <Class IRI="#dusk"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#dynamics"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#electric_pole"/>
     </Declaration>
     <Declaration>
         <Class IRI="#elevation_change"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#environment_labels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#exteroperceptive"/>
     </Declaration>
     <Declaration>
         <Class IRI="#fence"/>
@@ -157,6 +190,9 @@
         <Class IRI="#glacier"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#gps"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#grass"/>
     </Declaration>
     <Declaration>
@@ -172,16 +208,22 @@
         <Class IRI="#guard_rail"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#gyroscope"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#high_grass"/>
     </Declaration>
     <Declaration>
         <Class IRI="#hill"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#hyperspectral"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#ice"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#image_labels"/>
+        <Class IRI="#imu"/>
     </Declaration>
     <Declaration>
         <Class IRI="#infrastructure"/>
@@ -208,7 +250,16 @@
         <Class IRI="#leaf"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#legged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lidar"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#low_grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#magnetometer"/>
     </Declaration>
     <Declaration>
         <Class IRI="#material"/>
@@ -226,6 +277,9 @@
         <Class IRI="#mountain"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#multispectral"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#night"/>
     </Declaration>
     <Declaration>
@@ -239,6 +293,12 @@
     </Declaration>
     <Declaration>
         <Class IRI="#optical_phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#panchromatic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#passive"/>
     </Declaration>
     <Declaration>
         <Class IRI="#path"/>
@@ -265,7 +325,19 @@
         <Class IRI="#pole"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#private"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#proprioperceptive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#public"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#puddle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#radar"/>
     </Declaration>
     <Declaration>
         <Class IRI="#rail_track"/>
@@ -292,6 +364,15 @@
         <Class IRI="#rock"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#rotating_lidar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rtk_gps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scenario_label"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#sea"/>
     </Declaration>
     <Declaration>
@@ -299,6 +380,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#semi_truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sensor_issue"/>
@@ -313,6 +397,9 @@
         <Class IRI="#sidewalk"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#sign"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#sky"/>
     </Declaration>
     <Declaration>
@@ -325,7 +412,13 @@
         <Class IRI="#soil"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#solid_state_lidar"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#spring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#static"/>
     </Declaration>
     <Declaration>
         <Class IRI="#street_light"/>
@@ -338,6 +431,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#telecommunication_pole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#thermal"/>
     </Declaration>
     <Declaration>
         <Class IRI="#time_of_day"/>
@@ -383,6 +479,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#tunnel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ultrasound"/>
     </Declaration>
     <Declaration>
         <Class IRI="#unclassified"/>
@@ -445,19 +544,34 @@
         <ObjectProperty IRI="#HasMaterial"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#HasSensor"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#Makes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AgentManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AgentWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AutonomyMode"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#ConfidenceLevel"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#DatasetName"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#ElevationChange"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ImageDataset"/>
+        <DataProperty IRI="#ImageName"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#ImageName"/>
+        <DataProperty IRI="#InstanceHeight"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#IsAdversary"/>
@@ -484,16 +598,22 @@
         <DataProperty IRI="#IsVegetationClump"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#License"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#SensorIssue"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#Size"/>
+        <DataProperty IRI="#SizeArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Timestamp"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#Traversability"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#Version"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
@@ -503,8 +623,24 @@
         <Class IRI="#material"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#RGB"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RV_and_travel_trailer"/>
         <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#accelerometer"/>
+        <Class IRI="#imu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#accelerometer"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#active"/>
+        <Class IRI="#exteroperceptive"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#aerial_vehicle"/>
@@ -512,11 +648,23 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#agent"/>
+        <Class IRI="#collection_platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agent"/>
         <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agricultural"/>
+        <Class IRI="#ground_cover"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#animal"/>
         <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#area_jurisdiction"/>
+        <Class IRI="#scenario_label"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#artificial"/>
@@ -547,6 +695,10 @@
         <Class IRI="#barrier"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#barrier_tape"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#bay"/>
         <Class IRI="#water_body"/>
     </SubClassOf>
@@ -560,11 +712,15 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#biome"/>
-        <Class IRI="#image_labels"/>
+        <Class IRI="#scenario_label"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#boom_barrier"/>
         <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#boom_barrier"/>
+        <Class IRI="#regulatory"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#bridge"/>
@@ -585,6 +741,10 @@
     <SubClassOf>
         <Class IRI="#cacti"/>
         <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#camera"/>
+        <Class IRI="#passive"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#canyon"/>
@@ -616,11 +776,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#construction_and_agricultural_vehicle"/>
+        <Class IRI="#tracked_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
         <Class IRI="#wheeled_vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#container"/>
         <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crowded"/>
+        <Class IRI="#dynamics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#curb"/>
@@ -651,12 +819,24 @@
         <Class IRI="#time_of_day"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#dynamics"/>
+        <Class IRI="#scenario_label"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#electric_pole"/>
         <Class IRI="#pole"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#elevation_change"/>
         <Class IRI="#instance_attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#environment_labels"/>
+        <Class IRI="#scenario_label"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exteroperceptive"/>
+        <Class IRI="#sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#fence"/>
@@ -687,6 +867,10 @@
         <Class IRI="#land_body"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#gps"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#grass"/>
         <Class IRI="#plant"/>
     </SubClassOf>
@@ -707,6 +891,14 @@
         <Class IRI="#barrier"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#gyroscope"/>
+        <Class IRI="#imu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gyroscope"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#high_grass"/>
         <Class IRI="#grass"/>
     </SubClassOf>
@@ -715,8 +907,16 @@
         <Class IRI="#land_body"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#hyperspectral"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#ice"/>
         <Class IRI="#H2O"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#imu"/>
+        <Class IRI="#proprioperceptive"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#infrastructure"/>
@@ -740,11 +940,27 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#leaf"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leaf"/>
         <Class IRI="#tree_log"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#legged"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lidar"/>
+        <Class IRI="#active"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#low_grass"/>
         <Class IRI="#grass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#magnetometer"/>
+        <Class IRI="#proprioperceptive"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#material"/>
@@ -752,7 +968,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#misc_sign"/>
-        <Class IRI="#infrastructure"/>
+        <Class IRI="#sign"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#moss"/>
@@ -765,6 +981,10 @@
     <SubClassOf>
         <Class IRI="#mountain"/>
         <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multispectral"/>
+        <Class IRI="#camera"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#night"/>
@@ -785,6 +1005,14 @@
     <SubClassOf>
         <Class IRI="#optical_phenomenon"/>
         <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#panchromatic"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#passive"/>
+        <Class IRI="#exteroperceptive"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#path"/>
@@ -819,8 +1047,24 @@
         <Class IRI="#regulatory"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#private"/>
+        <Class IRI="#area_jurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#proprioperceptive"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#public"/>
+        <Class IRI="#area_jurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#puddle"/>
         <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#radar"/>
+        <Class IRI="#active"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#rail_track"/>
@@ -855,12 +1099,20 @@
         <Class IRI="#material"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#rotating_lidar"/>
+        <Class IRI="#lidar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rtk_gps"/>
+        <Class IRI="#gps"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#sea"/>
         <Class IRI="#water_body"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#season"/>
-        <Class IRI="#image_labels"/>
+        <Class IRI="#environment_labels"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#semi_truck"/>
@@ -883,6 +1135,10 @@
         <Class IRI="#path"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#sign"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#sky"/>
         <Class IRI="#atmospheric"/>
     </SubClassOf>
@@ -899,8 +1155,16 @@
         <Class IRI="#material"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#solid_state_lidar"/>
+        <Class IRI="#lidar"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#spring"/>
         <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#static"/>
+        <Class IRI="#dynamics"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#street_light"/>
@@ -919,8 +1183,12 @@
         <Class IRI="#pole"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#thermal"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#time_of_day"/>
-        <Class IRI="#image_labels"/>
+        <Class IRI="#environment_labels"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#tracked_vehicle"/>
@@ -937,6 +1205,10 @@
     <SubClassOf>
         <Class IRI="#traffic_sign"/>
         <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_sign"/>
+        <Class IRI="#sign"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#trail"/>
@@ -977,6 +1249,10 @@
     <SubClassOf>
         <Class IRI="#tunnel"/>
         <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ultrasound"/>
+        <Class IRI="#active"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#unclassified"/>
@@ -1035,7 +1311,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#weather"/>
-        <Class IRI="#image_labels"/>
+        <Class IRI="#environment_labels"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#wetland"/>
@@ -1064,7 +1340,7 @@
     <SubClassOf>
         <Class abbreviatedIRI="owl:Thing"/>
         <DataHasValue>
-            <DataProperty IRI="#Version"/>
+            <DataProperty IRI="#LabelPolicyVersion"/>
             <Literal>2.0.5</Literal>
         </DataHasValue>
     </SubClassOf>
@@ -1074,6 +1350,10 @@
         <Class IRI="#geographic_feature"/>
         <Class IRI="#unclassified"/>
     </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasSensor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#HasMaterial"/>
         <ObjectProperty IRI="#Makes"/>
@@ -1090,12 +1370,20 @@
         </ObjectUnionOf>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasSensor"/>
+        <Class IRI="#agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#Makes"/>
         <Class IRI="#material"/>
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#HasMaterial"/>
         <Class IRI="#material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasSensor"/>
+        <Class IRI="#sensor"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#Makes"/>
@@ -1105,6 +1393,22 @@
         </ObjectUnionOf>
     </ObjectPropertyRange>
     <SubDataPropertyOf>
+        <DataProperty IRI="#AgentManufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AgentWeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AutonomyMode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#InstanceHeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#IsEgoVehicle"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -1112,8 +1416,32 @@
         <DataProperty IRI="#IsVegetationClump"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#License"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Timestamp"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AgentManufacturer"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AgentWeight"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AutonomyMode"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#ConfidenceLevel"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DatasetName"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -1121,12 +1449,24 @@
         <Class IRI="#geographic_feature"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#ImageDataset"/>
+        <DataProperty IRI="#ImageName"/>
         <Class abbreviatedIRI="owl:Thing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#ImageName"/>
-        <Class abbreviatedIRI="owl:Thing"/>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#collection_platform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#instance_attributes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#instance_labels"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#sensor"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#IsAdversary"/>
@@ -1157,32 +1497,44 @@
         <Class IRI="#vegetation"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#Size"/>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SizeArea"/>
         <Class IRI="#instance_labels"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#Traversability"/>
         <Class IRI="#geographic_feature"/>
     </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#Version"/>
-        <Class abbreviatedIRI="owl:Thing"/>
-    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AgentWeight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AutonomyMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#ConfidenceLevel"/>
         <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DatasetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#ElevationChange"/>
         <Datatype abbreviatedIRI="xsd:float"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#ImageDataset"/>
+        <DataProperty IRI="#ImageName"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#ImageName"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#IsAdversary"/>
@@ -1217,20 +1569,28 @@
         <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#License"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#SensorIssue"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#Size"/>
+        <DataProperty IRI="#SizeArea"/>
         <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Timestamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#Traversability"/>
         <Datatype abbreviatedIRI="xsd:double"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#Version"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DLSafeRule>
         <Annotation>
