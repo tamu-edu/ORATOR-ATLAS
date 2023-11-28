@@ -144,13 +144,13 @@
 
 	{
 		"type" : "barrier_tape",
-		"polygon_instantiation" : "barrier, regulatory",
+		"polygon_instantiation" : "barrier_tape",
 		"terrain_instantiation" : ""
 	},
 
 	{
 		"type" : "misc_sign",
-		"polygon_instantiation" : "regulatory",
+		"polygon_instantiation" : "misc_sign",
 		"terrain_instantiation" : ""
 	},
 
@@ -180,7 +180,7 @@
 
 	{
 		"type" : "boom_barrier",
-		"polygon_instantiation" : "barrier, regulatory",
+		"polygon_instantiation" : "boom_barrier",
 		"terrain_instantiation" : ""
 	},
 	{
@@ -227,7 +227,7 @@
 	
 	{
 		"type" : "crops",
-		"polygon_instantiation" : "vegetation",
+		"polygon_instantiation" : "agricultural",
 		"terrain_instantiation" : "plant",
 		"IsVegetationClump" : "true"
 	},
@@ -347,7 +347,7 @@
 	
 	{
 		"type" : "ego_vehicle",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "agent",
 		"terrain_instantiation" : "artificial",
 		"IsEgoVehicle" : "true"
 	},
