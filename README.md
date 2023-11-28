@@ -3,9 +3,15 @@
 
 This repo holds the relevant code for an All-Terrain Labelset for Autonomous Systems (ATLAS) developed by the Off-Road Annotation TOols & Resources (ORATOR) team and Texas A&M University. The goal of this effort is to develop a standardized ontology for visual datasets to unify existing and future dataset ontologies. This standardized ontological framework can be used to aid training AI-models on data that is collected from multiple datasets. Moreover, the integration of W3C Web Ontology Language (OWL) allows for easy addition to the proposed ontology and the ability to analyze data for inconsistencies through open-source reasoners. This allows users to adapt the ontology to meet their needs.  
 
-There are 4 different parts of the ontology - image labels, instance labels, instance attributes, and properties. 
+There are 5 different class parents of the ontology - collection platform, instance attibutes, instance labels, scenario label, and sensor. There are also associated data properties and object properties. Since there is a large number of classes, it is recommended to use Protege to view the ontology. Additional classes can be added to the ontology as needed. Please subnmmit a pull request if you would like to add additional classes to the ontology.
 
-- Image Labels - Imaging conditions that describe the environment 
+The proposed ontology can be used to help guide the creation of an ontology for a new dataset or be used to understand the relationships between the different classes for intelligent reasoning. 
+
+
+
+<!-- image labels, instance labels, instance attributes, and properties.  -->
+
+<!-- - Image Labels - Imaging conditions that describe the environment 
 - Instance Labels - High-level descriptions of objects in an image. 
 - Instance Attributes - Typically sub-masks for image labels, since they define  entities at a low-level. 
 - Properties - Further define the instances. 
@@ -27,9 +33,9 @@ There are 4 different parts of the ontology - image labels, instance labels, ins
         - HasMaterial - Defines what material makes up an entity, for example, a trail in an image can be made up of soil, or a geographic feature can be made up of grass.
         - Makes - This is the inverse property of HasMaterial. It specifies what all individuals in an image are made up of by a specific material. For example, soil can be the material for two unique individuals in an image like a trail and a geographic feature.
 
-Visual representations of parts of the ontology can be seen below. They can also be viewed in Protege, for a more accurate representation of the hierarchies. 
+Visual representations of parts of the ontology can be seen below. They can also be viewed in Protege, for a more accurate representation of the hierarchies.  -->
 
-<div align="center">
+<!-- <div align="center">
 
 ## **Image Labels**
 
@@ -42,7 +48,7 @@ Visual representations of parts of the ontology can be seen below. They can also
 ## **Instance Attributes**
 
 ![Instance Attributes](Documentation/instance_attributes.png)
-</div>
+</div> -->
 
 
 ## Supported Datasets 
@@ -120,7 +126,7 @@ This package is used to start the conversion of existing semantically segmented 
 
 ### Parameters: 
 
-**ATLAS_version** - This is the current version of ATLAS being used. The default is "2.1.2". This is one of the items included in the json file. 
+**ATLAS_version** - This is the current version of ATLAS being used. This is one of the items included in the json file. 
 
 **ext** - This is the extension of the image files being analyzed. 
 
@@ -184,8 +190,8 @@ From the OntologyInstantiation directory, the code can be run with:
 
 `python3 main.py`
 
-## Examples
-These example scripts show how the resulting OWL files for a dataset can be used. Currently there are two example with base capabilities to show how the resulting OWL files can be used. Additional functionalities are being researched and will be added as they are developed. 
+## Testing - Examples
+These example scripts show how the resulting OWL files for a dataset can be used. Additional functionalities are being researched and will be added as they are developed. 
 
 ### img_from_json.py
 This example is able to recreate an image from a json file that includes the class label for each entity and the corresponding vertices. This functionality is helpful when combining datasets into a unified color scheme. This will allow machine learning models to be cross-trained on existing datasets using a common color scheme and ontology. 

@@ -1,1286 +1,1678 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
-
-    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ConsistsOf -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ConsistsOf">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#HasMaterial -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#HasMaterial">
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Makes"/>
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Makes -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Makes">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
-        <rdfs:range>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
-                    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ConfidenceLevel -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ConfidenceLevel">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ElevationChange -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ElevationChange">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageDataset -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageDataset">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageName -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ImageName">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsAdversary -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsAdversary">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsBoulder -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsBoulder">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rock"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsFreshWater -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsFreshWater">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsGravel -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsGravel">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rock"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsShadow -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsShadow">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#SensorIssue -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#SensorIssue">
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Size -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Size">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Traversability -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Traversability">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Version -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Version">
-        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#aerial_vehicle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#aerial_vehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#animal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#animal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#artificial -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#artificial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#asphalt -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#asphalt">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#artificial"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#autumn -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#autumn">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bay -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bay">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bridge -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bridge">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#building -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#building">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bush_and_tree -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#bush_and_tree">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vegetation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cacti -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cacti">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#canyon -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#canyon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cave -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cave">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#celestial_body -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#celestial_body">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#clear -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#clear">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cloud -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#cloud">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#coastal -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#coastal">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#container -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#container">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dawn -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dawn">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#day -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#day">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#desert -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#desert">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#detritus -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#detritus">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dusk -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#dusk">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#electric_pole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#electric_pole">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fence -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fence">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#flat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#flat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fluctuating_elevation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fluctuating_elevation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#elevation_change"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fog_haze -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#fog_haze">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#forest -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#forest">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#glacier -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#glacier">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#grass -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#grass">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#grassland -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#grassland">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_cover -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_cover">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vegetation"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_vehicle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ground_vehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#guard_rail -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#guard_rail">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#hill -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#hill">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ice -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes"/>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#lake -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#lake">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#landform"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#landform -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#landform">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#mountain -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#mountain">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#night -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#night">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#null -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#null">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ocean -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ocean">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#optical_phenomenon -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#optical_phenomenon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#person -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#person">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plain -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plain">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plateau -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plateau">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#puddle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#puddle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rain -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rain">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#infrastructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#river -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#river">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#road -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#road">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rock -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#rock">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sea -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sea">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sensor_issue -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sensor_issue">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#void"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#shape -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#shape">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_attributes"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sky -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#sky">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#snow -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#snow">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#snow_ice -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#snow_ice">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#soil -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#soil">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#material"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#spring -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#spring">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#street_light -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#street_light">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#subterranean -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#subterranean">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#summer -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#summer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#telecommunication_pole -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#telecommunication_pole">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#pole"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#time_of_day">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#traffic_light -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#traffic_light">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#traffic_sign -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#traffic_sign">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#regulatory"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#trail -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#trail">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tree_log -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tree_log">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tundra -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tundra">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tunnel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#tunnel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#path"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#instance_labels"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unknown -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unknown">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#void"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#urban -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#urban">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#biome"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#valley -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#valley">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vegetation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vegetation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#IsAdversary"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:maxQualifiedCardinality>
-                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vine -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vine">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#plant"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#void -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#void">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wall -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wall">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#H2O"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#landform"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_vehicle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_vehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#vehicle"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#weather">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#image_labels"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wetland -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#wetland">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#land_body"/>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#water_body"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#winter -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#winter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#season"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.w3.org/2002/07/owl#Thing -->
-
-    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#Version"/>
-                <owl:hasValue>2.0.5</owl:hasValue>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // General axioms
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#agent"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#atmospheric"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#unclassified"/>
-        </owl:members>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Rules
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val">
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
-        <rdfs:label>S2</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ElevationChange"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#barrier"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
-        <rdfs:comment></rdfs:comment>
-        <rdfs:label>S1</rdfs:label>
-        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#geographic_feature"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#ElevationChange"/>
-                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
-                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
-                            </rdf:Description>
-                        </rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                <rdf:first>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
-                                        <swrl:arguments>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
-                                                <rdf:rest>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</rdf:first>
-                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                    </rdf:Description>
-                                                </rdf:rest>
-                                            </rdf:Description>
-                                        </swrl:arguments>
-                                    </rdf:Description>
-                                </rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                                        <rdf:first>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
-                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
-                                                <swrl:arguments>
-                                                    <rdf:Description>
-                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                        <rdf:first rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#val"/>
-                                                        <rdf:rest>
-                                                            <rdf:Description>
-                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">-0.5</rdf:first>
-                                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                                            </rdf:Description>
-                                                        </rdf:rest>
-                                                    </rdf:Description>
-                                                </swrl:arguments>
-                                            </rdf:Description>
-                                        </rdf:first>
-                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </rdf:rest>
-            </rdf:Description>
-        </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
-                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#flat"/>
-                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#f"/>
-                    </rdf:Description>
-                </rdf:first>
-                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-            </rdf:Description>
-        </swrl:head>
-    </rdf:Description>
-</rdf:RDF>
-
-
-
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+     ontologyIRI="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204">
+    <Prefix name="" IRI="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="swrl" IRI="http://www.w3.org/2003/11/swrl#"/>
+    <Prefix name="swrla" IRI="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"/>
+    <Prefix name="swrlb" IRI="http://www.w3.org/2003/11/swrlb#"/>
+    <Declaration>
+        <Class IRI="#H2O"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RGB"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RV_and_travel_trailer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#accelerometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#active"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#aerial_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#agent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#agricultural"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#animal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#area_jurisdiction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#artificial"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#asphalt"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#atmospheric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#autumn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barrel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#barrier_tape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bay"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bicyle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bikeway"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#biome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#boom_barrier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bridge"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#bush"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cacti"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#camera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#canyon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#car"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cave"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#celestial_body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#clear"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#cloud"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#coastal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#collection_platform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#crowded"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#curb"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dawn"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#debris"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#desert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#detritus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dusk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#dynamics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#electric_pole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#elevation_change"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#environment_labels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#exteroperceptive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fence"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#flat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fluctuating_elevation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#fog_haze"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#forest"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#geographic_feature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#glacier"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#grassland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ground_cover"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ground_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#guard_rail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#gyroscope"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#high_grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hill"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#hyperspectral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#imu"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#infrastructure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instance_attributes"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#instance_labels"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#kick_scooter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lake"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#land_body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#landform"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#leaf"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#legged"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#lidar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#low_grass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#magnetometer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#misc_sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#moss"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#motorcycle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#mountain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#multispectral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#night"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#null"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#obstacle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ocean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#optical_phenomenon"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#panchromatic"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#passive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#path"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pedestrian_crossing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pipe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plant"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#plateau"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#pole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#private"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#proprioperceptive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#public"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#puddle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#radar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rail_track"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#railed_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#regulatory"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#river"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#road"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#road_marking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rock"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rotating_lidar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#rtk_gps"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#scenario_label"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sea"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#season"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#semi_truck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sensor_issue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#shipping_container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sidewalk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#sky"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#snow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#snow_ice"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#soil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#solid_state_lidar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#spring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#static"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#street_light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#subterranean"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#summer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#telecommunication_pole"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#thermal"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#time_of_day"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tracked_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#traffic_cone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#traffic_light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#traffic_sign"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trailer_unattached"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#trash_container"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree_crown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree_log"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree_root"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tree_trunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tundra"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#tunnel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ultrasound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unclassified"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#unknown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#urban"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#valley"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vegetation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#vine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#void"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#water"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#water_body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#water_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#weather"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wetland"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wheeled_vehicle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#winter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wire"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#wood"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#ConsistsOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasMaterial"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#HasSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Makes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AgentManufacturer"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AgentWeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#AutonomyMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ConfidenceLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#DatasetName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ElevationChange"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#ImageName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#InstanceHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsAdversary"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsBoulder"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsEgoVehicle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsFreshWater"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsGravel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsRider"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsShadow"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#IsVegetationClump"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#License"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SensorIssue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SizeArea"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Timestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Traversability"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#H2O"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RGB"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RV_and_travel_trailer"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#accelerometer"/>
+        <Class IRI="#imu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#accelerometer"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#active"/>
+        <Class IRI="#exteroperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#aerial_vehicle"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agent"/>
+        <Class IRI="#collection_platform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agent"/>
+        <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#agricultural"/>
+        <Class IRI="#ground_cover"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#animal"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#area_jurisdiction"/>
+        <Class IRI="#scenario_label"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#artificial"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#asphalt"/>
+        <Class IRI="#artificial"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#atmospheric"/>
+        <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#autumn"/>
+        <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barrel"/>
+        <Class IRI="#container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barrier"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barrier_tape"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#barrier_tape"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bay"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bicyle"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bikeway"/>
+        <Class IRI="#road"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#biome"/>
+        <Class IRI="#scenario_label"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#boom_barrier"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#boom_barrier"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bridge"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#building"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bus"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#bush"/>
+        <Class IRI="#vegetation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cacti"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#camera"/>
+        <Class IRI="#passive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#canyon"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#car"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cave"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#celestial_body"/>
+        <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#clear"/>
+        <Class IRI="#weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#cloud"/>
+        <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#coastal"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
+        <Class IRI="#tracked_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#construction_and_agricultural_vehicle"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#container"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#crowded"/>
+        <Class IRI="#dynamics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#curb"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dawn"/>
+        <Class IRI="#time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#day"/>
+        <Class IRI="#time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#debris"/>
+        <Class IRI="#geographic_feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#desert"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#detritus"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dusk"/>
+        <Class IRI="#time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#dynamics"/>
+        <Class IRI="#scenario_label"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#electric_pole"/>
+        <Class IRI="#pole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#elevation_change"/>
+        <Class IRI="#instance_attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#environment_labels"/>
+        <Class IRI="#scenario_label"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#exteroperceptive"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fence"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#flat"/>
+        <Class IRI="#elevation_change"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fluctuating_elevation"/>
+        <Class IRI="#elevation_change"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#fog_haze"/>
+        <Class IRI="#weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#forest"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#geographic_feature"/>
+        <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#glacier"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gps"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grass"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#grassland"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ground_cover"/>
+        <Class IRI="#vegetation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ground_vehicle"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#guard_rail"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gyroscope"/>
+        <Class IRI="#imu"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#gyroscope"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#high_grass"/>
+        <Class IRI="#grass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hill"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#hyperspectral"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ice"/>
+        <Class IRI="#H2O"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#imu"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#infrastructure"/>
+        <Class IRI="#geographic_feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#kick_scooter"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lake"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#land_body"/>
+        <Class IRI="#landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#landform"/>
+        <Class IRI="#geographic_feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leaf"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#leaf"/>
+        <Class IRI="#tree_log"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#legged"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#lidar"/>
+        <Class IRI="#active"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#low_grass"/>
+        <Class IRI="#grass"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#magnetometer"/>
+        <Class IRI="#proprioperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#material"/>
+        <Class IRI="#instance_attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#misc_sign"/>
+        <Class IRI="#sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#moss"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#motorcycle"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#mountain"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#multispectral"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#night"/>
+        <Class IRI="#time_of_day"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#null"/>
+        <Class IRI="#unclassified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#obstacle"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ocean"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#optical_phenomenon"/>
+        <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#panchromatic"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#passive"/>
+        <Class IRI="#exteroperceptive"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#path"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pedestrian_crossing"/>
+        <Class IRI="#road"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#person"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pipe"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plain"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plant"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#plateau"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#pole"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#private"/>
+        <Class IRI="#area_jurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#proprioperceptive"/>
+        <Class IRI="#sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#public"/>
+        <Class IRI="#area_jurisdiction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#puddle"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#radar"/>
+        <Class IRI="#active"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rail_track"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#railed_vehicle"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rain"/>
+        <Class IRI="#weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#regulatory"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#river"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#road"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#road_marking"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rock"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rotating_lidar"/>
+        <Class IRI="#lidar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#rtk_gps"/>
+        <Class IRI="#gps"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sea"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#season"/>
+        <Class IRI="#environment_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#semi_truck"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sensor_issue"/>
+        <Class IRI="#void"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shape"/>
+        <Class IRI="#instance_attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#shipping_container"/>
+        <Class IRI="#container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sidewalk"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sign"/>
+        <Class IRI="#infrastructure"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#sky"/>
+        <Class IRI="#atmospheric"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#snow"/>
+        <Class IRI="#H2O"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#snow_ice"/>
+        <Class IRI="#weather"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#soil"/>
+        <Class IRI="#material"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#solid_state_lidar"/>
+        <Class IRI="#lidar"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#spring"/>
+        <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#static"/>
+        <Class IRI="#dynamics"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#street_light"/>
+        <Class IRI="#pole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#subterranean"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#summer"/>
+        <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#telecommunication_pole"/>
+        <Class IRI="#pole"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#thermal"/>
+        <Class IRI="#camera"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#time_of_day"/>
+        <Class IRI="#environment_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tracked_vehicle"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_cone"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_light"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_sign"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#traffic_sign"/>
+        <Class IRI="#sign"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trail"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trailer_unattached"/>
+        <Class IRI="#wheeled_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#trash_container"/>
+        <Class IRI="#container"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree"/>
+        <Class IRI="#vegetation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree_crown"/>
+        <Class IRI="#tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree_log"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree_root"/>
+        <Class IRI="#tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tree_trunk"/>
+        <Class IRI="#tree"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tundra"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#tunnel"/>
+        <Class IRI="#path"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ultrasound"/>
+        <Class IRI="#active"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unclassified"/>
+        <Class IRI="#instance_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#unknown"/>
+        <Class IRI="#void"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#urban"/>
+        <Class IRI="#biome"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#valley"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vegetation"/>
+        <Class IRI="#geographic_feature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vehicle"/>
+        <Class IRI="#agent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vehicle"/>
+        <DataMaxCardinality cardinality="1">
+            <DataProperty IRI="#IsAdversary"/>
+            <Datatype abbreviatedIRI="xsd:integer"/>
+        </DataMaxCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#vine"/>
+        <Class IRI="#plant"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#void"/>
+        <Class IRI="#unclassified"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wall"/>
+        <Class IRI="#barrier"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#water"/>
+        <Class IRI="#H2O"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#water_body"/>
+        <Class IRI="#landform"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#water_vehicle"/>
+        <Class IRI="#vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#weather"/>
+        <Class IRI="#environment_labels"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wetland"/>
+        <Class IRI="#land_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wetland"/>
+        <Class IRI="#water_body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wheeled_vehicle"/>
+        <Class IRI="#ground_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#winter"/>
+        <Class IRI="#season"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wire"/>
+        <Class IRI="#regulatory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#wood"/>
+        <Class IRI="#tree_log"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <DataHasValue>
+            <DataProperty IRI="#LabelPolicyVersion"/>
+            <Literal>2.0.5</Literal>
+        </DataHasValue>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#agent"/>
+        <Class IRI="#atmospheric"/>
+        <Class IRI="#geographic_feature"/>
+        <Class IRI="#unclassified"/>
+    </DisjointClasses>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#HasSensor"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#HasMaterial"/>
+        <ObjectProperty IRI="#Makes"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#ConsistsOf"/>
+        <Class IRI="#geographic_feature"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasMaterial"/>
+        <ObjectUnionOf>
+            <Class IRI="#agent"/>
+            <Class IRI="#geographic_feature"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#HasSensor"/>
+        <Class IRI="#agent"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#Makes"/>
+        <Class IRI="#material"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasMaterial"/>
+        <Class IRI="#material"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#HasSensor"/>
+        <Class IRI="#sensor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#Makes"/>
+        <ObjectUnionOf>
+            <Class IRI="#agent"/>
+            <Class IRI="#geographic_feature"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AgentManufacturer"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AgentWeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#AutonomyMode"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#InstanceHeight"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#IsEgoVehicle"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#IsVegetationClump"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#License"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#Timestamp"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AgentManufacturer"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AgentWeight"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#AutonomyMode"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ConfidenceLevel"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#DatasetName"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ElevationChange"/>
+        <Class IRI="#geographic_feature"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#ImageName"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#collection_platform"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#instance_attributes"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#instance_labels"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Class IRI="#sensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsAdversary"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsBoulder"/>
+        <Class IRI="#rock"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsEgoVehicle"/>
+        <Class IRI="#agent"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsFreshWater"/>
+        <Class IRI="#H2O"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsGravel"/>
+        <Class IRI="#rock"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsRider"/>
+        <Class IRI="#person"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#IsVegetationClump"/>
+        <Class IRI="#vegetation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SizeArea"/>
+        <Class IRI="#instance_labels"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Traversability"/>
+        <Class IRI="#geographic_feature"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#AgentWeight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#AutonomyMode"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ConfidenceLevel"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#DatasetName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ElevationChange"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#ImageName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#InstanceHeight"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsAdversary"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsBoulder"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsEgoVehicle"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsFreshWater"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsGravel"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsRider"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsShadow"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#IsVegetationClump"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#LabelPolicyVersion"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#License"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SensorIssue"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SizeArea"/>
+        <Datatype abbreviatedIRI="xsd:decimal"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Timestamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Traversability"/>
+        <Datatype abbreviatedIRI="xsd:double"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S2</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#geographic_feature"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#ElevationChange"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#barrier"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="swrla:isRuleEnabled"/>
+            <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+            <Literal></Literal>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+            <Literal>S1</Literal>
+        </Annotation>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#geographic_feature"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#ElevationChange"/>
+                <Variable IRI="#f"/>
+                <Variable IRI="#val"/>
+            </DataPropertyAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
+                <Variable IRI="#val"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#flat"/>
+                <Variable IRI="#f"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
