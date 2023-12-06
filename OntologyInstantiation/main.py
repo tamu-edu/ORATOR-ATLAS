@@ -9,11 +9,18 @@ import numpy as np
 if __name__ == '__main__':
     
     #parameters
-    input_ATLAS_ontology="../ATLAS_OWL/ATLAS_v2.0.3.owl"
-    input_image_json_directory = "../Datasets/Rellis_3D_image_example/img_json/"
-    input_ontology_mapping= "../Mappings_OWL/RELLIS3D.json"
-    output_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
+    #input_ATLAS_ontology="../ATLAS_OWL/ATLAS_v2.0.3.owl"
+    #input_image_json_directory = "../Datasets/Rellis_3D_image_example/img_json/"
+    #input_ontology_mapping= "../Mappings_OWL/RELLIS3D.json"
+    #output_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
 
+    
+    #GOOSE parameters
+    input_ATLAS_ontology="../ATLAS_OWL/ATLAS_v2.0.3.owl"
+    input_image_json_directory = "../Datasets/Goose_image_example/img_json/"
+    input_ontology_mapping= "../Mappings_OWL/GOOSE.json"
+    output_owl_directory = "../Datasets/Goose_image_example/img_owl/"    
+    
     
     #start of main code 
     f1 = open(input_ontology_mapping)
