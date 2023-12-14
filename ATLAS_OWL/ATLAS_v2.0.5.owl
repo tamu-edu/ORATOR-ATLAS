@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204"
+     xml:base="http://www.semanticweb.org/ATLAS/ontologies/2023/3/v205"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204">
+     ontologyIRI="http://www.semanticweb.org/ATLAS/ontologies/2023/3/v205">
     <Prefix name="" IRI="http://www.semanticweb.org/anant/ontologies/2023/3/untitled-ontology-204#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
@@ -263,6 +263,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#material"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#military_vehicle"/>
     </Declaration>
     <Declaration>
         <Class IRI="#misc_sign"/>
@@ -572,6 +575,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#InstanceHeight"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#InstanceID"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#IsAdversary"/>
@@ -965,6 +971,14 @@
     <SubClassOf>
         <Class IRI="#material"/>
         <Class IRI="#instance_attributes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#military_vehicle"/>
+        <Class IRI="#tracked_vehicle"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#military_vehicle"/>
+        <Class IRI="#wheeled_vehicle"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#misc_sign"/>
@@ -1409,6 +1423,10 @@
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
+        <DataProperty IRI="#InstanceID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
         <DataProperty IRI="#IsEgoVehicle"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
@@ -1608,26 +1626,26 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#geographic_feature"/>
-                <Variable IRI="#f"/>
+                <Variable abbreviatedIRI=":f"/>
             </ClassAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#ElevationChange"/>
-                <Variable IRI="#f"/>
-                <Variable IRI="#val"/>
+                <Variable abbreviatedIRI=":f"/>
+                <Variable abbreviatedIRI=":val"/>
             </DataPropertyAtom>
             <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
-                <Variable IRI="#val"/>
+                <Variable abbreviatedIRI=":val"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
             </BuiltInAtom>
             <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
-                <Variable IRI="#val"/>
+                <Variable abbreviatedIRI=":val"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.5</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <ClassAtom>
                 <Class IRI="#barrier"/>
-                <Variable IRI="#f"/>
+                <Variable abbreviatedIRI=":f"/>
             </ClassAtom>
         </Head>
     </DLSafeRule>
@@ -1647,32 +1665,217 @@
         <Body>
             <ClassAtom>
                 <Class IRI="#geographic_feature"/>
-                <Variable IRI="#f"/>
+                <Variable abbreviatedIRI=":f"/>
             </ClassAtom>
             <DataPropertyAtom>
                 <DataProperty IRI="#ElevationChange"/>
-                <Variable IRI="#f"/>
-                <Variable IRI="#val"/>
+                <Variable abbreviatedIRI=":f"/>
+                <Variable abbreviatedIRI=":val"/>
             </DataPropertyAtom>
             <BuiltInAtom abbreviatedIRI="swrlb:lessThan">
-                <Variable IRI="#val"/>
+                <Variable abbreviatedIRI=":val"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">0.5</Literal>
             </BuiltInAtom>
             <BuiltInAtom abbreviatedIRI="swrlb:greaterThan">
-                <Variable IRI="#val"/>
+                <Variable abbreviatedIRI=":val"/>
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">-0.5</Literal>
             </BuiltInAtom>
         </Body>
         <Head>
             <ClassAtom>
                 <Class IRI="#flat"/>
-                <Variable IRI="#f"/>
+                <Variable abbreviatedIRI=":f"/>
             </ClassAtom>
         </Head>
     </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RGB</IRI>
+        <Literal>A camera that captures image data in the red, green, and blue electromagnetic spectrum range in a 3 channel image</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#accelerometer</IRI>
+        <Literal>A sensor that measures vibration or acceleration</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#active</IRI>
+        <Literal>A sensor that emits form of energy to gather information related to the environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#aerial_vehicle</IRI>
+        <Literal>A vehicle whose primary operational domain is the air</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#agent</IRI>
+        <Literal>An entity that is capable of performing actions in an environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#animal</IRI>
+        <Literal>A non-human organism capable of performing actions in an environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#camera</IRI>
+        <Literal>A passive sensor that captures image data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#collection_platform</IRI>
+        <Literal>A platform that collects data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#construction_and_agricultural_vehicle</IRI>
+        <Literal>A vehicle used for construction or agricultural purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#exteroperceptive</IRI>
+        <Literal>Sensors that provide feedback on external environmental properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#gps</IRI>
+        <Literal>A sensor that determines its precise location and altitude at a given point in time via signals received from satellites.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ground_vehicle</IRI>
+        <Literal>A vehicle whose primary operational domain is the land</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#gyroscope</IRI>
+        <Literal>A sensor that measures orientation and angular velocity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hyperspectral</IRI>
+        <Literal>A camera that captures image data within specific wavelength ranges across the electromagnetic spectrum with 40 or more spectral bands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#imu</IRI>
+        <Literal>A sensor that measures specific force, angular rate, and sometimes surrounding magnetic field</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#legged</IRI>
+        <Literal>A vehicle that moves using legs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#lidar</IRI>
+        <Literal>A sensor that emits laser light to measure distances of objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#magnetometer</IRI>
+        <Literal>A sensor that measures magnetism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#military_vehicle</IRI>
+        <Literal>A vehicle designed for combat environments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#multispectral</IRI>
+        <Literal>A camera that captures image data within specific wavelength ranges across the electromagnetic spectrum and has less than 40 bands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#panchromatic</IRI>
+        <Literal>A camera that captures image data across the visible light electromagnetic spectrum range within a single grayscale channel</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#passive</IRI>
+        <Literal>A sensor that detects energy emitted or reflected from an object</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#person</IRI>
+        <Literal>A human that is capable of performing actions in the environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#proprioperceptive</IRI>
+        <Literal>Sensors that provide feedback on the internal state of a system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#radar</IRI>
+        <Literal>A sensor that emits radio waves to determine range, angle, and velocity of objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#railed_vehicle</IRI>
+        <Literal>A vehicle designed to travel on rails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rotating_lidar</IRI>
+        <Literal>A lidar that rotates while sending out laser beams and measuring how long it takes for them to return</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rtk_gps</IRI>
+        <Literal>A gps that has correctional information to provide enchanced accuracy for positioning</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#scenario_label</IRI>
+        <Literal>Labels that define the environment in which the data was collected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sensor</IRI>
+        <Literal>A device that detects or measures an environmental characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#solid_state_lidar</IRI>
+        <Literal>A lidar that uses electronic beam steering instead of mechanical parts</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#thermal</IRI>
+        <Literal>A camera that captures image data within the mid and long wave infrared electromagnetic spectrum range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tracked_vehicle</IRI>
+        <Literal>A vehicle designed to travel on continuous tracks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ultrasound</IRI>
+        <Literal>A sensor that emits sound waves higher than the upper audible limit of human hearing to create measure distances of objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vehicle</IRI>
+        <Literal>Objects that are capable of transporting people or items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#water_vehicle</IRI>
+        <Literal>A vehicle whose primary operational domain is the water</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wheeled_vehicle</IRI>
+        <Literal>A vehicle designed to move on wheels</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
