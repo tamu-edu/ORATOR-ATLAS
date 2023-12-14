@@ -1695,6 +1695,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RV_and_travel_trailer</IRI>
+        <Literal>Recreational vehicles equipped with living amenities and designed for traveling or camping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#accelerometer</IRI>
         <Literal>A sensor that measures vibration or acceleration</Literal>
     </AnnotationAssertion>
@@ -1720,8 +1725,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bicyle</IRI>
+        <Literal>A two-wheeled vehicle powered by pedaling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bus</IRI>
+        <Literal>A large motor vehicle designed to carry passengers</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#camera</IRI>
         <Literal>A passive sensor that captures image data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#car</IRI>
+        <Literal>A four-wheeled vehicle designed to transport people</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1765,6 +1785,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#kick_scooter</IRI>
+        <Literal>A small platform with two wheels propelled by a rider pushing off the ground</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#legged</IRI>
         <Literal>A vehicle that moves using legs</Literal>
     </AnnotationAssertion>
@@ -1782,6 +1807,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#military_vehicle</IRI>
         <Literal>A vehicle designed for combat environments</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#motorcycle</IRI>
+        <Literal>A two-wheeled motorized vehicle</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1835,6 +1865,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#semi_truck</IRI>
+        <Literal>Heavy trucks and their attached freight trailer</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#sensor</IRI>
         <Literal>A device that detects or measures an environmental characteristic</Literal>
     </AnnotationAssertion>
@@ -1852,6 +1887,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#tracked_vehicle</IRI>
         <Literal>A vehicle designed to travel on continuous tracks</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#trailer_unattached</IRI>
+        <Literal>Freight trailers that are not attached to a truck</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
