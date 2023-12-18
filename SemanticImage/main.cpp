@@ -33,13 +33,13 @@ std::chrono::time_point<std::chrono::system_clock> start, end;
  
 start = std::chrono::system_clock::now();
 //parameters
-string input_directory = "../../Datasets/Rellis_3D_image_example/pylon_camera_node_label_color/";
-//string input_directory = "../../Datasets/Rellis_3D_pylon_camera_node_label_color/Rellis-3D/00000/pylon_camera_node_label_color/";
-std::string input_json = "../../Mappings_RGB/Rellis3D_dataset.json";
+string input_directory = "../../../semantic_images/a2d2/";
+std::string input_json = "../../Mappings_RGB/A2D2_dataset.json";
+string output_directory = "../../../extracted_json/a2d2/";
 int num_threads=std::thread::hardware_concurrency(); // number of parallel threads
-string output_directory = "../../Datasets/Rellis_3D_image_example/img_json/";
-//string output_directory = "../../Datasets/Rellis_3D_pylon_camera_node_label_color/00000_json/";
-bool visualize=false;
+
+
+bool visualize=true;
 
 // you can either get the default values in the json file or use custom values for the below parameters
 // string ATLAS_version = "2.0.3";
@@ -269,7 +269,7 @@ for(int a=0; a<img_files.size(); a++)
         cvtColor( drawing2, drawing2, COLOR_BGR2RGB );
         //filtered polygons for output json file
         cv::imshow("Image", drawing2);
-        cv::waitKey(200);
+        cv::waitKey(50);
     }
 
 }

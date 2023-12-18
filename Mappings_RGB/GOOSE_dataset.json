@@ -3,7 +3,7 @@
       "parameters": {
          "ATLAS_version": "2.0.5",
          "img_extension": ".png",
-         "min_polygon_size": 1000
+         "min_polygon_size": 100
       }
    },
    "Color_Information": {

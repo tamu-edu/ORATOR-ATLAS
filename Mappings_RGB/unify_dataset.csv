@@ -69,7 +69,7 @@ Traffic_sign1,A2D2,12
 Traffic_sign2,A2D2,12
 Traffic_sign3,A2D2,12
 traffic_sign,goose,12
-Signal_corpos,A2D2,12
+Signal_corpus,A2D2,12
 Irrelevant_signs,A2D2,12
 misc_sign,goose,12
 Electronic_traffic,A2D2,12

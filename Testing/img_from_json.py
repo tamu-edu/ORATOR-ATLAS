@@ -5,20 +5,42 @@ import os
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2 as cv
+import sys 
 
 
 
 if __name__ == '__main__':
 
     #parameters
-    input_img_json="../Datasets/Rellis_3D_image_example/img_json/frame000000-1581623790_349.json"
-    input_color_scheme="../Mappings_RGB/Rellis3D_dataset.json"
+    input_color_scheme="Mappings_RGB/unify_dataset_rgb.json"
+    
+    results_dir = '../results_unify_dataset_imgs/'
+    # input_img_dir = '../semantic_images/' #includes sub directories for each dataset
+    input_img_dir = '../extracted_json/' #includes sub directories for each dataset
+    # zip file is on google drive for datasets
     
     
+    
+    file_ext = '.json'  
+    files_list = os.listdir(input_img_dir)
+    input_files = []
+    # print(files_list)
+    for file in files_list:
+        # print(file)
+        files_list_subdir = os.listdir(input_img_dir+file+'/')
+        for file_subdir in files_list_subdir:
+            # print(file_subdir)
+            input_img_png=input_img_dir+file+'/'+file_subdir
+            _, extension = os.path.splitext(input_img_png)
+            if extension == file_ext:
+                input_files.append(input_img_png)
+                # print(input_img_png)
+    # print size of input_files
+    # print(len(input_files))
+                    
+    
+        
     #start of main script
-    f1 = open(input_img_json)
-    polygonInfo = json.load(f1)
-
     f2 = open(input_color_scheme)
     colorInfo = json.load(f2)
 
@@ -30,42 +52,69 @@ if __name__ == '__main__':
         green_value=colorInfo['Color_Information'][i]['green_value']
         # print(i,red_value,green_value, blue_value)
         color_dict[i]=[blue_value,green_value,red_value]
+    
+    
+    # sys.exit()
+    
+    for input_img_json in input_files:
+    
+        f1 = open(input_img_json)
+        
+        
+        
+        polygonInfo = json.load(f1)
+
+        
 
 
 
-    for i in polygonInfo['entities']:
-        class_instance = i['type']
+        for i in polygonInfo['entities']:
+            class_instance = i['type']
 
-        #use the ballpark to initialize image size
-        if (class_instance=='Ballpark'):
-            coordinates=i['geometry']['coordinates']
-            #print(coordinates)
-            height=int(coordinates[2][1])
-            width=int(coordinates[2][0])
-            color_image = np.zeros((height,width,3), np.uint8)
-            # print(height,width)
-        else:
-            #get the coordinates
-            # print(class_instance)
-            coordinates=np.array(i['geometry']['coordinates'])
-            # print(coordinates)
-            # need to get color scheme for each item 
-            color_scheme=color_dict[class_instance]
-            # print(color_scheme)
-            #create a mask on the blank image and fill it with the color scheme
-            # print(coordinates.shape)
-            # cv.drawContours(image, contours, -1, (0, 255, 0), 3)
-            cv.fillPoly(color_image, pts =[coordinates], color=color_scheme)
+            #use the ballpark to initialize image size
+            if (class_instance=='Ballpark'):
+                coordinates=i['geometry']['coordinates']
+                #print(coordinates)
+                height=int(coordinates[2][1])
+                width=int(coordinates[2][0])
+                color_image = np.zeros((height,width,3), np.uint8)
+                # print(height,width)
+            else:
+                #get the coordinates
+                # print(class_instance)
+                coordinates=np.array(i['geometry']['coordinates'])
+                # print(coordinates)
+                # need to get color scheme for each item 
+                color_scheme=color_dict[class_instance]
+                # print(color_scheme)
+                #create a mask on the blank image and fill it with the color scheme
+                # print(coordinates.shape)
+                # cv.drawContours(image, contours, -1, (0, 255, 0), 3)
+                cv.fillPoly(color_image, pts =[coordinates], color=color_scheme)
 
-            
+                
 
-    #resize color image
-    disp_image=cv.resize(color_image,(500,500))
-    cv.imshow('test', disp_image)
-    cv.waitKey()
+        #resize color image for visualization 
+        # disp_image=cv.resize(color_image,(500,500))
+        # cv.imshow('test', disp_image)
+        # cv.waitKey(1000)
+        
+        
+        # Determine the directory
+        dir_path = results_dir + input_img_json.split('/')[-2]
+
+        # Create the directory if it doesn't exist
+        if not os.path.exists(dir_path):
+            os.makedirs(dir_path)
+
+        # Determine the file path
+        file_path = dir_path + '/' + input_img_json.split('/')[-1].split('.')[0] + '.png'
+        print(file_path)
+
+        # save images 
+        cv.imwrite(file_path, color_image)
+        
     
 
-    #need to create a common color scheme for atlas for display
-    #need to show image in atlas color scheme 
-           
-
+   
+    print('Done')

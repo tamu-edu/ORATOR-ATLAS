@@ -3,10 +3,15 @@
         "parameters": {
             "ATLAS_version": "2.0.4",
             "img_extension": ".png",
-            "min_polygon_size": 1000
+            "min_polygon_size": 100
         }
     },
     "Color_Information": {
+        "unknown_class": {
+            "red_value": 0,
+            "green_value": 0,
+            "blue_value": 0
+        },
         "Car1": {
             "red_value": 255,
             "green_value": 0,
@@ -113,6 +118,11 @@
             "blue_value": 0
         },
         "bicycle": {
+            "red_value": 255,
+            "green_value": 42,
+            "blue_value": 0
+        },
+        "bicyle": {
             "red_value": 255,
             "green_value": 42,
             "blue_value": 0
@@ -302,7 +312,7 @@
             "green_value": 255,
             "blue_value": 0
         },
-        "Signal_corpos": {
+        "Signal_corpus": {
             "red_value": 42,
             "green_value": 255,
             "blue_value": 0

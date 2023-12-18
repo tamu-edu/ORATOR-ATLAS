@@ -42,7 +42,7 @@ def read_csv_file(file_path):
             if value < min_value:
                 min_value = value
         
-        print('max val: ', max_value, ' min val: ', min_value)
+        # print('max val: ', max_value, ' min val: ', min_value)
         
         results = []  # Create a list to store the results
         for row in rows:
@@ -90,3 +90,5 @@ result = read_csv_file(csv_file_path)
 #     print(i)
 
 save_to_json(result, json_file_path)
+
+print('Done')
