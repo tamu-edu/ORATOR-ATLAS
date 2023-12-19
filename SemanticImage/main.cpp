@@ -32,6 +32,7 @@ int main (int argc, char *argv[])
 std::chrono::time_point<std::chrono::system_clock> start, end;
  
 start = std::chrono::system_clock::now();
+/*
 //parameters
 string input_directory = "../../Datasets/Rellis_3D_image_example/pylon_camera_node_label_color/";
 //string input_directory = "../../Datasets/Rellis_3D_pylon_camera_node_label_color/Rellis-3D/00000/pylon_camera_node_label_color/";
@@ -39,6 +40,18 @@ std::string input_json = "../../Mappings_RGB/Rellis3D_dataset.json";
 int num_threads=std::thread::hardware_concurrency(); // number of parallel threads
 string output_directory = "../../Datasets/Rellis_3D_image_example/img_json/";
 //string output_directory = "../../Datasets/Rellis_3D_pylon_camera_node_label_color/00000_json/";
+*/
+
+
+
+//parameters goose
+string input_directory = "../../Datasets/Goose_image_example/pylon_camera_node_label_color/";
+//string input_directory = "../../Datasets/Rellis_3D_pylon_camera_node_label_color/Rellis-3D/00000/pylon_camera_node_label_color/";
+std::string input_json = "../../Mappings_RGB/GOOSE_dataset.json";
+int num_threads=std::thread::hardware_concurrency(); // number of parallel threads
+string output_directory = "../../Datasets/Goose_image_example/img_json/";
+//string output_directory = "../../Datasets/Rellis_3D_pylon_camera_node_label_color/00000_json/";
+
 bool visualize=false;
 
 // you can either get the default values in the json file or use custom values for the below parameters
