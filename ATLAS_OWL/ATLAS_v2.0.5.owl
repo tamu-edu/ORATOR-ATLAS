@@ -1735,6 +1735,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#building</IRI>
+        <Literal>Structure with walls and a roof</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#bus</IRI>
         <Literal>A large motor vehicle designed to carry passengers</Literal>
     </AnnotationAssertion>
@@ -1770,8 +1775,23 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#container</IRI>
+        <Literal>Structure for holding other objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#debris</IRI>
+        <Literal>Piles or pieces of waste. Natural or manufactured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#exteroperceptive</IRI>
         <Literal>Sensors that provide feedback on external environmental properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#geographic_feature</IRI>
+        <Literal>Sizeable, often stationary, locations, sites, areasm or regions which comprise the layout and structure of a space</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1797,6 +1817,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#imu</IRI>
         <Literal>A sensor that measures specific force, angular rate, and sometimes surrounding magnetic field</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#infrastructure</IRI>
+        <Literal>Man made organization structures</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#instance_labels</IRI>
+        <Literal>Labels that define specific objects that occupy space within the image</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1850,8 +1880,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#path</IRI>
+        <Literal>A track laid down for walking, driving, or more broadly traversing on.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#person</IRI>
         <Literal>A human that is capable of performing actions in the environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pipe</IRI>
+        <Literal>A tube used to typically convey liquids</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1867,6 +1907,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#railed_vehicle</IRI>
         <Literal>A vehicle designed to travel on rails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#regulatory</IRI>
+        <Literal>Signage that conveys what can or cannot be done such as: speed limits, no-turn on red, etc</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1892,6 +1937,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#sensor</IRI>
         <Literal>A device that detects or measures an environmental characteristic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sign</IRI>
+        <Literal>Signage which conveys information about location, direction, or general purpose information.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
