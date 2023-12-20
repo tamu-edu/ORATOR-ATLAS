@@ -373,7 +373,7 @@
         <Class IRI="#rtk_gps"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#scenario_label"/>
+        <Class IRI="#scenario_labels"/>
     </Declaration>
     <Declaration>
         <Class IRI="#sea"/>
@@ -673,7 +673,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#area_jurisdiction"/>
-        <Class IRI="#scenario_label"/>
+        <Class IRI="#scenario_labels"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#artificial"/>
@@ -837,7 +837,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#environment_labels"/>
-        <Class IRI="#scenario_label"/>
+        <Class IRI="#scenario_labels"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#exteroperceptive"/>
@@ -989,7 +989,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#motion_label"/>
-        <Class IRI="#scenario_label"/>
+        <Class IRI="#scenario_labels"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#motorcycle"/>
@@ -1732,13 +1732,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#area_jurisdiction</IRI>
+        <Literal>A geographic feature which is owned by a government, individual, or legal entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#atmospheric</IRI>
         <Literal>An entity in the enviornment which can be observed in the atmopshere of the planet</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#autumn</IRI>
+        <Literal>The season after summer and before winter, when temperatures gradually decrease.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#bicyle</IRI>
         <Literal>A two-wheeled vehicle powered by pedaling</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#biome</IRI>
+        <Literal>A large community of plants and animals that occupies a distinct region defined by its climate and dominant vegetation</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1767,8 +1782,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#clear</IRI>
+        <Literal>A state of the weather where there are no clouds, fog, haze, or other obstructions in the sky.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#cloud</IRI>
         <Literal>A mass of condensed water vapor floating in the atmosphere</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#coastal</IRI>
+        <Literal>Pertaining to areas where the land meets the ocean or sea</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1787,13 +1812,53 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dawn</IRI>
+        <Literal>The time of day when light first appears in the sky, before the sun rises.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#day</IRI>
+        <Literal>The period of time when the sun is above the horizon and it’s light outside.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#debris</IRI>
         <Literal>Piles or pieces of waste. Natural or manufactured.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#desert</IRI>
+        <Literal>A barren area of landscape where little precipitation occurs, resulting in hostile conditions for most plant and animal life</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dusk</IRI>
+        <Literal>The time of day immediately following sunset when the sky is still partially lit.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#dynamic</IRI>
+        <Literal>Agents are moving within the environment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#environment_labels</IRI>
+        <Literal>Labels that describe the environmental conditions during data collection</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#exteroperceptive</IRI>
         <Literal>Sensors that provide feedback on external environmental properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fog_haze</IRI>
+        <Literal>A weather condition characterized by very fine droplets of water suspended in the air, reducing visibility.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#forest</IRI>
+        <Literal>A large area covered chiefly with trees and undergrowth</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1804,6 +1869,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#gps</IRI>
         <Literal>A sensor that determines its precise location and altitude at a given point in time via signals received from satellites.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#grassland</IRI>
+        <Literal>A large open area of country covered with grass</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1862,6 +1932,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#motion_label</IRI>
+        <Literal>Describes the predominant motion characteristics for agents within the environment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#motorcycle</IRI>
         <Literal>A two-wheeled motorized vehicle</Literal>
     </AnnotationAssertion>
@@ -1869,6 +1944,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#multispectral</IRI>
         <Literal>A camera that captures image data within specific wavelength ranges across the electromagnetic spectrum and has less than 40 bands</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#night</IRI>
+        <Literal>The period of darkness between sunset and sunrise when the sun is below the horizon.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1902,8 +1982,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#private</IRI>
+        <Literal>A geographic feature that is not owned by a government.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#proprioperceptive</IRI>
         <Literal>Sensors that provide feedback on the internal state of a system</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#public</IRI>
+        <Literal>A geographic feature that is owned by the goverment.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1914,6 +2004,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#railed_vehicle</IRI>
         <Literal>A vehicle designed to travel on rails</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rain</IRI>
+        <Literal>A weather condition marked by the falling of water droplets from the sky.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1932,8 +2027,13 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>#scenario_label</IRI>
+        <IRI>#scenario_labels</IRI>
         <Literal>Labels that define the environment in which the data was collected</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#season</IRI>
+        <Literal>A division of the year marked by changes in weather, ecology, and the amount of daylight.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1957,13 +2057,43 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#snow_ice</IRI>
+        <Literal>A weather condition characterized by the falling of frozen, crystalline water particles, known as snow, or the presence of solidified water, known as ice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#solid_state_lidar</IRI>
         <Literal>A lidar that uses electronic beam steering instead of mechanical parts</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#spring</IRI>
+        <Literal>The season after winter and before summer, when vegetation begins to appear and temperatures gradually increase.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#static</IRI>
+        <Literal>There is a lack of agents within the environment or agents are not moving.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#subterranean</IRI>
+        <Literal>Existing, occurring, or done under the earth’s surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#summer</IRI>
+        <Literal>The warmest season of the year, occurring between spring and autumn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#thermal</IRI>
         <Literal>A camera that captures image data within the mid and long wave infrared electromagnetic spectrum range</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#time_of_day</IRI>
+        <Literal>A specific time period during the 24-hour day</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1977,8 +2107,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tundra</IRI>
+        <Literal>A type of biome where the tree growth is hindered by low temperatures and short growing seasons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ultrasound</IRI>
         <Literal>A sensor that emits sound waves higher than the upper audible limit of human hearing to create measure distances of objects</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#urban</IRI>
+        <Literal>Relating to, or characteristic of a city or town.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1992,8 +2132,18 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#weather</IRI>
+        <Literal>The state of the atmosphere at a particular place and time as regards heat, cloudiness, dryness, sunshine, wind, and rain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#wheeled_vehicle</IRI>
         <Literal>A vehicle designed to move on wheels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#winter</IRI>
+        <Literal>The coldest season of the year, occurring after autumn and before spring</Literal>
     </AnnotationAssertion>
 </Ontology>
 
