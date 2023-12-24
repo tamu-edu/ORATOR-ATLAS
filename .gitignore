@@ -44,3 +44,6 @@
 #ontology instantiation project
 **/.idea/*
 **/venv/*
+
+#protege properties files
+*.properties
