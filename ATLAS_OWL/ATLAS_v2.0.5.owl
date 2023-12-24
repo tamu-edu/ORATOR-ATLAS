@@ -1530,6 +1530,10 @@
         <Class IRI="#geographic_feature"/>
     </DataPropertyDomain>
     <DataPropertyRange>
+        <DataProperty IRI="#AgentManufacturer"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#AgentWeight"/>
         <Datatype abbreviatedIRI="xsd:double"/>
     </DataPropertyRange>
@@ -1697,6 +1701,116 @@
     </DLSafeRule>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AgentManufacturer</IRI>
+        <Literal>Company that has manufactured the instance of the agent class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AgentWeight</IRI>
+        <Literal>The stock weight of the instance of the agent class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#AutonomyMode</IRI>
+        <Literal>The autonomy level of the instance of the agent class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConfidenceLevel</IRI>
+        <Literal>The confidence value about the semantic class of a given individual. It is represented in percentage.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ConsistsOf</IRI>
+        <Literal>Specify if a geographic feature consisits of smaller features, i.e. features which can be enclosed within a larger feature.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#DatasetName</IRI>
+        <Literal>Name of the dataset which is being imported into the unfied ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ElevationChange</IRI>
+        <Literal>The rate of change of elevation of an instance of a particular geographic feature. It is the slope i.e. how much elevation is gained/lost for each m moved .</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasMaterial</IRI>
+        <Literal>Specifies the material that makes up an individual belonging to either the agent or the geographic feature class.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#HasSensor</IRI>
+        <Literal>Specifies what all sensors does any given agent have.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ImageName</IRI>
+        <Literal>Name of the image of the particular dataset that is being imported into the unfying ontology.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InstanceHeight</IRI>
+        <Literal>The height of the indivual with respect to the gound.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsAdversary</IRI>
+        <Literal>A boolean used to define if an individual defined is an adversary or not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsBoulder</IRI>
+        <Literal>Boolean used to define if an instance of the rock class is large enough to be also classified as a boulder.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsDynamic</IRI>
+        <Literal>Boolean used to define if any given individual of the ontology is capable of motion.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsEgoVehicle</IRI>
+        <Literal>Boolen used to define if an instance of the agent class is ego vehicle which was used to capture the dataset.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsFreshWater</IRI>
+        <Literal>Boolean used to define if an instance of the H20 class, is made up of fresh water or salt water.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsGravel</IRI>
+        <Literal>Boolean used to define if an instance of the rock class is small enough to be also classified as gravel.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsRider</IRI>
+        <Literal>Boolean used to specify if an instance of the person class is also a rider of a vehicle.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsShadow</IRI>
+        <Literal>Boolean to specify if an individual specified is in shadow.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#IsVegetationClump</IRI>
+        <Literal>Boolean used to specify if an instance of the vegetation class is a group of multiple individuals too difficult of being identified individually.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#License</IRI>
+        <Literal>Used to mention the type of license used to keep the unifying ontology open source.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Makes</IRI>
+        <Literal>Specifies the list of all individuals are are made up of a particular material.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RGB</IRI>
         <Literal>A camera that captures image data in the red, green, and blue electromagnetic spectrum range in a 3 channel image</Literal>
     </AnnotationAssertion>
@@ -1704,6 +1818,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#RV_and_travel_trailer</IRI>
         <Literal>Recreational vehicles equipped with living amenities and designed for traveling or camping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#SizeArea</IRI>
+        <Literal>The area of an instance of the instance_labels class specified in pixel^2 or m^2.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Timestamp</IRI>
+        <Literal>The timestamp specifying when the image being converted into the unifying ontology was captured.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Traversability</IRI>
+        <Literal>The ease with which an instance of a geographic_feature class can be travered by a given agent.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2149,5 +2278,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
 
