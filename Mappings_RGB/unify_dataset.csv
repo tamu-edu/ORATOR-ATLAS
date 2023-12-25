@@ -22,6 +22,7 @@ truck,goose,1
 trailer,goose,1
 Tractor,A2D2,1
 bicycle,rugd,2
+bicyle,all,2
 Bicycle1,A2D2,2
 Bicycle2,A2D2,2
 Bicycle3,A2D2,2
@@ -175,3 +176,4 @@ tunnel,goose,33
 wire,goose,34
 barrel,goose,35
 pipe,goose,36
+unknown_class,all,37

@@ -14,12 +14,12 @@ if __name__ == '__main__':
     #parameters
     input_color_scheme="Mappings_RGB/unify_dataset_rgb.json"
     
-    results_dir = '../results_unify_dataset_imgs/'
+    results_dir = '../results_unify_dataset_imgs/img_json/'
     # input_img_dir = '../semantic_images/' #includes sub directories for each dataset
     input_img_dir = '../extracted_json/' #includes sub directories for each dataset
     # zip file is on google drive for datasets
     
-    
+    use_greyscale = True
     
     file_ext = '.json'  
     files_list = os.listdir(input_img_dir)
@@ -45,15 +45,18 @@ if __name__ == '__main__':
     colorInfo = json.load(f2)
 
     color_dict={}
+    grey_scale_dict={}
     for i in colorInfo['Color_Information']:
         
         red_value=colorInfo['Color_Information'][i]['red_value']
         blue_value=colorInfo['Color_Information'][i]['blue_value']
         green_value=colorInfo['Color_Information'][i]['green_value']
+        class_value=colorInfo['Color_Information'][i]['class_value']
         # print(i,red_value,green_value, blue_value)
         color_dict[i]=[blue_value,green_value,red_value]
+        grey_scale_dict[i]=class_value
     
-    
+    # print(grey_scale_dict)
     # sys.exit()
     
     for input_img_json in input_files:
@@ -77,7 +80,10 @@ if __name__ == '__main__':
                 #print(coordinates)
                 height=int(coordinates[2][1])
                 width=int(coordinates[2][0])
-                color_image = np.zeros((height,width,3), np.uint8)
+                if (use_greyscale):
+                    color_image = np.zeros((height,width,1), np.uint8)
+                else:
+                    color_image = np.zeros((height,width,3), np.uint8)
                 # print(height,width)
             else:
                 #get the coordinates
@@ -85,7 +91,10 @@ if __name__ == '__main__':
                 coordinates=np.array(i['geometry']['coordinates'])
                 # print(coordinates)
                 # need to get color scheme for each item 
-                color_scheme=color_dict[class_instance]
+                if (use_greyscale):
+                    color_scheme=int(grey_scale_dict[class_instance])
+                else:
+                    color_scheme=color_dict[class_instance]
                 # print(color_scheme)
                 #create a mask on the blank image and fill it with the color scheme
                 # print(coordinates.shape)
@@ -113,6 +122,8 @@ if __name__ == '__main__':
 
         # save images 
         cv.imwrite(file_path, color_image)
+        # cv.imshow('test', color_image)
+        # cv.waitKey(1000)
         
     
 

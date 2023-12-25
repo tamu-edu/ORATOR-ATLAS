@@ -49,7 +49,8 @@ def read_csv_file(file_path):
             value = int(row[2])  # Assuming the value is in the third column
             rgb = convert_to_rgb(value, min_value, max_value+1)  
             class_name = row[0]
-            results.append((class_name, rgb))  # Append the class_name and rgb to the results list
+            class_value = row[2]
+            results.append((class_name, rgb, class_value))  # Append the class_name and rgb to the results list
             # print(class_name, rgb)
         
         # print('Done')
@@ -62,19 +63,21 @@ def save_to_json(results, json_file_path):
             "parameters": {
                 "ATLAS_version": "2.0.4",
                 "img_extension": ".png",
-                "min_polygon_size": 1000
+                "min_polygon_size": 100
             }
         },
         "Color_Information": {}
     }
 
     # Add the Color_Information
-    for class_name, rgb in results:
+    for class_name, rgb, class_value in results:
         red, green, blue = rgb
         data["Color_Information"][class_name] = {
             "red_value": red,
             "green_value": green,
-            "blue_value": blue
+            "blue_value": blue,
+            # add class value
+            "class_value": class_value
         }
 
     # Write the data to a JSON file
