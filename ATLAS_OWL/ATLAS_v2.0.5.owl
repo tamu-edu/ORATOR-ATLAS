@@ -1856,6 +1856,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#agricultural</IRI>
+        <Literal>specific ground cover releating to farming or agricultural needs, such as extensive farmland.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#animal</IRI>
         <Literal>A non-human organism capable of performing actions in an environment</Literal>
     </AnnotationAssertion>
@@ -1876,13 +1881,38 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#barrier</IRI>
+        <Literal>obstacle with the intent of physically preventing movement of access</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#barrier_tape</IRI>
+        <Literal>tape used to resctrict access to areas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#bicyle</IRI>
         <Literal>A two-wheeled vehicle powered by pedaling</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bikeway</IRI>
+        <Literal>A route specifically designed or marked for cycling.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#biome</IRI>
         <Literal>A large community of plants and animals that occupies a distinct region defined by its climate and dominant vegetation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#boom_barrier</IRI>
+        <Literal>A bar or pole pivoted to allow a boom to block access through a controlled point.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bridge</IRI>
+        <Literal>Structure carrying a road, path, or similar infrastructure across something such as a river.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1896,13 +1926,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#bush</IRI>
+        <Literal>A small to medium side plant which covers the ground</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#camera</IRI>
         <Literal>A passive sensor that captures image data</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#canyon</IRI>
+        <Literal>Deep gorge in the ground, typically with a river flowing through it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#car</IRI>
         <Literal>A four-wheeled vehicle designed to transport people</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cave</IRI>
+        <Literal>Large underground naturally formed chamber.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1941,6 +1986,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#curb</IRI>
+        <Literal>a  stone or concrete edge to a pavement, road, or raised path</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#dawn</IRI>
         <Literal>The time of day when light first appears in the sky, before the sun rises.</Literal>
     </AnnotationAssertion>
@@ -1971,6 +2021,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#electric_pole</IRI>
+        <Literal>A pole that supports overhead power or other various utility lines (electric, cable, optical, etc)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#environment_labels</IRI>
         <Literal>Labels that describe the environmental conditions during data collection</Literal>
     </AnnotationAssertion>
@@ -1978,6 +2033,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#exteroperceptive</IRI>
         <Literal>Sensors that provide feedback on external environmental properties</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#fence</IRI>
+        <Literal>A structure for enclosing or blocking an area with posts typically connected by boards, wires, or netting.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -1996,6 +2056,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#glacier</IRI>
+        <Literal>Slowly moving enormous mass of ice.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#gps</IRI>
         <Literal>A sensor that determines its precise location and altitude at a given point in time via signals received from satellites.</Literal>
     </AnnotationAssertion>
@@ -2006,13 +2071,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ground_cover</IRI>
+        <Literal>Plants which hug low to the ground and spread over wide areas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#ground_vehicle</IRI>
         <Literal>A vehicle whose primary operational domain is the land</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#guard_rail</IRI>
+        <Literal>A railing designed to keep vehicles or persons from staying off a designated path or into off-limit areas.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#gyroscope</IRI>
         <Literal>A sensor that measures orientation and angular velocity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hill</IRI>
+        <Literal>Naturally elevated area of land with gentle slope.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2038,6 +2118,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#kick_scooter</IRI>
         <Literal>A small platform with two wheels propelled by a rider pushing off the ground</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#landform</IRI>
+        <Literal>A natural feature on the surface of the earth</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2071,6 +2156,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#mountain</IRI>
+        <Literal>Large natural elevation of surface rising abruptly from surrounding area.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#multispectral</IRI>
         <Literal>A camera that captures image data within specific wavelength ranges across the electromagnetic spectrum and has less than 40 bands</Literal>
     </AnnotationAssertion>
@@ -2078,6 +2168,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#night</IRI>
         <Literal>The period of darkness between sunset and sunrise when the sun is below the horizon.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#null</IRI>
+        <Literal>Any classification that is thought to be of importance but does not fall into any defined categories.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#obstacle</IRI>
+        <Literal>An object that blocks or hinders progress</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2101,6 +2201,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pedestrian_crossing</IRI>
+        <Literal>Designated point on structures like road where pedestrians can safely cross.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#person</IRI>
         <Literal>A human that is capable of performing actions in the environment</Literal>
     </AnnotationAssertion>
@@ -2108,6 +2213,21 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#pipe</IRI>
         <Literal>A tube used to typically convey liquids</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#plain</IRI>
+        <Literal>Area of flat land with few trees</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#plateau</IRI>
+        <Literal>Area of flat land at a reletively high elevation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#pole</IRI>
+        <Literal>Long peice of wood or metal used as a support structure</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2131,6 +2251,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rail_track</IRI>
+        <Literal>Permanent rails fastened to the ground over which trains run.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#railed_vehicle</IRI>
         <Literal>A vehicle designed to travel on rails</Literal>
     </AnnotationAssertion>
@@ -2143,6 +2268,16 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#regulatory</IRI>
         <Literal>Signage that conveys what can or cannot be done such as: speed limits, no-turn on red, etc</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#road</IRI>
+        <Literal>A way wide enough for vehicles to travel over.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#road_marking</IRI>
+        <Literal>Lines, arrows, or words on a road that give information or directions</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2176,6 +2311,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#sidewalk</IRI>
+        <Literal>A paved path for pedestrians, typically on the side of the road.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#sign</IRI>
         <Literal>Signage which conveys information about location, direction, or general purpose information.</Literal>
     </AnnotationAssertion>
@@ -2206,6 +2346,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#street_light</IRI>
+        <Literal>A pole supporting a light</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#subterranean</IRI>
         <Literal>Existing, occurring, or done under the earth’s surface.</Literal>
     </AnnotationAssertion>
@@ -2213,6 +2358,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#summer</IRI>
         <Literal>The warmest season of the year, occurring between spring and autumn.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#telecommunication_pole</IRI>
+        <Literal>A pole that supports wire or equipment for telecommunications services</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2231,13 +2381,58 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#traffic_cone</IRI>
+        <Literal>a cone shaped marker placed to control the flow of traffic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#traffic_light</IRI>
+        <Literal>A electrical signaling device used to control the flow of traffic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#traffic_sign</IRI>
+        <Literal>Signs which give information to control the flow of traffic</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#trail</IRI>
+        <Literal>a pathway, often unpaved, made by the passage of agents such as people or animals</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#trailer_unattached</IRI>
         <Literal>Freight trailers that are not attached to a truck</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree</IRI>
+        <Literal>A tall plant with a wooden trunk, branches, and leaves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree_crown</IRI>
+        <Literal>Top part of a tree which includes branches and leaves.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree_root</IRI>
+        <Literal>Underground wooden roots of a tree which may break through to the surface.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tree_trunk</IRI>
+        <Literal>The main wooden stem of the tree between the roots and crown.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#tundra</IRI>
         <Literal>A type of biome where the tree growth is hindered by low temperatures and short growing seasons.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#tunnel</IRI>
+        <Literal>Underground or underwater passageway</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2251,8 +2446,28 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#valley</IRI>
+        <Literal>Low are aof land situated between hills or mountains</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#vegetation</IRI>
+        <Literal>Plants in general</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#vehicle</IRI>
         <Literal>Objects that are capable of transporting people or items</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#void</IRI>
+        <Literal>Anything regions which should not be considered part of the images (corrupted data, misaligned pixels)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wall</IRI>
+        <Literal>A continuous vertical structure for enclosing or dividing areas.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2263,6 +2478,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#weather</IRI>
         <Literal>The state of the atmosphere at a particular place and time as regards heat, cloudiness, dryness, sunshine, wind, and rain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wetland</IRI>
+        <Literal>Land consiting of marshes or swamps. Saturated with water</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
@@ -2278,5 +2498,5 @@
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
