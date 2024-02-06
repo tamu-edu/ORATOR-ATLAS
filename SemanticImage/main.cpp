@@ -33,9 +33,9 @@ std::chrono::time_point<std::chrono::system_clock> start, end;
  
 start = std::chrono::system_clock::now();
 //parameters
-string input_directory = "../../../semantic_images/a2d2/";
-std::string input_json = "../../Mappings_RGB/A2D2_dataset.json";
-string output_directory = "../../../extracted_json/a2d2/";
+string input_directory = "../../../semantic_images/rugd/";
+std::string input_json = "../../Mappings_RGB/RUGD_dataset.json";
+string output_directory = "../../../extracted_json/rugd/";
 int num_threads=std::thread::hardware_concurrency(); // number of parallel threads
 
 
