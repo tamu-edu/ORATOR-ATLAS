@@ -14,7 +14,7 @@ if __name__ == '__main__':
     #parameters
     input_color_scheme="Mappings_RGB/unify_dataset_rgb.json"
     
-    results_dir = '../classified_images_grey_new/'
+    results_dir = '../classified_images_grey/'
     # input_img_dir = '../semantic_images/' #includes sub directories for each dataset
     input_img_dir = '../extracted_json/' #includes sub directories for each dataset
     # zip file is on google drive for datasets

@@ -8,130 +8,161 @@
 
    },
    "Color_Information" : {
-      "void" : {
+      "unknown_class": {
+         "red_value": 255,
+         "green_value": 0,
+         "blue_value": 0,
+         "class_value": "0"
+      },
+     "void" : {
          "blue_value" : 0,
          "green_value" : 0,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "1"
       },
       "dirt" : {
          "blue_value" : 20,
          "green_value" : 64,
-         "red_value" : 108
+         "red_value" : 108,
+         "class_value": "2"
       },
       "grass" : {
          "blue_value" : 0,
          "green_value" : 102,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "3"
       },
       "tree" : {
          "blue_value" : 0,
          "green_value" : 255,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "4"
       },
       "pole" : {
          "blue_value" : 153,
          "green_value" : 153,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "5"
       },
       "water" : {
          "blue_value" : 255,
          "green_value" : 128,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "6"
       },
       "sky" : {
          "blue_value" : 255,
          "green_value" : 0,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "7"
       },
       "vehicle" : {
          "blue_value" : 0,
          "green_value" : 255,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "8"
       },
       "container_and_generic_object" : {
          "blue_value" : 127,
          "green_value" : 0,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "9"
       },
       "asphalt" : {
          "blue_value" : 64,
          "green_value" : 64,
-         "red_value" : 64
+         "red_value" : 64,
+         "class_value": "10"
       },
       "building" : {
          "blue_value" : 0,
          "green_value" : 0,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "11"
       },
       "log" : {
          "blue_value" : 0,
          "green_value" : 0,
-         "red_value" : 102
+         "red_value" : 102,
+         "class_value": "12"
       },
       "person" : {
          "blue_value" : 255,
          "green_value" : 153,
-         "red_value" : 204
+         "red_value" : 204,
+         "class_value": "13"
       },
       "fence" : {
          "blue_value" : 204,
          "green_value" : 0,
-         "red_value" : 102
+         "red_value" : 102,
+         "class_value": "14"
       },
       "bush" : {
          "blue_value" : 204,
          "green_value" : 153,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "15"
       },
       "concrete" : {
          "blue_value" : 11,
          "green_value" : 101,
-         "red_value" : 101
+         "red_value" : 101,
+         "class_value": "16"
       },
       "sand" : {
          "blue_value" : 204,
          "green_value" : 229,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "17"
       },
       "gravel" : {
          "blue_value" : 0,
          "green_value" : 128,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "18"
       },
       "mulch" : {
          "blue_value" : 0,
          "green_value" : 76,
-         "red_value" : 153
+         "red_value" : 153,
+         "class_value": "19"
       },
       "rock_bed" : {
          "blue_value" : 0,
          "green_value" : 102,
-         "red_value" : 102
+         "red_value" : 102,
+         "class_value": "20"
       },
       "bicycle" : {
          "blue_value" : 128,
          "green_value" : 255,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "21"
       },
       "sign" : {
          "blue_value" : 102,
          "green_value" : 102,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "22"
       },
       "rock" : {
          "blue_value" : 255,
          "green_value" : 204,
-         "red_value" : 153
+         "red_value" : 153,
+         "class_value": "23"
       },
       "bridge" : {
          "blue_value" : 255,
          "green_value" : 255,
-         "red_value" : 102
+         "red_value" : 102,
+         "class_value": "24"
       },
       "picnic_table" : {
          "blue_value" : 47,
          "green_value" : 85,
-         "red_value" : 114
+         "red_value" : 114,
+         "class_value": "25"
       }
    }
        

@@ -11,241 +11,241 @@
             "red_value": 255,
             "green_value": 0,
             "blue_value": 0,
-            "class_value": "1"
+            "class_value": "0"
         },
         "void": {
             "red_value": 255,
             "green_value": 0,
             "blue_value": 0,
-            "class_value": "1"
+            "class_value": "0"
         },
         "background": {
             "red_value": 255,
             "green_value": 0,
             "blue_value": 0,
-            "class_value": "1"
+            "class_value": "0"
         },
         "vehicle": {
             "red_value": 255,
-            "green_value": 63,
+            "green_value": 56,
             "blue_value": 0,
-            "class_value": "2"
+            "class_value": "1"
         },
         "bicycle": {
             "red_value": 255,
-            "green_value": 127,
+            "green_value": 113,
             "blue_value": 0,
-            "class_value": "3"
+            "class_value": "2"
         },
         "bicyle": {
             "red_value": 255,
-            "green_value": 127,
+            "green_value": 113,
             "blue_value": 0,
-            "class_value": "3"
+            "class_value": "2"
         },
         "person": {
             "red_value": 255,
-            "green_value": 191,
+            "green_value": 170,
             "blue_value": 0,
-            "class_value": "4"
+            "class_value": "3"
         },
         "sky": {
             "red_value": 255,
+            "green_value": 226,
+            "blue_value": 0,
+            "class_value": "4"
+        },
+        "picnic_table": {
+            "red_value": 226,
             "green_value": 255,
             "blue_value": 0,
             "class_value": "5"
         },
-        "obstacle": {
-            "red_value": 191,
-            "green_value": 255,
-            "blue_value": 0,
-            "class_value": "6"
-        },
         "object": {
-            "red_value": 191,
+            "red_value": 226,
             "green_value": 255,
             "blue_value": 0,
-            "class_value": "6"
-        },
-        "container_and_generic_object": {
-            "red_value": 191,
-            "green_value": 255,
-            "blue_value": 0,
-            "class_value": "6"
+            "class_value": "5"
         },
         "barrier": {
-            "red_value": 191,
+            "red_value": 170,
             "green_value": 255,
             "blue_value": 0,
             "class_value": "6"
         },
-        "sign": {
-            "red_value": 127,
+        "obstacle": {
+            "red_value": 113,
             "green_value": 255,
             "blue_value": 0,
             "class_value": "7"
         },
-        "bush": {
-            "red_value": 63,
+        "fence": {
+            "red_value": 56,
             "green_value": 255,
             "blue_value": 0,
             "class_value": "8"
         },
-        "high_vegetation": {
+        "container_and_generic_object": {
             "red_value": 0,
             "green_value": 255,
             "blue_value": 0,
             "class_value": "9"
         },
-        "low_vegetation": {
+        "sign": {
             "red_value": 0,
             "green_value": 255,
-            "blue_value": 0,
-            "class_value": "9"
-        },
-        "vegetation": {
-            "red_value": 0,
-            "green_value": 255,
-            "blue_value": 0,
-            "class_value": "9"
-        },
-        "grass": {
-            "red_value": 0,
-            "green_value": 255,
-            "blue_value": 63,
+            "blue_value": 56,
             "class_value": "10"
         },
-        "tree": {
+        "building": {
             "red_value": 0,
             "green_value": 255,
-            "blue_value": 127,
+            "blue_value": 113,
             "class_value": "11"
         },
-        "log": {
+        "trail": {
             "red_value": 0,
             "green_value": 255,
-            "blue_value": 191,
+            "blue_value": 169,
             "class_value": "12"
         },
-        "mud": {
+        "smooth_trail": {
             "red_value": 0,
             "green_value": 255,
-            "blue_value": 255,
-            "class_value": "13"
+            "blue_value": 169,
+            "class_value": "12"
         },
-        "dirt": {
+        "rough_trail": {
             "red_value": 0,
             "green_value": 255,
-            "blue_value": 255,
+            "blue_value": 169,
+            "class_value": "12"
+        },
+        "bridge": {
+            "red_value": 0,
+            "green_value": 255,
+            "blue_value": 226,
             "class_value": "13"
         },
         "pole": {
             "red_value": 0,
-            "green_value": 191,
+            "green_value": 226,
             "blue_value": 255,
             "class_value": "14"
         },
-        "puddle": {
+        "high_vegetation": {
             "red_value": 0,
-            "green_value": 127,
+            "green_value": 169,
             "blue_value": 255,
             "class_value": "15"
         },
-        "water": {
+        "low_vegetation": {
             "red_value": 0,
-            "green_value": 127,
+            "green_value": 169,
             "blue_value": 255,
             "class_value": "15"
         },
-        "concrete": {
+        "vegetation": {
             "red_value": 0,
-            "green_value": 63,
+            "green_value": 169,
+            "blue_value": 255,
+            "class_value": "15"
+        },
+        "bush": {
+            "red_value": 0,
+            "green_value": 113,
             "blue_value": 255,
             "class_value": "16"
         },
-        "rock_bed": {
+        "tree": {
             "red_value": 0,
-            "green_value": 0,
+            "green_value": 56,
             "blue_value": 255,
             "class_value": "17"
         },
-        "rock": {
+        "log": {
             "red_value": 0,
-            "green_value": 0,
-            "blue_value": 255,
-            "class_value": "17"
-        },
-        "rubble": {
-            "red_value": 0,
-            "green_value": 0,
-            "blue_value": 255,
-            "class_value": "17"
-        },
-        "gravel": {
-            "red_value": 0,
-            "green_value": 0,
-            "blue_value": 255,
-            "class_value": "17"
-        },
-        "sand": {
-            "red_value": 63,
             "green_value": 0,
             "blue_value": 255,
             "class_value": "18"
         },
         "mulch": {
-            "red_value": 63,
-            "green_value": 0,
-            "blue_value": 255,
-            "class_value": "18"
-        },
-        "trail": {
-            "red_value": 127,
+            "red_value": 56,
             "green_value": 0,
             "blue_value": 255,
             "class_value": "19"
         },
-        "smooth_trail": {
-            "red_value": 127,
-            "green_value": 0,
-            "blue_value": 255,
-            "class_value": "19"
-        },
-        "rough_trail": {
-            "red_value": 127,
-            "green_value": 0,
-            "blue_value": 255,
-            "class_value": "19"
-        },
-        "asphalt": {
-            "red_value": 191,
+        "grass": {
+            "red_value": 113,
             "green_value": 0,
             "blue_value": 255,
             "class_value": "20"
         },
-        "picnic_table": {
-            "red_value": 255,
+        "puddle": {
+            "red_value": 170,
             "green_value": 0,
             "blue_value": 255,
             "class_value": "21"
         },
-        "fence": {
-            "red_value": 255,
+        "water": {
+            "red_value": 170,
             "green_value": 0,
-            "blue_value": 191,
+            "blue_value": 255,
+            "class_value": "21"
+        },
+        "asphalt": {
+            "red_value": 226,
+            "green_value": 0,
+            "blue_value": 255,
             "class_value": "22"
         },
-        "building": {
+        "mud": {
             "red_value": 255,
             "green_value": 0,
-            "blue_value": 127,
+            "blue_value": 226,
             "class_value": "23"
         },
-        "bridge": {
+        "dirt": {
             "red_value": 255,
             "green_value": 0,
-            "blue_value": 63,
+            "blue_value": 226,
+            "class_value": "23"
+        },
+        "rock_bed": {
+            "red_value": 255,
+            "green_value": 0,
+            "blue_value": 170,
             "class_value": "24"
+        },
+        "rock": {
+            "red_value": 255,
+            "green_value": 0,
+            "blue_value": 170,
+            "class_value": "24"
+        },
+        "rubble": {
+            "red_value": 255,
+            "green_value": 0,
+            "blue_value": 170,
+            "class_value": "24"
+        },
+        "gravel": {
+            "red_value": 255,
+            "green_value": 0,
+            "blue_value": 170,
+            "class_value": "24"
+        },
+        "concrete": {
+            "red_value": 255,
+            "green_value": 0,
+            "blue_value": 113,
+            "class_value": "25"
+        },
+        "sand": {
+            "red_value": 255,
+            "green_value": 0,
+            "blue_value": 56,
+            "class_value": "26"
         }
     }
 }

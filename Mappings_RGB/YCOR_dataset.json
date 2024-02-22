@@ -8,50 +8,65 @@
 
    },
    "Color_Information" : {
-      "background" : {
+     "unknown_class": {
+         "red_value": 255,
+         "green_value": 0,
+         "blue_value": 0,
+         "class_value": "0"
+     },
+     "background" : {
          "blue_value" : 255,
          "green_value" : 255,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "1"
       },
       "high_vegetation" : {
          "blue_value" : 0,
          "green_value" : 80,
-         "red_value" : 40
+         "red_value" : 40,
+         "class_value": "2"
       },
       "grass" : {
          "blue_value" : 0,
          "green_value" : 255,
-         "red_value" : 128
+         "red_value" : 128,
+         "class_value": "3"
       },
       "smooth_trail" : {
          "blue_value" : 153,
          "green_value" : 176,
-         "red_value" : 178
+         "red_value" : 178,
+         "class_value": "4"
       },
       "obstacle" : {
          "blue_value" : 0,
          "green_value" : 0,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "5"
       },
       "sky" : {
          "blue_value" : 255,
          "green_value" : 88,
-         "red_value" : 1
+         "red_value" : 1,
+         "class_value": "6"
       },
       "rough_trail" : {
          "blue_value" : 30,
          "green_value" : 76,
-         "red_value" : 156
+         "red_value" : 156,
+         "class_value": "7"
       },
       "puddle" : {
          "blue_value" : 128,
          "green_value" : 0,
-         "red_value" : 255
+         "red_value" : 255,
+         "class_value": "8"
       },
       "low_vegetation" : {
          "blue_value" : 0,
          "green_value" : 160,
-         "red_value" : 0
+         "red_value" : 0,
+         "class_value": "9"
       }
    }
        
