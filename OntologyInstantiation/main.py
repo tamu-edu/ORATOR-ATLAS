@@ -16,17 +16,17 @@ if __name__ == '__main__':
 
     
     #dataset parameters
-    # input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
-    # input_image_json_directory = "Datasets/freiburg/img_json/"
-    # input_ontology_mapping= "Mappings_OWL/DeepScene.json"
-    # output_owl_directory = "Datasets/freiburg/img_owl/"    
-    
-    
-    
     input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
-    input_image_json_directory = "../extracted_json/rugd/"
-    input_ontology_mapping= "Mappings_OWL/RUGD.json"
-    output_owl_directory = "../OWL_files/rugd/" 
+    input_image_json_directory = "Datasets/freiburg/img_json/"
+    input_ontology_mapping= "Mappings_OWL/DeepScene.json"
+    output_owl_directory = "Datasets/freiburg/img_owl/"    
+    
+    
+    
+    # input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
+    # input_image_json_directory = "../extracted_json/rugd/"
+    # input_ontology_mapping= "Mappings_OWL/RUGD.json"
+    # output_owl_directory = "../OWL_files/rugd/" 
     
     
     
