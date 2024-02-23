@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     file_list_mappings = []
     dict_mapping = {}
-    pixelMinArea = 0000
+    pixelMinArea = 100
 
     for file in os.listdir(owl_mappings_directory):
         if file.endswith(".json"):
@@ -113,6 +113,7 @@ if __name__ == '__main__':
 
     if list_files:
         print(list_files)
+        print(len(list_files))
     else:
         print("Not Found", classOfInterest)
     print("done")
