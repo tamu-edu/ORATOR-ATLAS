@@ -79,10 +79,16 @@ if __name__ == '__main__':
             onto.scenario_labels.DatasetName = jsonMapping["ImageDataset"]
             onto.instance_attributes.DatasetName = jsonMapping["ImageDataset"]
             onto.instance_labels.DatasetName = jsonMapping["ImageDataset"]
+
+            onto.collection_platform.DatasetName = jsonMapping["ImageDataset"]
+            # onto.sensor.DatasetName = jsonMapping["ImageDataset"]
+
             temp_val = input_image_json.rfind('/')
             onto.scenario_labels.ImageName = input_image_json[temp_val+1:-5]
             onto.instance_labels.ImageName = input_image_json[temp_val+1:-5]
             onto.instance_attributes.ImageName = input_image_json[temp_val+1:-5]
+            onto.collection_platform.ImageName = input_image_json[temp_val+1:-5]
+            # onto.sensor.ImageName = input_image_json[temp_val+1:-5]
 
             for i in polygonInfo['entities']:
                 class_instance = i['type']
@@ -100,7 +106,7 @@ if __name__ == '__main__':
                     ind1 = onto[poly_type](poly_instance_name)
 
 
-                    onto[poly_instance_name].Size = [(properties['pixel_area'])]
+                    onto[poly_instance_name].SizeArea = [(properties['pixel_area'])]
 
                     if terrain_type != '':
                         if terrain_type in dict_material.keys():

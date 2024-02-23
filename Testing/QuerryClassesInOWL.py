@@ -8,9 +8,11 @@ from tkinter import simpledialog
 if __name__ == '__main__':
 
     #parameters
-    input_owl_directory = "Datasets/Rellis_3D_image_example/img_owl/"
+    # input_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
+
+    input_owl_directory = "../Datasets/freiburg/img_owl"
     # input_owl_directory = "../extracted_json/freiburg"
-    owl_mappings_directory = "Mappings_OWL/"
+    owl_mappings_directory = "../Mappings_OWL/"
 
     
     #start of main script
@@ -24,7 +26,7 @@ if __name__ == '__main__':
 
     file_list_mappings = []
     dict_mapping = {}
-    pixelMinArea = 1000
+    pixelMinArea = 0
 
     for file in os.listdir(owl_mappings_directory):
         if file.endswith(".json"):
@@ -59,14 +61,14 @@ if __name__ == '__main__':
             if ontoClassOfInterest.instances():
                 # print("Found")
                 for k in list(ontoClassOfInterest.instances()):
-                    if k.Size:
-                        if int(k.Size[0]) > pixelMinArea:
+                    if k.SizeArea:
+                        if int(k.SizeArea[0]) > pixelMinArea:
                             list_files.append([imageName[0], imageDataset[0]])
                             break
                     else:
                         sz_n = 0
                         for j in list(k.Makes):
-                            sz_n = sz_n + int(j.Size[0])
+                            sz_n = sz_n + int(j.SizeArea[0])
 
                         if sz_n > pixelMinArea:
                             list_files.append([imageName[0], imageDataset[0]])
@@ -96,8 +98,8 @@ if __name__ == '__main__':
                 if ontoClassOfInterest.instances():
                     # print("Found")
                     for k in list(ontoClassOfInterest.instances()):
-                        if k.Size:
-                            if int(k.Size[0]) > pixelMinArea:
+                        if k.SizeArea:
+                            if int(k.SizeArea[0]) > pixelMinArea:
                                 list_files.append([imageName[0], imageDataset[0]])
                                 break
 
