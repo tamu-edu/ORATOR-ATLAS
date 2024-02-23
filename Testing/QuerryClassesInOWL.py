@@ -50,8 +50,8 @@ if __name__ == '__main__':
         onto = get_ontology(input_owl)
         onto.load()
 
-        imageName = onto.imaging_conditions.ImageName
-        imageDataset = onto.imaging_conditions.ImageDataset
+        imageName = onto.scenario_labels.ImageName
+        imageDataset = onto.scenario_labels.DatasetName
 
         if onto[classOfInterest]:
             # print("Ontology Hierarchy")
