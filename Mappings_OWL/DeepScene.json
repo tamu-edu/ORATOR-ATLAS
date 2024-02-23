@@ -32,7 +32,7 @@
 		"terrain_instantiation" : "wood"
 	},
 	{
-		"type" : "unknown_error",
+		"type" : "unknown_class",
 		"polygon_instantiation" : "null",
 		"terrain_instantiation" : ""
 	}
