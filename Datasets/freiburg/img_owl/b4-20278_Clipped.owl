@@ -1087,6 +1087,7 @@
 <owl:NamedIndividual rdf:about="#F1">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20126.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#M1">
@@ -1096,11 +1097,13 @@
 <owl:NamedIndividual rdf:about="#F2">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">24237.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F3">
   <rdf:type rdf:resource="#trail"/>
   <HasMaterial rdf:resource="#M2"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">39040.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#M2">
@@ -1109,19 +1112,23 @@
 
 <owl:NamedIndividual rdf:about="#F4">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">59516.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F5">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1545.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F6">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">806.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F7">
   <rdf:type rdf:resource="#vegetation"/>
   <HasMaterial rdf:resource="#M3"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">273580.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#M3">
@@ -1130,14 +1137,17 @@
 
 <owl:NamedIndividual rdf:about="#F8">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">135.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F9">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">136.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F10">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145.5</SizeArea>
 </owl:NamedIndividual>
 
 <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">

@@ -1086,22 +1086,27 @@
 
 <owl:NamedIndividual rdf:about="#F1">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">30710.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F2">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">46549.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F3">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">90960.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F4">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">103386.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F5">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">136480.0</SizeArea>
 </owl:NamedIndividual>
 
 <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">

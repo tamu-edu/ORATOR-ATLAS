@@ -1087,6 +1087,7 @@
 <owl:NamedIndividual rdf:about="#F1">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8097.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#M1">
@@ -1096,11 +1097,13 @@
 <owl:NamedIndividual rdf:about="#F2">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">512.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F3">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">26556.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#M2">
@@ -1110,20 +1113,24 @@
 <owl:NamedIndividual rdf:about="#F4">
   <rdf:type rdf:resource="#trail"/>
   <HasMaterial rdf:resource="#M2"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8810.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F5">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2212.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F6">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">12543.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F7">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">588.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#M3">
@@ -1132,245 +1139,304 @@
 
 <owl:NamedIndividual rdf:about="#F8">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5658.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F9">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4101.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F10">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2743.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F11">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2114.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F12">
   <rdf:type rdf:resource="#ground_cover"/>
   <HasMaterial rdf:resource="#M1"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">844.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F13">
   <rdf:type rdf:resource="#trail"/>
   <HasMaterial rdf:resource="#M2"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55622.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F14">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">335.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F15">
   <rdf:type rdf:resource="#geographic_feature"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">220.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F16">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">128.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F17">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">105.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F18">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">369.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F19">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F20">
   <rdf:type rdf:resource="#vegetation"/>
   <HasMaterial rdf:resource="#M3"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">116.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F21">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">109.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F22">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">331.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F23">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">500.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F24">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">373.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F25">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">146.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F26">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">692.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F27">
   <rdf:type rdf:resource="#vegetation"/>
   <HasMaterial rdf:resource="#M3"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">244.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F28">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1734.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F29">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">460.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F30">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2966.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F31">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">114.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F32">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">7210.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F33">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">106.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F34">
   <rdf:type rdf:resource="#vegetation"/>
   <HasMaterial rdf:resource="#M3"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">253504.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F35">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">356.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F36">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">110.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F37">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">140.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F38">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">388.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F39">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">212.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F40">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">257.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F41">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">168.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F42">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">102.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F43">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">119.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F44">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">730.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F45">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">127.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F46">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F47">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">160.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F48">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">249.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F49">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">286.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F50">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">147.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F51">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">125.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F52">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">113.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F53">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">436.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F54">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">147.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F55">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">131.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F56">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">197.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F57">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">145.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F58">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">166.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F59">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">231.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F60">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">102.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F61">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">126.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F62">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">217.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F63">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">102.0</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F64">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">580.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F65">
   <rdf:type rdf:resource="#sky"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">112.5</SizeArea>
 </owl:NamedIndividual>
 
 <owl:NamedIndividual rdf:about="#F66">
   <rdf:type rdf:resource="#vegetation"/>
   <HasMaterial rdf:resource="#M3"/>
+  <SizeArea rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">122.5</SizeArea>
 </owl:NamedIndividual>
 
 <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">

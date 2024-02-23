@@ -8,10 +8,10 @@ from tkinter import simpledialog
 if __name__ == '__main__':
 
     #parameters
-    input_owl_directory = "Datasets/freiburg/img_owl/"
-    # input_owl_directory = "../OWL_files/freiburg"
+    # input_owl_directory = "Datasets/freiburg/img_owl/"
+    input_owl_directory = "../OWL_files/rugd/"
     owl_mappings_directory = "Mappings_OWL/"
-
+    print('input directory',input_owl_directory)
     
     #start of main script
     list_files = [] #list of files which have the requested class
@@ -20,12 +20,12 @@ if __name__ == '__main__':
         if file.endswith(".owl"):
             temp_file_owl=os.path.join(input_owl_directory, file)
             file_list_owl.append(temp_file_owl)
-            #print(temp_file_owl)
+            # print(temp_file_owl)
 
     file_list_mappings = []
     dict_mapping = {}
-    pixelMinArea = 100
-
+    pixelMinArea = 1000
+    print('pixelMinArea: ', pixelMinArea)
     for file in os.listdir(owl_mappings_directory):
         if file.endswith(".json"):
             temp_file_mappings = os.path.join(owl_mappings_directory, file)
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     classOfInterest = simpledialog.askstring(title="Search",
                                       prompt="What semantic class images do you want to extract?:")
     classOfInterest = classOfInterest.lower()
-
+    print('class of interes', classOfInterest)
     for input_owl in file_list_owl:
         #load owl ontology
         onto = get_ontology(input_owl)
@@ -112,8 +112,8 @@ if __name__ == '__main__':
         onto.destroy()
 
     if list_files:
-        print(list_files)
-        print(len(list_files))
+        # print(list_files)
+        print('number of images', len(list_files))
     else:
         print("Not Found", classOfInterest)
     print("done")
