@@ -24,9 +24,9 @@ if __name__ == '__main__':
     
     
     input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
-    input_image_json_directory = "../extracted_json/freiburg/"
-    input_ontology_mapping= "Mappings_OWL/DeepScene.json"
-    output_owl_directory = "../OWL_files/freiburg/" 
+    input_image_json_directory = "../extracted_json/rugd/"
+    input_ontology_mapping= "Mappings_OWL/RUGD.json"
+    output_owl_directory = "../OWL_files/rugd/" 
     
     
     
@@ -106,6 +106,7 @@ if __name__ == '__main__':
                         terrain_type = ""
 
                     poly_instance_name = 'F' + str(properties['entity_number'])
+                    # print('Error: onto[{}] is not callable'.format(poly_type))
                     ind1 = onto[poly_type](poly_instance_name)
 
 
