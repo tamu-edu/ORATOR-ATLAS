@@ -16,10 +16,19 @@ if __name__ == '__main__':
 
     
     #dataset parameters
+    # input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
+    # input_image_json_directory = "Datasets/freiburg/img_json/"
+    # input_ontology_mapping= "Mappings_OWL/DeepScene.json"
+    # output_owl_directory = "Datasets/freiburg/img_owl/"    
+    
+    
+    
     input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
-    input_image_json_directory = "Datasets/freiburg/img_json/"
+    input_image_json_directory = "../extracted_json/freiburg/"
     input_ontology_mapping= "Mappings_OWL/DeepScene.json"
-    output_owl_directory = "Datasets/freiburg/img_owl/"    
+    output_owl_directory = "../OWL_files/freiburg/" 
+    
+    
     
     
     #start of main code 
@@ -76,9 +85,9 @@ if __name__ == '__main__':
         with onto:
 
             dict_terrain = {}
-            onto.scenario_labels.ImageDataset = jsonMapping["ImageDataset"]
-            onto.instance_attributes.ImageDataset = jsonMapping["ImageDataset"]
-            onto.instance_labels.ImageDataset = jsonMapping["ImageDataset"]
+            onto.scenario_labels.DatasetName = jsonMapping["ImageDataset"]
+            onto.instance_attributes.DatasetName = jsonMapping["ImageDataset"]
+            onto.instance_labels.DatasetName = jsonMapping["ImageDataset"]
             temp_val = input_image_json.rfind('/')
             onto.scenario_labels.ImageName = input_image_json[temp_val+1:-5]
             onto.instance_labels.ImageName = input_image_json[temp_val+1:-5]
