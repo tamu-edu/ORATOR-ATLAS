@@ -9,17 +9,17 @@ import numpy as np
 if __name__ == '__main__':
     
     #parameters
-    input_ATLAS_ontology="../ATLAS_OWL/ATLAS_v2.0.3.owl"
-    input_image_json_directory = "../Datasets/Rellis_3D_image_example/img_json/"
-    input_ontology_mapping= "../Mappings_OWL/RELLIS3D.json"
-    output_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
+    # input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.3.owl"
+    # input_image_json_directory = "Datasets/Rellis_3D_image_example/img_json/"
+    # input_ontology_mapping= "Mappings_OWL/RELLIS3D.json"
+    # output_owl_directory = "Datasets/Rellis_3D_image_example/img_owl/"
 
     
-    #GOOSE parameters
-    # input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
-    # input_image_json_directory = "../extracted_json/freiburg/"
-    # input_ontology_mapping= "Mappings_OWL/DeepScene.json"
-    # output_owl_directory = "../OWL_files/freiburg/"    
+    #dataset parameters
+    input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
+    input_image_json_directory = "Datasets/freiburg/img_json/"
+    input_ontology_mapping= "Mappings_OWL/DeepScene.json"
+    output_owl_directory = "Datasets/freiburg/img_owl/"    
     
     
     #start of main code 
@@ -76,13 +76,13 @@ if __name__ == '__main__':
         with onto:
 
             dict_terrain = {}
-            onto.imaging_conditions.ImageDataset = jsonMapping["ImageDataset"]
-            onto.instance_ontology.ImageDataset = jsonMapping["ImageDataset"]
-            onto.property.ImageDataset = jsonMapping["ImageDataset"]
+            onto.scenario_labels.ImageDataset = jsonMapping["ImageDataset"]
+            onto.instance_attributes.ImageDataset = jsonMapping["ImageDataset"]
+            onto.instance_labels.ImageDataset = jsonMapping["ImageDataset"]
             temp_val = input_image_json.rfind('/')
-            onto.imaging_conditions.ImageName = input_image_json[temp_val+1:-5]
-            onto.instance_ontology.ImageName = input_image_json[temp_val+1:-5]
-            onto.property.ImageName = input_image_json[temp_val+1:-5]
+            onto.scenario_labels.ImageName = input_image_json[temp_val+1:-5]
+            onto.instance_labels.ImageName = input_image_json[temp_val+1:-5]
+            onto.instance_attributes.ImageName = input_image_json[temp_val+1:-5]
 
             for i in polygonInfo['entities']:
                 class_instance = i['type']
