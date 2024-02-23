@@ -3,12 +3,12 @@
 	"Class": [
 	{
 		"type" : "background",
-		"polygon_instantiation" : "unknown",
+		"polygon_instantiation" : "void",
 		"terrain_instantiation" : ""
 		
 	},{
 		"type" : "smooth_trail",
-		"polygon_instantiation" : "road",
+		"polygon_instantiation" : "trail",
 		"terrain_instantiation" : "soil"
 		
 	},
@@ -21,25 +21,25 @@
 
 	{
 		"type" : "rough_trail",
-		"polygon_instantiation" : "road",
+		"polygon_instantiation" : "trail",
 		"terrain_instantiation" : "rock"
 	},
 
 	{
 		"type" : "obstacle",
-		"polygon_instantiation" : "geographic_feature",
+		"polygon_instantiation" : "obstacle",
 		"terrain_instantiation" : ""
 	},
 	
 	{
 		"type" : "low_vegetation",
-		"polygon_instantiation" : "ground_cover",
+		"polygon_instantiation" : "vegetation",
 		"terrain_instantiation" : "plant"
 	},
 
 	{
 		"type" : "high_vegetation",
-		"polygon_instantiation" : "ground_cover",
+		"polygon_instantiation" : "vegetation",
 		"terrain_instantiation" : "plant"
 	},
 

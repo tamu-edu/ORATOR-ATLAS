@@ -8,9 +8,9 @@ from tkinter import simpledialog
 if __name__ == '__main__':
 
     #parameters
-    # input_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
-    input_owl_directory = "../Datasets/Rellis_3D_image_example/rellis/"
-    owl_mappings_directory = "../Mappings_OWL/"
+    input_owl_directory = "Datasets/Rellis_3D_image_example/img_owl/"
+    # input_owl_directory = "../extracted_json/freiburg"
+    owl_mappings_directory = "Mappings_OWL/"
 
     
     #start of main script
@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     file_list_mappings = []
     dict_mapping = {}
-    pixelMinArea = 100
+    pixelMinArea = 1000
 
     for file in os.listdir(owl_mappings_directory):
         if file.endswith(".json"):

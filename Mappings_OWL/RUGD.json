@@ -4,7 +4,7 @@
 
 	{
 		"type" : "void",
-		"polygon_instantiation" : "unknown",
+		"polygon_instantiation" : "void",
 		"terrain_instantiation" : ""
 		
 	},{
@@ -16,7 +16,7 @@
 	{
 		"type" : "sand",
 		"polygon_instantiation" : "land_body",
-		"terrain_instantiation" : "soil"
+		"terrain_instantiation" : "sand"
 		
 	},
 	
@@ -28,7 +28,7 @@
 
 	{
 		"type" : "tree",
-		"polygon_instantiation" : "bush_and_tree",
+		"polygon_instantiation" : "tree",
 		"terrain_instantiation" : "tree_log"
 	},
 
@@ -52,13 +52,13 @@
 
 	{
 		"type" : "vehicle",
-		"polygon_instantiation" : "vehicle",
+		"polygon_instantiation" : "ground_vehicle",
 		"terrain_instantiation" : "artificial"
 	},
 
 	{
 		"type" : "container_and_generic_object",
-		"polygon_instantiation" : "geographic_feature",
+		"polygon_instantiation" : "container",
 		"terrain_instantiation" : ""
 	},
 
@@ -97,7 +97,7 @@
 
 	{
 		"type" : "bicyle",
-		"polygon_instantiation" : "ground_vehicle",
+		"polygon_instantiation" : "bicylce",
 		"terrain_instantiation" : "artificial"
 	},
 	
@@ -115,13 +115,13 @@
 
 	{
 		"type" : "bush",
-		"polygon_instantiation" : "bush_and_tree",
+		"polygon_instantiation" : "bush",
 		"terrain_instantiation" : "plant"
 	},
 
 	{
 		"type" : "sign",
-		"polygon_instantiation" : "regulatory",
+		"polygon_instantiation" : "sign",
 		"terrain_instantiation" : "artificial"
 	},
 	
@@ -139,13 +139,13 @@
 	
 	{
 		"type" : "concrete",
-		"polygon_instantiation" : "infrastructure",
-		"terrain_instantiation" : "artificial"
+		"polygon_instantiation" : "infratructure",
+		"terrain_instantiation" : "concrete"
 	},
 
 	{
 		"type" : "picnic_table",
-		"polygon_instantiation" : "infrastructure",
+		"polygon_instantiation" : "geographic_feature",
 		"terrain_instantiation" : "artificial"
 	},
 

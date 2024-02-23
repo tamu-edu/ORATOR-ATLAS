@@ -9,7 +9,7 @@
 
 	{
 		"type" : "trail",
-		"polygon_instantiation" : "road",
+		"polygon_instantiation" : "trail",
 		"terrain_instantiation" : "soil"
 		
 	},

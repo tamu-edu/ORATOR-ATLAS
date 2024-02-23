@@ -9,17 +9,17 @@ import numpy as np
 if __name__ == '__main__':
     
     #parameters
-    #input_ATLAS_ontology="../ATLAS_OWL/ATLAS_v2.0.3.owl"
-    #input_image_json_directory = "../Datasets/Rellis_3D_image_example/img_json/"
-    #input_ontology_mapping= "../Mappings_OWL/RELLIS3D.json"
-    #output_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
+    input_ATLAS_ontology="../ATLAS_OWL/ATLAS_v2.0.3.owl"
+    input_image_json_directory = "../Datasets/Rellis_3D_image_example/img_json/"
+    input_ontology_mapping= "../Mappings_OWL/RELLIS3D.json"
+    output_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
 
     
     #GOOSE parameters
-    input_ATLAS_ontology="../ATLAS_OWL/ATLAS_v2.0.3.owl"
-    input_image_json_directory = "../Datasets/Goose_image_example/img_json/"
-    input_ontology_mapping= "../Mappings_OWL/GOOSE.json"
-    output_owl_directory = "../Datasets/Goose_image_example/img_owl/"    
+    # input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
+    # input_image_json_directory = "../extracted_json/freiburg/"
+    # input_ontology_mapping= "Mappings_OWL/DeepScene.json"
+    # output_owl_directory = "../OWL_files/freiburg/"    
     
     
     #start of main code 
@@ -63,10 +63,14 @@ if __name__ == '__main__':
         f2 = open(input_image_json)
         polygonInfo = json.load(f2)
 
+        # print(jsonMapping)
 
 
         count_polygon = 0
         count_terrain = 0
+
+        
+
 
         dict_material = {}
         with onto:

@@ -3,7 +3,7 @@
 	"Class": [
 	{
 		"type" : "void",
-		"polygon_instantiation" : "unknown",
+		"polygon_instantiation" : "void",
 		"terrain_instantiation" : ""
 		
 	},
@@ -22,7 +22,7 @@
 
 	{
 		"type" : "tree",
-		"polygon_instantiation" : "bush_and_tree",
+		"polygon_instantiation" : "tree",
 		"terrain_instantiation" : "tree_log"
 	},
 
@@ -46,7 +46,7 @@
 
 	{
 		"type" : "vehicle",
-		"polygon_instantiation" : "vehicle",
+		"polygon_instantiation" : "ground_vehicle",
 		"terrain_instantiation" : "artificial"
 	},
 
@@ -88,14 +88,14 @@
 
 	{
 		"type" : "bush",
-		"polygon_instantiation" : "bush_and_tree",
+		"polygon_instantiation" : "bush",
 		"terrain_instantiation" : "plant"
 	},
 
 	{
 		"type" : "concrete",
 		"polygon_instantiation" : "infrastructure",
-		"terrain_instantiation" : "artificial"
+		"terrain_instantiation" : "concrete"
 	},
 
 	{
