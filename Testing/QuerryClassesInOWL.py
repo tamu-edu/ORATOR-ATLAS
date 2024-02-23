@@ -8,12 +8,9 @@ from tkinter import simpledialog
 if __name__ == '__main__':
 
     #parameters
-    # input_owl_directory = "../Datasets/Rellis_3D_image_example/img_owl/"
-
     input_owl_directory = "../Datasets/freiburg/img_owl"
     # input_owl_directory = "../extracted_json/freiburg"
     owl_mappings_directory = "../Mappings_OWL/"
-
     
     #start of main script
     list_files = [] #list of files which have the requested class
@@ -26,7 +23,7 @@ if __name__ == '__main__':
 
     file_list_mappings = []
     dict_mapping = {}
-    pixelMinArea = 0
+    pixelMinArea = 100
 
     for file in os.listdir(owl_mappings_directory):
         if file.endswith(".json"):
@@ -85,7 +82,7 @@ if __name__ == '__main__':
                 ontoClassOfInterestM_I = onto[dict_mapping[classOfInterest][1]].instances()
                 counter = 0
                 for inst in ontoClassOfInterestP.instances():
-                    if inst.HasMaterial == ontoClassOfInterestM_I and int(inst.Size[0]) > pixelMinArea:
+                    if inst.HasMaterial == ontoClassOfInterestM_I and int(inst.SizeArea[0]) > pixelMinArea:
                         # print("Found")
                         list_files.append([imageName[0], imageDataset[0]])
                         counter = 1

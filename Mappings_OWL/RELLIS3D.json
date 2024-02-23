@@ -125,6 +125,11 @@
 		"type" : "unknown_error",
 		"polygon_instantiation" : "null",
 		"terrain_instantiation" : ""
+	},
+	{
+		"type" : "unknown_class",
+		"polygon_instantiation" : "null",
+		"terrain_instantiation" : ""
 	}
 	
 	]

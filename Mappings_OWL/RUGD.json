@@ -97,10 +97,14 @@
 
 	{
 		"type" : "bicyle",
-		"polygon_instantiation" : "bicylce",
+		"polygon_instantiation" : "bicyle",
 		"terrain_instantiation" : "artificial"
 	},
-	
+	{
+		"type" : "bicycle",
+		"polygon_instantiation" : "bicyle",
+		"terrain_instantiation" : "artificial"
+	},
 	{
 		"type" : "person",
 		"polygon_instantiation" : "person",
@@ -139,7 +143,7 @@
 	
 	{
 		"type" : "concrete",
-		"polygon_instantiation" : "infratructure",
+		"polygon_instantiation" : "infrastructure",
 		"terrain_instantiation" : "concrete"
 	},
 
@@ -156,6 +160,11 @@
 	},
 	{
 		"type" : "unknown_error",
+		"polygon_instantiation" : "null",
+		"terrain_instantiation" : ""
+	},
+	{
+		"type" : "unknown_class",
 		"polygon_instantiation" : "null",
 		"terrain_instantiation" : ""
 	}
