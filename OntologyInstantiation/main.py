@@ -16,17 +16,17 @@ if __name__ == '__main__':
 
     
     #dataset parameters
-    # input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
-    # input_image_json_directory = "Datasets/freiburg/img_json/"
-    # input_ontology_mapping= "Mappings_OWL/DeepScene.json"
-    # output_owl_directory = "Datasets/freiburg/img_owl/"    
-    
-    
-    
     input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
-    input_image_json_directory = "../extracted_json/ycor/"
-    input_ontology_mapping= "Mappings_OWL/YCOR.json"
-    output_owl_directory = "../OWL_files/ycor/" 
+    input_image_json_directory = "Datasets/freiburg/img_json/"
+    input_ontology_mapping= "Mappings_OWL/DeepScene.json"
+    output_owl_directory = "Datasets/freiburg/img_owl/"    
+    
+    
+    
+    # input_ATLAS_ontology="ATLAS_OWL/ATLAS_v2.0.5.owl"
+    # input_image_json_directory = "../extracted_json/ycor/"
+    # input_ontology_mapping= "Mappings_OWL/YCOR.json"
+    # output_owl_directory = "../OWL_files/ycor/" 
     
     
     
@@ -88,10 +88,16 @@ if __name__ == '__main__':
             onto.scenario_labels.DatasetName = jsonMapping["ImageDataset"]
             onto.instance_attributes.DatasetName = jsonMapping["ImageDataset"]
             onto.instance_labels.DatasetName = jsonMapping["ImageDataset"]
+
+            onto.collection_platform.DatasetName = jsonMapping["ImageDataset"]
+            # onto.sensor.DatasetName = jsonMapping["ImageDataset"]
+
             temp_val = input_image_json.rfind('/')
             onto.scenario_labels.ImageName = input_image_json[temp_val+1:-5]
             onto.instance_labels.ImageName = input_image_json[temp_val+1:-5]
             onto.instance_attributes.ImageName = input_image_json[temp_val+1:-5]
+            onto.collection_platform.ImageName = input_image_json[temp_val+1:-5]
+            # onto.sensor.ImageName = input_image_json[temp_val+1:-5]
 
             for i in polygonInfo['entities']:
                 class_instance = i['type']

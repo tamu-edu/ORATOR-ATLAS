@@ -8,8 +8,8 @@ from tkinter import simpledialog
 if __name__ == '__main__':
 
     #parameters
-    # input_owl_directory = "Datasets/freiburg/img_owl/"
-    input_owl_directory = "../OWL_files/rugd/"
+    input_owl_directory = "Datasets/freiburg/img_owl/"
+    # input_owl_directory = "../OWL_files/rugd/"
     owl_mappings_directory = "Mappings_OWL/"
     print('input directory',input_owl_directory)
     
@@ -96,7 +96,7 @@ if __name__ == '__main__':
                 if ontoClassOfInterest.instances():
                     # print("Found")
                     for k in list(ontoClassOfInterest.instances()):
-                        if k.Size:
+                        if k.SizeArea:
                             if int(k.SizeArea[0]) > pixelMinArea:
                                 list_files.append([imageName[0], imageDataset[0]])
                                 break

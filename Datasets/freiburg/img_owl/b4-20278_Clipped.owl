@@ -368,6 +368,18 @@
 </owl:Class>
 
 <owl:Class rdf:about="#collection_platform">
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#DatasetName"/>
+      <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DeepScene</owl:hasValue>
+    </owl:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <owl:Restriction>
+      <owl:onProperty rdf:resource="#ImageName"/>
+      <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">b4-20278_Clipped</owl:hasValue>
+    </owl:Restriction>
+  </rdfs:subClassOf>
   <rdfs:comment>A platform that collects data</rdfs:comment>
 </owl:Class>
 
