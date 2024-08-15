@@ -3,10 +3,9 @@
 
 This repo holds the relevant code for an All-Terrain Labelset for Autonomous Systems (ATLAS) developed by the Off-Road Annotation TOols & Resources (ORATOR) team and Texas A&M University. The goal of this effort is to develop a standardized ontology for visual datasets to unify existing and future dataset ontologies. This standardized ontological framework can be used to aid training AI-models on data that is collected from multiple datasets. Moreover, the integration of W3C Web Ontology Language (OWL) allows for easy addition to the proposed ontology and the ability to analyze data for inconsistencies through open-source reasoners. This allows users to adapt the ontology to meet their needs.  
 
-There are 5 different class parents of the ontology - collection platform, instance attibutes, instance labels, scenario label, and sensor. There are also associated data properties and object properties. Since there is a large number of classes, it is recommended to use Protege to view the ontology. Additional classes can be added to the ontology as needed. Please subnmmit a pull request if you would like to add additional classes to the ontology.
+There are 5 different class parents of the ontology - collection platform, instance attibutes, instance labels, scenario label, and sensor. There are also associated data properties and object properties. Since there is a large number of classes, it is recommended to use Protege to view the ontology. Additional classes can be added to the ontology as needed. Please submit a pull request if you would like to add additional classes or properties to the ontology.
 
 The proposed ontology can be used to help guide the creation of an ontology for a new dataset or be used to understand the relationships between the different classes for intelligent reasoning. 
-
 
 
 <!-- image labels, instance labels, instance attributes, and properties.  -->
